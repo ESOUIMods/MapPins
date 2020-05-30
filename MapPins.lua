@@ -2977,19 +2977,28 @@ local CustomChestData,CustomThievesTrove={},{}
 local PoiData={}
 local Achievements={
 --Instrumental Triumph
-chillwinddepths_base={[59]={{.953,.497,2669,6}}},--Lilytongue 156800
-shadowgreen_upper={[59]={{.863,.495,2669,4}}},--Tenderclaw 156798
 nchuthnkarst_base={[59]={{.859,.555,2669,2}}},--Lute 156666
-westernskryim_base={[59]={	--Provided by Aqufolius
-{.657,.591,2669,16},	--Крик как шёлк
-{.603,.667,2669,19},	--Тельхарпа Доззена
-{.528,.225,2669,10},	--Jarlsbane
-{.354,.664,2669,18},	--Магнетит
-{.674,.411,2669,17},	--Рожок котринги из рога левиафана
-{.148,.496,2669,11},	--Повелитель грома
-{.354,.285,2669,12},	--Джахар Фусо'Джа
+shadowgreen_upper={[59]={{.863,.495,2669,4}}},--Tenderclaw 156798
+dragonhome_base={[59]={{.663,.706,2669,5}}},--Shadow of Rahjin 156799
+chillwinddepths_base={[59]={{.953,.497,2669,6}}},--Lilytongue 156800
+labyrinthian_base={[59]={{.602,.558,2669,7}}},--Sky talker 156801
+thescraps_base={[59]={{.602,.307,2669,9}}},--Hightmourn Dizi 156803
+blackreach_base={[59]={
+{.586,.243,2669,3},	--Chime of the Endless 156797
+{.919,.455,2669,13},	--Pan Flute of Morachellis 156807
+{.502,.358,2669,14},	--Reman War Drum 156808
+{.275,.674,2669,15}	--Ateian Fife 160510
 }},
-labyrinthian_base={[59]={{.602,.558,2669}}},	--Говорит с Небом
+westernskryim_base={[59]={	--Provided by Aqufolius
+{.379,.505,2669,8},	--Long Fire 156802
+{.528,.225,2669,10},	--Jarlsbane 156804
+{.148,.496,2669,11},	--King Thunder 156805
+{.354,.285,2669,12},	--Jahar Fuso'ja 156806
+{.657,.591,2669,16},	--Shiek-of-Silk 160511
+{.674,.411,2669,17},	--Kothringi Leviathan Bugle 160512
+{.354,.664,2669,18},	--Lodestone 160514
+{.603,.667,2669,19}	--Dozzen Talharpa 160515
+}},
 
 senchal_base={
 [55]={{.512,.83,2534,9},{.549,.807,2534,12}},
@@ -3214,7 +3223,7 @@ southernelsweyr_base={
 {.173,.623,7213},	--[7213] Gloves
 },
 --]]
-local AchievementsId={[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53}
+local AchievementsId={[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
 local ZoneAchievement={
 auridon_base=1,
 grahtwood_base=2,
@@ -3253,7 +3262,7 @@ alikr_base=17,
 bangkorai_base=18,
 coldharbour_base=19,
 }
-local AchievementItems={[1712]={},[1250]={},[2099]={},[1958]={},[2320]={},[2463]={},[2534]={}}
+local AchievementItems={[1712]={},[1250]={},[2099]={},[1958]={},[2320]={},[2463]={},[2534]={},[2669]={}}
 local TimeBreach={
 summerset_base={{.587,.543,2},{.226,.599,2},{.292,.373,2},{.621,.322,2},{.561,.432,2},{.676,.62,2},{.479,.743,2},{.339,.424,2},{.738,.713,2}},
 glenumbra_base={{.735,.199,2},{.336,.509,2},{.436,.807,2}},
@@ -3523,6 +3532,46 @@ local PrecursorTooltip={
 	{v=11,desc="Brass Bortress: Mechanical Fundament"},
 	{v=12,desc="Clockwork Base"},
 	{v=13,desc="Brass Bortress: Machine District"}
+	}
+local Instruments={
+[156666]=2,	--Lute of Blue Longing
+[156797]=3,	--Chime of the Endless
+[156798]=4,	--Tenderclaw
+[156799]=5,	--Shadow of Rahjin
+[156800]=6,	--Lilytongue
+[156801]=7,--Sky talker
+[156802]=8,	--Long Fire
+[156803]=9,	--Hightmourn Dizi
+[156804]=10,	--Jarlsbane
+[156805]=11,	--King Thunder
+[156806]=12,	--Jahar Fuso'ja
+[156807]=13,	--Pan Flute of Morachellis
+[156808]=14,	--Reman War Drum
+[160510]=15,	--Ateian Fife
+[160511]=16,	--Shiek-of-Silk
+[160512]=17,	--Kothringi Leviathan Bugle
+[160514]=18,	--Lodestone
+[160515]=19,	--Dozzen Talharpa
+}
+local InstrumentsTooltip={
+	{v=2,desc="  Nchuthnkarst: Lute of Blue Longing"},
+	{v=3,desc="  Blackreach: Chime of the Endless"},
+	{v=4,desc="  Shadowgreen: Tenderclaw "},
+	{v=5,desc="  Dragonhome: Shadow of Rahjin"},
+	{v=6,desc="  Chill Wind Depths: Lilytongue"},
+	{v=7,desc="  Labyrinthian: Sky talker"},
+	{v=8,desc="  Western Skryim: Long Fire"},
+	{v=9,desc="  Scraps: Hightmourn Dizi"},
+	{v=10,desc="Western Skryim: Jarlsbane"},
+	{v=11,desc="Western Skryim: King Thunder"},
+	{v=12,desc="Western Skryim: Jahar Fuso'ja"},
+	{v=13,desc="Blackreach: Pan Flute of Morachellis"},
+	{v=14,desc="Blackreach: Reman War Drum"},
+	{v=15,desc="Blackreach: Ateian Fife"},
+	{v=16,desc="Western Skryim: Shiek-of-Silk"},
+	{v=17,desc="Western Skryim: Kothringi Leviathan Bugle"},
+	{v=18,desc="Western Skryim: Lodestone"},
+	{v=19,desc="Western Skryim: Dozzen Talharpa"},
 	}
 local CustomPins={	--Types
 	[1]={name="pinType_Delve_bosses",done=false,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},--tint=ZO_ColorDef:New(1,1,1,1),
@@ -3979,6 +4028,7 @@ local function ScanInventory()
 			elseif ChronoglerTablet[itemId] then AchievementItems[2320][ ChronoglerTablet[itemId] ]=true
 			elseif MuralMenderFragments[itemId] then AchievementItems[2463][ MuralMenderFragments[itemId] ]=true
 			elseif PiecesOfHistory[itemId] then AchievementItems[2534][ PiecesOfHistory[itemId] ]=true
+			elseif Instruments[itemId] then AchievementItems[2669][ Instruments[itemId] ]=true
 			end
 		end
 	end
@@ -4026,6 +4076,10 @@ local function OnLootReceived(_, receivedBy, itemName, quantity, itemSound, loot
 		AchievementItems[2534][ PiecesOfHistory[itemId] ]=true
 		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[55].name])
 		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[55].name) end
+	elseif Instruments[itemId] then
+		AchievementItems[2669][ Instruments[itemId] ]=true
+		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[59].name])
+		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[59].name) end
 	end
 end
 
@@ -4235,7 +4289,7 @@ local function RegisterEvents()
 		SHARED_INVENTORY:UnregisterCallback("SlotAdded")
 		SHARED_INVENTORY:UnregisterCallback("SlotRemoved")
 	end
-	if SavedVars[11] or SavedVars[13] or SavedVars[14] or SavedVars[18] or SavedVars[19] or SavedVars[20] then
+	if SavedVars[11] or SavedVars[13] or SavedVars[14] or SavedVars[18] or SavedVars[19] or SavedVars[20] or SavedVars[22] then
 		ScanInventory()
 		EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_LOOT_RECEIVED, OnLootReceived)
 	else
@@ -4317,6 +4371,19 @@ local function AddPinFilter(i,pinCheckboxText)
 					text=text..info..data.desc
 				end
 				return zo_iconFormat(CustomPins[47].def_texture,24,24).." "..string.gsub(string.gsub(CustomPins[47].name,"pinType_",""),"_"," ")
+					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t"
+					..text
+			end
+		elseif CustomPins[i].name=="pinType_Greymoor" then
+			tooltipText=function()
+				local text=""
+				for i,data in ipairs(InstrumentsTooltip) do
+					local _,c,r=GetAchievementCriterion(2669,data.v)
+					local HaveItem=AchievementItems[2669] and AchievementItems[2669][data.v] and true or false
+					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
+					text=text..info..data.desc
+				end
+				return zo_iconFormat(CustomPins[59].def_texture,24,24).." "..string.gsub(string.gsub(CustomPins[59].name,"pinType_",""),"_"," ")
 					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t"
 					..text
 			end
@@ -4696,7 +4763,7 @@ end
 /script local id=_G["pinType_Treasure_Maps"] local en=ZO_WorldMap_GetPinManager():IsCustomPinEnabled(id) d(en)
 /script ZO_WorldMap_GetPinManager():SetCustomPinEnabled(POI_TYPE_HOUSE,false)
 /script d(string.match(GetMapTileTexture(), "%w+/%w+/%w+/(%w+_%w+)"))
-/script d("|t26:26:/MapPins/Chest_1.dds|t")
+/script d("|t26:26:/MapPins/img/Chest_1.dds|t")
 /script MP_MakeBase()
 /script Link=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(130803) local _,name=GetItemLinkSetInfo(Link) StartChatInput(name)
 /script d(ZO_WorldMap_GetPinManager():IsCustomPinEnabled(201))
