@@ -665,6 +665,25 @@ vvardenfell_base={{.404,.809,20,3},{.882,.612,20,3},{.34,.528,20,3},{.502,.244,8
 --["coldharbour_base"]={{.683,.806}},
 }
 local TreasureMaps={
+westernskryim_base={
+{.33,.297,166460,1},--Blacksmith Survey
+{.567,.684,166461,1},--Clothier Survey
+{.194,.430,166462,1},--Enchanting Survey
+{.755,.571,166465,1},--Woodworker Survey
+{.562,.488,166459,1},--Alchemy Survey
+{.44,.58,166464,1},--JewelryCraftingSurvey
+{.407,.51,166035},--CE Treasure Map
+{.54,.4627,166040},--TreasureMapI
+{.537,.591,166041},--TreasureMapII
+{.289,.62,166042},--TreasureMapIII
+{.264,.554,166043},--TreasureMapIV
+},
+blackreach_base={
+{.824,.482,166036},--CE Treasure Map 1
+{.894,.554,166037},--CE Treasure Map 2
+{.21,.674,166038},--TreasureMapI
+{.224,.587,166039},--TreasureMapII
+},
 southernelsweyr_base={{.468,.636,156716},{.293,.256,156715}},
 elsweyr_base={
 {.319,.725,147922},{.699,.251,147923},{.811,.361,147924},--CE TreasureMap
