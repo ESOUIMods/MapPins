@@ -3828,7 +3828,7 @@ local function MapPinAddCallback(i)
 				if itemData and itemData.itemType==ITEMTYPE_TROPHY then
 					for _, pinData in pairs(mapData) do
 						if GetItemId(BAG_BACKPACK,itemData.slotIndex)==pinData[3] then
-							local pinTag=pinData[4] and (pinData[4]==1 and {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/Treasure_"..(itemData.stackCount>1 and 4 or 3)..".dds"}
+							local pinTag=pinData[4] and (pinData[4]==1 and {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_"..(itemData.stackCount>1 and 4 or 3)..".dds"}
 							or type(pinData[4])=="string" and {[1]=i,[2]=itemData.slotIndex,texture="esoui/art/icons/gear_reach_"..pinData[4].."_c.dds"})
 							or {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_2.dds"}
 							CustomPins[i].tint=type(pinData[4])=="string" and ZO_ColorDef:New(1,.3,.3,1) or nil
