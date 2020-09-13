@@ -627,10 +627,10 @@ innerseaarmature_base={{.539,.229,12,1}},
 mephalasnest_base={{.564,.292,8,2}},
 softloamcavern_base={{.428,.435,10,3}},
 fungalgrotto_base={{.331,.785,11,1}},
-stormhaven_base={{.480,.602,10,6},{.245,.198,2,1},{.179,.232,2,1},{.212,.225,2,1},{.180,.472,2,2},{.202,.441,2,2},{.166,.510,2,3},{.200,.594,2,3},{.181,.620,2,3},{.135,.580,2,3},{.262,.299,2,4},{.310,.350,2,4},{.320,.316,2,4},{.299,.286,2,4},{.382,.390,2,5},{.556,.417,2,5},{.329,.374,2,5},{.349,.349,2,5},{.369,.352,2,5},{.272,.434,2,6},{.360,.423,2,6},{.323,.471,2,6},{.279,.493,2,7},{.251,.489,2,7},{.214,.536,2,7},{.281,.529,2,7},{.303,.588,2,8},{.273,.656,2,8},{.333,.663,2,8},{.302,.635,2,8},{.376,.651,2,9},{.395,.594,2,9},{.354,.565,2,9},{.341,.608,2,9},{.236,.275,2,10},{.208,.298,2,10},{.17,.28,2,10},{.261,.413,8,3},{.256,.362,8,3},{.236,.328,8,3},{.256,.391,8,3},{.147,.335,8,4},{.161,.303,8,4},{.149,.348,8,4},{.50,.58,10,4},{.476,.633,10,6},{.446,.607,10,6},{.562,.577,11,9},{.461,.491,12,4},{.408,.510,12,4},{.486,.511,12,4},{.417,.414,12,5},{.416,.458,12,5},{.449,.415,12,5},{.538,.347,12,6},{.422,.352,12,6},{.485,.358,12,6},{.418,.547,15,1},{.435,.582,15,1},{.461,.553,15,1},{.667,.366,15,2},{.654,.347,15,2},{.641,.391,15,2},{.672,.395,15,2},{.736,.437,15,3},{.716,.450,15,3},{.775,.412,15,4},{.773,.447,15,4},{.805,.428,15,4},{.812,.459,15,5},{.738,.472,15,5},{.785,.495,15,5},{.654,.592,15,6},{.659,.539,15,6},{.683,.599,15,6},{.692,.558,15,6},{.744,.507,15,7},{.703,.514,15,7},{.746,.541,15,7},{.781,.539,15,7},{.839,.464,15,8},{.884,.449,15,8},{.878,.442,15,8},{.885,.498,15,8},{.527,.384,16,1},{.495,.403,16,1},{.532,.460,16,2},{.574,.501,16,2},{.587,.463,16,2},{.553,.376,16,3},{.571,.368,16,3},{.605,.422,16,3},{.618,.363,16,3},{.695,.425,16,4},{.686,.464,16,4},{.629,.514,16,5},{.647,.484,16,5},{.700,.493,16,5},{.655,.510,16,5}},
+stormhaven_base={{.480,.602,10,6},{.245,.198,2,1},{.179,.232,2,1},{.212,.225,2,1},{.180,.472,2,2},{.202,.441,2,2},{.166,.510,2,3},{.200,.594,2,3},{.181,.620,2,3},{.135,.580,2,3},{.262,.299,2,4},{.310,.350,2,4},{.320,.316,2,4},{.299,.286,2,4},{.382,.390,2,5},{.556,.417,2,5},{.329,.374,2,5},{.349,.349,2,5},{.369,.352,2,5},{.272,.434,2,6},{.360,.423,2,6},{.323,.471,2,6},{.279,.493,2,7},{.251,.489,2,7},{.214,.536,2,7},{.281,.529,2,7},{.303,.588,2,8},{.273,.656,2,8},{.333,.663,2,8},{.302,.635,2,8},{.376,.651,2,9},{.395,.594,2,9},{.354,.565,2,9},{.341,.608,2,9},{.236,.275,2,10},{.208,.298,2,10},{.17,.28,2,10},{.261,.413,8,3},{.256,.362,8,3},{.236,.328,8,3},{.256,.391,8,3},{.147,.335,8,4},{.161,.303,8,4},{.149,.348,8,4},{.50,.58,10,4},{.476,.633,10,6},{.446,.607,10,6},{.562,.577,11,9},{.461,.491,12,4},{.408,.510,12,4},{.486,.511,12,4},{.417,.414,12,5},{.416,.458,12,5},{.449,.415,12,5},{.538,.347,12,6},{.422,.352,12,6},{.485,.358,12,6},{.418,.547,15,1},{.435,.582,15,1},{.461,.553,15,1},{.667,.366,15,2},{.654,.347,15,2},{.641,.391,15,2},{.672,.395,15,2},{.736,.437,15,3},{.716,.450,15,3},{.775,.412,15,4},{.773,.447,15,4},{.805,.428,15,4},{.812,.459,15,5},{.738,.472,15,5},{.785,.495,15,5},{.654,.592,15,6},{.659,.539,15,6},{.683,.599,15,6},{.692,.558,15,6},{.744,.507,15,7},{.703,.514,15,7},{.746,.541,15,7},{.781,.539,15,7},{.839,.464,15,8},{.884,.449,15,8},{.878,.442,15,8},{.885,.498,15,8},{.527,.384,16,1},{.495,.403,16,1},{.532,.460,16,2},{.574,.501,16,2},{.587,.463,16,2},{.553,.376,16,3},{.571,.368,16,3},{.605,.422,16,3},{.618,.363,16,3},{.695,.425,16,4},{.686,.464,16,4},{.629,.514,16,5},{.647,.484,16,5},{.700,.493,16,5},{.655,.510,16,5},{.443,.545,12,4}},
 alcairecastle_base={{.603,.351,2,1},{.863,.293,2,1},{.770,.593,2,10},{.496,.753,2,10}},
 koeglinvillage_base={{.245,.672,2,2},{.525,.303,2,2}},
-wayrest_base={{.226,.410,10,4},{.610,.298,10,4},{.308,.212,10,4},{.465,.564,10,5},{.827,.374,10,5},{.075,.660,10,6},{.215,.096,15,1},{.970,.454,15,6},{.361,.080,16,2}},
+wayrest_base={{.226,.410,10,4},{.610,.298,10,4},{.308,.212,10,4},{.465,.564,10,5},{.827,.374,10,5},{.075,.660,10,6},{.215,.096,15,1},{.970,.454,15,6},{.361,.080,16,2},{.486,.115,9,9}},
 wayrestsewers_base={{.830,.100,11,9}},
 therift_base={{.497,.291,24,1},{.482,.280,24,1},{.510,.333,24,1},{.589,.344,24,2},{.582,.268,24,2},
 --{.617,.285,24,2},{.646,.275,24,2},
@@ -663,6 +663,7 @@ dbsanctuary_base={{.802,.532,16,9}},
 vvardenfell_base={{.404,.809,20,3},{.882,.612,20,3},{.34,.528,20,3},{.502,.244,8,4},{.405,.269,8,4},{.32,.627,8,4},{.169,.291,8,4},{.648,.57,8,5},{.557,.756,8,5},{.74,.53,8,5},{.597,.76,8,5},{.29,.22,10,10},{.78,.62,10,10},{.441,.747,10,10},{.878,.706,11,6},{.741,.834,11,6},{.243,.231,11,6},{.652,.28,11,6},{.627,.813,20,8},{.444,.206,20,8},{.67,.849,20,8},{.423,.198,20,8},{.485,.65,22,9},{.165,.374,22,9},{.72,.828,22,9},{.286,.29,23,1},{.778,.715,23,1},{.751,.26,23,1},{.9,.534,23,1},{.607,.911,23,3},{.311,.338,23,3},{.389,.722,23,3},{.579,.7,23,3},{.193,.427,23,9},{.33,.475,23,9},{.686,.622,23,9},{.712,.456,23,9}},
 --Need to confirm:
 --["coldharbour_base"]={{.683,.806}},
+hewsbane_base={{.382,.595,11,3}},
 }
 local TreasureMaps={
 westernskryim_base={
@@ -671,7 +672,7 @@ westernskryim_base={
 {.194,.430,166462,1},--Enchanting Survey
 {.755,.571,166465,1},--Woodworker Survey
 {.562,.488,166459,1},--Alchemy Survey
-{.44,.58,166464,1},--JewelryCraftingSurvey
+{.44,.58,166464,4},--JewelryCraftingSurvey
 {.407,.51,166035},--CE Treasure Map
 {.54,.4627,166040},--TreasureMapI
 {.537,.591,166041},--TreasureMapII
@@ -698,7 +699,7 @@ elsweyr_base={
 {.4283,.4209,151601,1},--AlchemistSurvey
 {.2685,.4400,151598,1},--BlacksmithSurvey
 {.4918,.6791,151600,1},--WoodworkerSurvey
-{.6120,.6430,151603,1},--JewelryCraftingSurvey
+{.6120,.6430,151603,4},--JewelryCraftingSurvey
 },
 murkmire_base={{.546,.378,145510},{.45,.408,145512}},
 summerset_base={{.335,.324,139008},{.204,.626,139009},{.598,.56,139007},{.486,.197,43748},{.367,.4,43750},{.356,.568,43751},{.169,.32,43752},{.672,.782,43753},{.701,.678,43749}},
@@ -3828,9 +3829,13 @@ local function MapPinAddCallback(i)
 				if itemData and itemData.itemType==ITEMTYPE_TROPHY then
 					for _, pinData in pairs(mapData) do
 						if GetItemId(BAG_BACKPACK,itemData.slotIndex)==pinData[3] then
-							local pinTag=pinData[4] and (pinData[4]==1 and {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_"..(itemData.stackCount>1 and 4 or 3)..".dds"}
-							or type(pinData[4])=="string" and {[1]=i,[2]=itemData.slotIndex,texture="esoui/art/icons/gear_reach_"..pinData[4].."_c.dds"})
-							or {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_2.dds"}
+							local pinTag=pinData[4] and
+								(
+								type(pinData[4])=="string" and {[1]=i,[2]=itemData.slotIndex,texture="esoui/art/icons/gear_reach_"..pinData[4].."_c.dds"}
+--								or pinData[4]==4 and	--Jewelry survey
+								or {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_"..(itemData.stackCount>1 and 4 or 3)..".dds"}
+								)
+							or {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_2.dds"}	--Treasure map
 							CustomPins[i].tint=type(pinData[4])=="string" and ZO_ColorDef:New(1,.3,.3,1) or nil
 							pinTag.icon=itemData.iconFile
 							PinManager:CreatePin(_G[CustomPins[i].name],pinTag,pinData[1],pinData[2])
@@ -4243,35 +4248,41 @@ end
 local function OnInteract(_,result,TargetName)
 	if result~=CLIENT_INTERACT_RESULT_SUCCESS then return end
 	if SavedVars[7] and IsThievesTrove[TargetName] then
-		local x,y,_=GetMapPlayerPosition("player") x=math.floor(x*10000)/10000 y=math.floor(y*10000)/10000
 		local zone=string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "%w+/%w+/%w+/(%w+_%w+)")
-		if not CheckThievesTrove(x,y,zone) then
-			if not CustomThievesTrove[zone] then CustomThievesTrove[zone]={} end
-			table.insert(CustomThievesTrove[zone], {x,y})
-			d("New thieves trove found at "..("%05.02f"):format(zo_round(x*10000)/100).."x"..("%05.02f"):format(zo_round(y*10000)/100))
+		if zone then
+			local x,y,_=GetMapPlayerPosition("player") x=math.floor(x*10000)/10000 y=math.floor(y*10000)/10000
+			if not CheckThievesTrove(x,y,zone) then
+				if not CustomThievesTrove[zone] then CustomThievesTrove[zone]={} end
+				table.insert(CustomThievesTrove[zone], {x,y})
+				d("New thieves trove found at "..("%05.02f"):format(zo_round(x*10000)/100).."x"..("%05.02f"):format(zo_round(y*10000)/100))
+			end
 		end
 	elseif SavedVars[7] and IsChest[TargetName] then
 		ChestsLooted=ChestsLooted+1
-		local x,y,_=GetMapPlayerPosition("player") x=math.floor(x*10000)/10000 y=math.floor(y*10000)/10000
 		local zone=string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "%w+/%w+/%w+/(%w+_%w+)")
-		local subzone=(GetMapType()==MAPTYPE_SUBZONE or GetMapContentType()==MAP_CONTENT_DUNGEON)
-		if not CheckChestData(x,y,zone,subzone) then
-			if not CustomChestData[zone] then CustomChestData[zone]={} end
-			table.insert(CustomChestData[zone], {x,y})
-			d("New chest found at "..("%05.02f"):format(zo_round(x*10000)/100).."x"..("%05.02f"):format(zo_round(y*10000)/100) )
+		if zone then
+			local x,y,_=GetMapPlayerPosition("player") x=math.floor(x*10000)/10000 y=math.floor(y*10000)/10000
+			local subzone=(GetMapType()==MAPTYPE_SUBZONE or GetMapContentType()==MAP_CONTENT_DUNGEON)
+			if not CheckChestData(x,y,zone,subzone) then
+				if not CustomChestData[zone] then CustomChestData[zone]={} end
+				table.insert(CustomChestData[zone], {x,y})
+				d("New chest found at "..("%05.02f"):format(zo_round(x*10000)/100).."x"..("%05.02f"):format(zo_round(y*10000)/100) )
+			end
 		end
 	elseif SavedVars[15] and IsTimeBreach[TargetName] then
-		local x,y,_=GetMapPlayerPosition("player") x=math.floor(x*10000)/10000 y=math.floor(y*10000)/10000
 		local zone=string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "%w+/%w+/%w+/(%w+_%w+)")
-		local delta=0.03
-		mapData=TimeBreach[zone]
-		if mapData then
-			for i,data in ipairs(mapData) do
-				if math.abs(data[1]-x)<delta and math.abs(data[2]-y)<delta then
-					if not SavedVars.TimeBreachClosed[zone] then SavedVars.TimeBreachClosed[zone]={} end
-					SavedVars.TimeBreachClosed[zone][i]=true
-					ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[15].name])
-					if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[15].name) end
+		if zone then
+			local x,y,_=GetMapPlayerPosition("player") x=math.floor(x*10000)/10000 y=math.floor(y*10000)/10000
+			local delta=0.03
+			mapData=TimeBreach[zone]
+			if mapData then
+				for i,data in ipairs(mapData) do
+					if math.abs(data[1]-x)<delta and math.abs(data[2]-y)<delta then
+						if not SavedVars.TimeBreachClosed[zone] then SavedVars.TimeBreachClosed[zone]={} end
+						SavedVars.TimeBreachClosed[zone][i]=true
+						ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[15].name])
+						if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[15].name) end
+					end
 				end
 			end
 		end
