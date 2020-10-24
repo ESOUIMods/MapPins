@@ -1,9 +1,9 @@
 ## Title: |c4B8BFEMap Pins|r
 ## Description: Adds Treasure maps, Dungeon bosses, Skyshards, Chests, Lore books, Achivements and some other pins on map. Slash commands: /loc /pinsize 16-40
 ## Author: |c4B8BFEHoft|r
-## Version: 1.64
-## AddOnVersion: 164
-## APIVersion: 100031 100032
+## Version: 1.65
+## AddOnVersion: 165
+## APIVersion: 100032 100033
 ## SavedVariables: MP_SavedVars MP_SavedGlobal MP_ChestData MP_ThievesTrove
 ## OptionalDependsOn: CustomCompassPins
 

@@ -500,7 +500,7 @@ hallsofregulation_2={{.728,.402,1844,5}},
 }
 local SkyShardsAchievements={[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
---ELS_DG={{-2.821,-2.378,28,9}},
+ELS_DG={{-2.821,-2.378,28,9}},
 belarata_base={{.668,.795,18,1}},
 elsweyr_base={{.579,.69,28,1},{.363,.304,26,9},{.714,.265,28,7}},
 abahslanding_base={{.183,.781,18,5}},
@@ -4480,22 +4480,25 @@ local PinTooltipCreator={
 			icon=CustomPins[21].texture
 			name="Volendrung spawn location"
 		end
---[[
-		if IsInGamepadPreferredMode() then
-			ZO_MapLocationTooltip_Gamepad:LayoutIconStringLine(ZO_MapLocationTooltip_Gamepad.tooltip, nil, zo_strformat("<<1>>", name), ZO_MapLocationTooltip_Gamepad.tooltip:GetStyle("mapTitle"))
-			if desc~="" then
-				ZO_MapLocationTooltip_Gamepad:LayoutIconStringLine(ZO_MapLocationTooltip_Gamepad.tooltip, icon, zo_strformat("<<1>>", desc), {fontSize=27, fontColorField=GAMEPAD_TOOLTIP_COLOR_GENERAL_COLOR_3})
-			end
---]]
 		name=(pinTag[3] and "["..pinTag[3].."] " or "")..name
-		InformationTooltip:AddLine(zo_strformat("<<1>> <<2>>",zo_iconFormat(icon,24,24), name), "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
-		if desc then
-			ZO_Tooltip_AddDivider(InformationTooltip)
-			InformationTooltip:AddLine(zo_strformat("<<1>>", desc), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
-		end
-		if desc1 then
-			ZO_Tooltip_AddDivider(InformationTooltip)
-			InformationTooltip:AddLine(zo_strformat("<<1>>", desc1), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+		if IsInGamepadPreferredMode() then
+			ZO_MapLocationTooltip_Gamepad:LayoutIconStringLine(ZO_MapLocationTooltip_Gamepad.tooltip, icon, zo_strformat("<<1>>", name), ZO_MapLocationTooltip_Gamepad.tooltip:GetStyle("mapLocationTooltipWayshrineHeader"))
+			if desc then
+				ZO_MapLocationTooltip_Gamepad:LayoutIconStringLine(ZO_MapLocationTooltip_Gamepad.tooltip, nil, zo_strformat("<<1>>", desc), ZO_MapLocationTooltip_Gamepad.tooltip:GetStyle("mapRecallCost"))
+			end
+			if desc1 then
+				ZO_MapLocationTooltip_Gamepad:LayoutIconStringLine(ZO_MapLocationTooltip_Gamepad.tooltip, nil, zo_strformat("<<1>>", desc1), ZO_MapLocationTooltip_Gamepad.tooltip:GetStyle("mapRecallCost"))
+			end
+		else
+			InformationTooltip:AddLine(zo_strformat("<<1>> <<2>>",zo_iconFormat(icon,24,24), name), "ZoFontGameOutline", ZO_SELECTED_TEXT:UnpackRGB())
+			if desc then
+				ZO_Tooltip_AddDivider(InformationTooltip)
+				InformationTooltip:AddLine(zo_strformat("<<1>>", desc), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+			end
+			if desc1 then
+				ZO_Tooltip_AddDivider(InformationTooltip)
+				InformationTooltip:AddLine(zo_strformat("<<1>>", desc1), "", ZO_HIGHLIGHT_TEXT:UnpackRGB())
+			end
 		end
 	end
 }
