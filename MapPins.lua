@@ -217,6 +217,13 @@ local BossesAchievements={[2714]=true,[2715]=true,[2717]=true,[2718]=true,[2440]
 elsweyr_base={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.623},{.421,.462},{.635,.265},{.445,.527}},
 clockwork_base={{.634,.604,2047}},
 --]]
+--[[Book index, collection index. With tbugm the book index is the
+first entry then collection index is 3rd. However, you put them
+backwards for the pin. So if book index is 9 and collection index
+is 4 then it is 4,9 not the other way around.
+
+{0.439162,0.685270,4,9}
+]]--
 local SkyShards={
 reach_base={{.821,.717,2857,2},{.469,.309,2857,1}},
 U28_blackreach={{.406,.371,2857,3},{.914,.731,2857,4}},
@@ -507,7 +514,7 @@ hallsofregulation_2={{.728,.402,1844,5}},
 }
 local SkyShardsAchievements={[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
-reach_base={{.39,.674,2942}},
+reach_base={{0.390826,0.674602,24,4},{0.439162,0.685270,4,9}},
 ELS_DG={{-2.821,-2.378,28,9}},
 belarata_base={{.668,.795,18,1}},
 elsweyr_base={{.579,.69,28,1},{.363,.304,26,9},{.714,.265,28,7}},
