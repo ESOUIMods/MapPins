@@ -593,7 +593,7 @@ direfrostkeep_base={{.541,.653,11,10}},
 glenumbra_base={{.27,.74,1,1},{.22,.68,1,2},{.360,.715,1,3},{.373,.632,1,3},{.407,.673,1,3},{.316,.660,1,3},{.209,.590,1,4},{.251,.588,1,4},{.242,.600,1,4},{.235,.565,1,4},{.316,.514,1,5},{.259,.528,1,5},{.351,.540,1,5},{.359,.512,1,5},{.300,.574,1,6},{.343,.614,1,6},{.294,.632,1,6},{.352,.592,1,6},{.452,.526,1,7},{.400,.427,1,7},{.412,.536,1,7},{.477,.548,1,7},{.426,.576,1,7},{.423,.797,1,8},{.506,.650,1,8},{.434,.745,1,8},{.448,.714,1,8},{.499,.778,1,8},{.564,.724,1,9},{.540,.711,1,9},{.512,.693,1,9},{.484,.748,1,9},{.457,.640,1,10},{.502,.641,1,10},{.491,.623,1,10},{.494,.673,1,10},{.651,.374,8,1},{.693,.358,8,1},{.634,.418,8,1},{.692,.414,8,1},{.608,.450,8,2},{.590,.469,8,2},{.550,.507,8,2},{.294,.417,9,1},{.196,.443,9,1},{.234,.486,9,1},{.554,.609,9,2},{.588,.607,9,2},{.56,.58,9,2},{.642,.513,9,3},{.689,.538,9,3},{.641,.458,9,3},{.710,.475,9,3},{.744,.348,9,4},{.755,.406,9,4},{.721,.318,9,4},{.520,.400,9,5},{.494,.394,9,5},{.515,.450,9,5},{.515,.433,9,5},{.576,.372,9,6},{.615,.351,9,6},{.615,.371,9,6},{.553,.398,9,6},{.535,.385,9,6},{.518,.353,9,7},{.509,.344,9,7},{.534,.341,9,7},{.439,.349,9,8},{.424,.407,9,8},{.448,.379,9,8},{.324,.382,10,1},{.322,.342,10,1},{.347,.362,10,1},{.377,.307,10,1},{.806,.341,10,2},{.548,.234,10,2},{.817,.299,10,2},{.755,.269,10,3},{.792,.312,10,3},{.786,.232,10,3},{.82,.16,12,1},{.773,.156,12,2},{.686,.131,12,2},{.734,.149,12,2},{.754,.176,12,2},{.740,.197,12,3},{.723,.243,12,3},{.690,.174,19,1},{.605,.185,19,1},{.603,.233,19,2},{.637,.250,19,2},{.653,.234,19,2},{.684,.253,19,2},{.640,.273,19,3},{.644,.318,19,3},{.664,.339,19,3},{.605,.324,19,4},{.577,.301,19,4},{.590,.289,19,4},{.611,.282,19,4},{.573,.225,19,5},{.571,.263,19,5},{.557,.228,19,5},{.522,.234,19,5},{.714,.336,11,8}},
 aldcroft_base={{.387,.648,9,2},{.381,.878,9,2}},
 crosswych_base={{.554,.822,12,1},{.568,.621,12,1},{.397,.654,12,1},{.683,.648,12,1}},
-daggerfall_base={{.749,.699,1,1},{.517,.636,1,1},{.311,.566,1,1},{.657,.606,1,1},{.216,.089,1,2},{.431,.143,1,2},{.511,.290,1,2},{.606,.325,1,2},{.892,.254,1,3}},
+daggerfall_base={{.749,.699,1,1},{.517,.636,1,1},{.311,.566,1,1},{.216,.089,1,2},{.431,.143,1,2},{.511,.290,1,2},{.606,.325,1,2},{.892,.254,1,3}},
 desolationsend_base={{.856,.376,9,8}},
 spindleclutch_base={{.677,.475,11,8}},
 strosmkai_base={{.403,.509,12,11}},
@@ -681,8 +681,7 @@ vvardenfell_base={{.404,.809,20,3},{.882,.612,20,3},{.34,.528,20,3},{.502,.244,8
 hewsbane_base={{.382,.595,11,3}},
 }
 local TreasureMaps={
-reach_base={{.386,.681,171474}},--Provided by SuppeFuss165
-U28_blackreach={{.156,.725,171475}},
+reach_base={{.386,.681,171474}},U28_blackreach={{.156,.725,171475}},--Provided by SuppeFuss165
 westernskryim_base={
 {.33,.297,166460,1},--Blacksmith Survey
 {.567,.684,166461,1},--Clothier Survey
@@ -721,7 +720,7 @@ elsweyr_base={
 murkmire_base={{.546,.378,145510},{.45,.408,145512}},
 summerset_base={{.335,.324,139008},{.204,.626,139009},{.598,.56,139007},{.486,.197,43748},{.367,.4,43750},{.356,.568,43751},{.169,.32,43752},{.672,.782,43753},{.701,.678,43749}},
 khenarthisroost_base={{.611,.757,43695},{.225,.314,43696},{.410,.584,43697},{.773,.337,43698},{.616,.832,44939},{.399,.366,45010}},
-auridon_base={{.2,.217,153640,"staff"},{.495,.892,43625},{.485,.641,43626},{.441,.507,43627},{.664,.411,43628},{.503,.258,43629},{.338,.131,43630},{.685,.963,44927},{.545,.302,57744,1},{.447,.285,57733,1},{.548,.465,57741,1},{.635,.695,57687,1},{.408,.700,57738,1},{.399,.61,139422,4}},
+auridon_base={{.2,.217,153640,"staff"},{.493,.888,43625},{.485,.641,43626},{.441,.507,43627},{.664,.411,43628},{.5,.253,43629},{.335,.127,43630},{.685,.963,44927},{.545,.302,57744,1},{.447,.285,57733,1},{.548,.465,57741,1},{.635,.695,57687,1},{.408,.700,57738,1},{.399,.61,139422,4}},
 grahtwood_base={{.395,.675,43631},{.649,.477,43632},{.629,.381,43633},{.473,.340,43634},{.355,.356,43635},{.469,.471,43636},{.312,.600,44937},{.767,.469,57747,1},{.314,.582,57750,1},{.457,.787,57754,1},{.612,.380,57771,1},{.425,.264,57816,1},{.389,.393,139425,4}},
 eldenrootgroundfloor_base={{.882,.410,43632}},
 greenshade_base={{.654,.834,43637},{.722,.741,43638},{.363,.505,43639},{.340,.323,43640},{.250,.149,43641},{.597,.383,43642},{.593,.811,44938},{.556,.395,57757,1},{.764,.826,57774,1},{.599,.627,57788,1},{.502,.289,57802,1},{.299,.813,57819,1},{.231,.401,139427,4}},
@@ -761,6 +760,60 @@ vvardenfell_base={{.44,.243,126122,1},{.841,.731,126111,1},{.672,.627,126110,1},
 clockwork_base={{.181,.597,43746},{.803,.424,43747}},
 }
 local UnknownPOI={
+[1261]={
+[1]={"Borderwatch",31},
+[2]={"White Stallion Inn",2},
+[3]={"Undertow Cavern",3},
+[4]={"Leyawiin",7},
+[6]={"Plateau of the Traveler",2},
+[7]={"Tidewater Cave",3},
+[8]={"Deepscorn Hollow",5},
+[9]={"Shardius's Excavation",18},
+[10]={"Fort Blueblood",2},
+[12]={"Veyond",11},
+[14]={"Fort Redmane",31},
+[15]={"Doomvault Vulpinaz",10},
+[16]={"Toad-Tongue War Camp",18},
+[17]={"Arpenia",3},
+[18]={"Shrine to Nocturnal",2},
+[19]={"Zenithar's Abbey",13},
+[20]={"Sul-Xan Ritual Site",18},
+[21]={"Welke",11},
+[22]={"Bloodrun Cave",5},
+[23]={"Bloodrun Wayshrine",1},
+[24]={"Farmer's Nook",32},
+[25]={"Old Deathwart's Pond",18},
+[26]={"Salvitto Estate",2},
+[28]={"Hutan-Tzel",32},
+[29]={"Doomvault Porcixid",3},
+[31]={"Gideon",7},
+[32]={"The Silent Halls",13},
+[33]={"Glenbridge",28},
+[34]={"Vunalk",3},
+[35]={"Xeemhok's Lagoon",18},
+[39]={"Ojel-Bak",2},
+[40]={"Stonewastes",32},
+[41]={"The Shattered Xanmeer",18},
+[42]={"Xi-Tsei",3},
+[43]={"Leyawiin Wayshrine",1},
+[44]={"Gideon Wayshrine",1},
+[45]={"Borderwatch Wayshrine",1},
+[46]={"Fort Redmane Wayshrine",1},
+[47]={"Blueblood Wayshrine",1},
+[48]={"Stonewastes Wayshrine",1},
+[50]={"Pentric Run",8},--
+[51]={"Sariellen's Sword",8},--
+[52]={"Withered Root",8},--
+[56]={"Doomvault Vulpinaz Wayshrine",1},
+[57]={"Blackwood Crossroads Wayshrine",1},
+[58]={"Hutan-Tzel Wayshrine",1},
+[59]={"Vunalk Wayshrine",1},
+[60]={"Ayleid Well",11},
+[61]={"Ayleid Well",11},
+[62]={"Ayleid Well",11},
+[63]={"Ayleid Well",11},
+[64]={"Ayleid Well",11},
+},
 [1208]={
 [1]={"Nchuand-Zel",14},
 [2]={"Library of Arkthzand",15},
@@ -3065,6 +3118,24 @@ local CustomChestData,CustomThievesTrove={},{}
 --local CustomQuestData={}
 local PoiData={}
 local Achievements={
+blackwood_base={[62]={--Provided by remosito
+{.7,.9,	374},--Bog Blight Funerary Mask
+{.6,.79,	401},--Soiled Tapestry Scrap
+{.305,.36,	402},--Frayed Tapestry Scrap
+{.64,.8,	403},--Stained Tapestry Scrap
+{.583,.855,	404},--Torn Tapestry Scrap
+{.307,.576,	405},--Tattered Tapestry Scrap
+{.664,.675,	406},--Threadbare Tapestry Scrap
+{.317,.7,	407},--Ragged Tapestry Scrap
+{.812,.634,	408},--Ripped Tapestry Scrap
+{.58,.63,	409},--Grimy Tapestry Scrap
+{.816,.793,	410},--Dusty Tapestry Scrap
+{.374,.677,	411},--Filthy Tapestry Scrap
+{.49,.755,	413},--Niss'wo Sacramental Wraps
+{.171,.474,	414},--Moth-Eaten Tapestry Scrap
+{.207,.457,	415},--Ratty Tapestry Scrap
+}},
+--[[
 reach_base={--Provided by Aquifolius
 [60]={{.817,.76,2964}},	--Полёт Красного Орла
 [61]={	--Подношения древним духам
@@ -3073,6 +3144,7 @@ reach_base={--Provided by Aquifolius
 {.462,.432,2964},	--Ритуальный камень в лагере Дикого Копья
 {.384,.277,2964},	--Ритуальный камень в лагере Чёрной Луны
 }},
+--]]
 --Instrumental Triumph
 nchuthnkarst_base={[59]={{.859,.555,2669,2}}},--Lute 156666
 shadowgreen_upper={[59]={{.863,.495,2669,4}}},--Tenderclaw 156798
@@ -3096,7 +3168,6 @@ westernskryim_base={[59]={	--Provided by Aquifolius
 {.354,.664,2669,18},	--Lodestone 160514
 {.603,.667,2669,19}	--Dozzen Talharpa 160515
 }},
-
 senchal_base={
 [55]={{.512,.83,2534,9},{.549,.807,2534,12}},
 [56]={{.529,.187,2619,1}},
@@ -3732,33 +3803,42 @@ local CustomPins={	--Types
 	[21]={name="pinType_Volendrung",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25},
 	[22]={section=true,name="pinType_Greymoor",id={},pin={},texture="/esoui/art/treeicons/tutorial_indexicon_greymoor_up.dds",
 		[59]={name="pinType_Instrumental_Triumph",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
+--		[60]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
+--		[61]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
+		},
+	[23]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_summerset_up.dds.dds",
+		[62]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
 		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
-local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true}
+local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true}
 --	/script local name,_,_,icon=GetAchievementInfo(2669) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
+--	/script d("|t26:26:/esoui/art/treeicons/tutorial_indexicon_blackwood_up.dds")
 local function GetSetDescription(setData)
-	local itemLink=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(setData[1])
-	local _, setName, numBonuses=GetItemLinkSetInfo(itemLink)
-	local setBonuses=zo_strformat("|cEEEEEE<<1>> traits required|r\n", setData[2])
-	local numRequired, Description
-	for i=1, numBonuses do
-		numRequired, Description=GetItemLinkSetBonusInfo(itemLink, false, i)
-		Description=string.gsub(Description,"%d+ %w+ Health","|cFF2222%1|r")
-		Description=string.gsub(Description,"%d+ %w+ Stamina","|c22FF22%1|r")
-		Description=string.gsub(Description,"%d+ %w+ Magicka","|c5555EE%1|r")
-		Description=string.gsub(Description,"%d+ Health %w+","|cFF2222%1|r")
-		Description=string.gsub(Description,"%d+ Stamina %w+","|c22FF22%1|r")
-		Description=string.gsub(Description,"%d+ Magicka %w+","|c5555EE%1|r")
-		Description=string.gsub(Description,"%d+ Spell Damage","|c5555EE%1|r")
-		Description=string.gsub(Description,"%d+ Weapon Damage","|cBBBBBB%1|r")
-		Description=string.gsub(Description,"%d+ %w+ Critical","|cBB33BB%1|r")
-		setBonuses=setBonuses..Description..(i<numBonuses and "\n" or "")
+	if setData then
+		local itemLink=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(setData[1])
+		local _, setName, numBonuses=GetItemLinkSetInfo(itemLink)
+		local setBonuses=zo_strformat("|cEEEEEE<<1>> traits required|r\n", setData[2])
+		local numRequired, Description
+		for i=1, numBonuses do
+			numRequired, Description=GetItemLinkSetBonusInfo(itemLink, false, i)
+			Description=string.gsub(Description,"%d+ %w+ Health","|cFF2222%1|r")
+			Description=string.gsub(Description,"%d+ %w+ Stamina","|c22FF22%1|r")
+			Description=string.gsub(Description,"%d+ %w+ Magicka","|c5555EE%1|r")
+			Description=string.gsub(Description,"%d+ Health %w+","|cFF2222%1|r")
+			Description=string.gsub(Description,"%d+ Stamina %w+","|c22FF22%1|r")
+			Description=string.gsub(Description,"%d+ Magicka %w+","|c5555EE%1|r")
+			Description=string.gsub(Description,"%d+ Spell Damage","|c5555EE%1|r")
+			Description=string.gsub(Description,"%d+ Weapon Damage","|cBBBBBB%1|r")
+			Description=string.gsub(Description,"%d+ %w+ Critical","|cBB33BB%1|r")
+			setBonuses=setBonuses..Description..(i<numBonuses and "\n" or "")
+		end
+		return zo_strformat("<<1>> set (<<2>> items)", setName, numRequired), setBonuses
+	else
+		return "", ""
 	end
-	local setHeader=zo_strformat("<<1>> set (<<2>> items)", setName, numRequired)
-	return setHeader, setBonuses
 end
 
 local function GetFishingAchievement(subzone)
@@ -3858,6 +3938,18 @@ local function MapPinAddCallback(i)
 		if mapData then
 			for i1,pinData in pairs(mapData) do
 				PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Volendrung"..i1},pinData[1],pinData[2])
+			end
+		end
+	elseif i==62 then
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					if GetNumAntiquitiesRecovered(pinData[3])~=1 and not DoesAntiquityHaveLead(pinData[3]) then
+						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name=ZO_CachedStrFormat("<<C:1>>",GetAntiquityName(pinData[3]))},pinData[1],pinData[2])
+					end
+				end
 			end
 		end
 	elseif i>=30 then
@@ -3964,11 +4056,15 @@ local function MapPinAddCallback(i)
 			local normalizedX,normalizedY,poiType,_,_,_,known=GetPOIMapInfo(zoneIndex, poiIndex)
 			if mapData and mapData[poiIndex] then
 				if not known then	--poiType==MAP_PIN_TYPE_INVALID then
-					local pinTag={[1]=i,name=mapData[poiIndex][1],texture=UnknownPOItexture[ mapData[poiIndex][2] ],desc=""}
+					local pinTag={[1]=i,name=mapData[poiIndex][1],texture=UnknownPOItexture[ mapData[poiIndex][2] ]}
 					if mapData[poiIndex][2]==25 then	--Mundus
 						pinTag.desc=MundusDescription[ mapData[poiIndex][3] ]
 					elseif mapData[poiIndex][2]==8 then	--Crafting station unknown
-						pinTag.name,pinTag.desc=GetSetDescription(mapData[poiIndex][3])
+						if mapData[poiIndex][3] then
+							pinTag.name,pinTag.desc=GetSetDescription(mapData[poiIndex][3])
+						else
+							pinTag.name=mapData[poiIndex][1]
+						end
 					end
 					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
 					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
@@ -3976,7 +4072,7 @@ local function MapPinAddCallback(i)
 					local pinTag={[1]=i,name=GetAbilityName(mapData[poiIndex][3]),texture="/esoui/art/icons/poi/poi_mundus_complete.dds"} pinTag.desc=MundusDescription[ mapData[poiIndex][3] ]
 					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
 					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
-				elseif mapData[poiIndex][2]==8 then		--Crafting station known
+				elseif mapData[poiIndex][2]==8 and mapData[poiIndex][3] then	--Crafting station known
 					local pinTag={[1]=i,texture="/esoui/art/icons/mapkey/mapkey_crafting.dds"} pinTag.name,pinTag.desc=GetSetDescription(mapData[poiIndex][3])
 					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
 					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
@@ -4533,6 +4629,9 @@ local PinTooltipCreator={
 			for _,id in pairs(pinTag[4]) do
 				desc1=desc1..("\n|H1:item:%d:359:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(id)
 			end
+		elseif pinTag[1]==62 then
+			icon=CustomPins[62].texture
+			name=pinTag.name
 		elseif pinTag[1]<=4 or pinTag[1]>=30 then
 			if pinTag[1]==34 then
 				icon=CustomPins[34].texture
@@ -4606,7 +4705,7 @@ local function MakeMapFiltersScroll()
 		end
 	end
 	if ZO_WorldMapFiltersPvEContainer then ZO_WorldMapFiltersPvEContainer:SetAnchorFill() end
-
+--[[
 	if WORLD_MAP_FILTERS.pvpPanel.checkBoxPool then
 		WORLD_MAP_FILTERS.pvpPanel.checkBoxPool.parent=ZO_WorldMapFiltersPvPContainerScrollChild or WINDOW_MANAGER:CreateControlFromVirtual("ZO_WorldMapFiltersPvPContainer",ZO_WorldMapFiltersPvP,"ZO_ScrollContainer"):GetNamedChild("ScrollChild")
 		for i,control in pairs(WORLD_MAP_FILTERS.pvpPanel.checkBoxPool.m_Active) do
@@ -4632,6 +4731,7 @@ local function MakeMapFiltersScroll()
 		end
 	end
 	if ZO_WorldMapFiltersPvPContainer then ZO_WorldMapFiltersPvPContainer:SetAnchorFill() end
+--]]
 end
 
 local function OnLoad(eventCode,addonName)
@@ -4645,7 +4745,7 @@ local function OnLoad(eventCode,addonName)
 	PinManager=ZO_WorldMap_GetPinManager()
 --	CustomPins_init()
 	RegisterEvents()
---	MakeMapFiltersScroll()
+	MakeMapFiltersScroll()
 
 	local function AddPin(pin,pinLayout)
 		local TooltipCreator=((pin~=7 and pin~=16 and pin~=17) and PinTooltipCreator or nil)
@@ -4658,7 +4758,7 @@ local function OnLoad(eventCode,addonName)
 		return id
 	end
 
-	for i=1,22 do
+	for i=1,23 do
 		local filter=CustomPins[i]
 		if filter.section then
 			for i0,pinLayout in pairs(filter) do
@@ -4873,7 +4973,7 @@ end
 /script local id=_G["pinType_Treasure_Maps"] local en=ZO_WorldMap_GetPinManager():IsCustomPinEnabled(id) d(en)
 /script ZO_WorldMap_GetPinManager():SetCustomPinEnabled(POI_TYPE_HOUSE,false)
 /script d(string.match(GetMapTileTexture(), "%w+/%w+/%w+/(%w+_%w+)"))
-/script d("|t26:26:/MapPins/img/Chest_1.dds|t")
+/script d("|t26:26:/MapPins/Chest_1.dds|t")
 /script MP_MakeBase()
 /script Link=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(130803) local _,name=GetItemLinkSetInfo(Link) StartChatInput(name)
 /script d(ZO_WorldMap_GetPinManager():IsCustomPinEnabled(201))
@@ -4894,7 +4994,13 @@ end
 
 /script for i=1,GetNumSkillLines(5) do if GetSkillAbilityId(5,i,1,false)==103478 then PsijicSkillLine=i end end d(GetSkillLineXPInfo(5,PsijicSkillLine))
 
-	POI
+/script local x,y=GetMapPlayerWaypoint() StartChatInput('{'..math.floor(x*1000)/1000 ..","..math.floor(y*1000)/1000 ..'},')
+
+/script for _, itemData in pairs(SHARED_INVENTORY:GenerateFullSlotData(nil, BAG_BACKPACK)) do
+	if itemData and itemData.itemType==ITEMTYPE_TROPHY then d(itemData.name.." "..itemData.stackCount) end
+	end
+
+--	POI
 /script local zone=GetCurrentMapZoneIndex()
 for i=1,GetNumPOIs(zone) do local id=GetPOIType(zone, i) local Name=GetPOIInfo(zone, i)
 local _,_,poiType,_,_,_,known=GetPOIMapInfo(zone, i)
@@ -4904,11 +5010,4 @@ end end
 /script d(GetPOIMapInfo(GetCurrentMapZoneIndex(), 7))
 /script StartChatInput(GetZoneId(GetCurrentMapZoneIndex()))
 /script local i,zone=1,GetCurrentMapZoneIndex() local id=GetPOIType(zone, i) local Name=GetPOIInfo(zone, i) StartChatInput('['..i..']={"'..Name..'",'..id..'},')
-
-/script local x,y=GetMapPlayerWaypoint() StartChatInput('{'..math.floor(x*1000)/1000 ..","..math.floor(y*1000)/1000 ..'},')
-
-/script for _, itemData in pairs(SHARED_INVENTORY:GenerateFullSlotData(nil, BAG_BACKPACK)) do
-	if itemData and itemData.itemType==ITEMTYPE_TROPHY then d(itemData.name.." "..itemData.stackCount) end
-	end
-
 --]]
