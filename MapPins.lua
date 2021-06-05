@@ -1,5 +1,27 @@
 local AddonName="MapPins"
 local Bosses={
+--Blackwood. Provided by art1ink.
+u30_undertowcavern={{.501,.152,2971,1}},--Druvaakh the Smasher
+u30_xanmeeroverlook={{.516,.457,2971,2}},--Raj-Kall Ioraxeek
+VaultDelve_INT03={{.36,.653,2971,3}},--Karzikon the Razorsworn
+arpeniaH_base={{.166,.381,2971,4}},--Shadow Knight Nassuphae
+u30_bloodruncave={{.289,.648,2971,5}},--Tumma-Maxath
+vunalk2_base={{.293,.427,2971,6}},--Choking Vine
+ZHMain_base={--Zenithar's Abbey
+{.354,.47,2997,1},--Grapnur the Crusher and Burthar Meatwise
+{.205,.719,2997,2},--The Frigid Temptress
+{.366,.174,2997,3},--Gloom-Tooth
+{.546,.487,2997,4},--Arbitrator Tasellis
+{.88,.535,2997,5},--Fulciinius the Bone Miser
+},
+u30_silenthalls={--The Silent Halls
+{.604,.348,2996,1},--Kao'kuul
+{.328,.709,2996,2},--The Silent Sentry
+{.229,.593,2996,3},--The Rootwhisperer
+{.556,.178,2996,4},--Vor'chul the Beastbreaker
+{.455,.756,2996,5},--Dread Irenan
+},
+
 briarrockruins_ext={{.121,.583,2853,1,{167824,167526}}},
 Gloomreach_base={{.287,.513,2852}},Gloomreach2_base={{.287,.513,2852}},Gloomreach2B_base={{.287,.513,2852}},Gloomreach2C_base={{.287,.513,2852}},Gloomreach3_base={{.287,.513,2852}},Gloomreach5_base={{.287,.513,2852}},
 labyrinthian_base={{.812,.697,2717,1},{.842,.286,2717,2}},labyrinthianb_base={{.391,.572,2717,3},{.688,.408,2717,4},{.833,.598,2717,5},{.137,.516,2714}},
@@ -225,6 +247,17 @@ is 4 then it is 4,9 not the other way around.
 {0.439162,0.685270,4,9}
 ]]--
 local SkyShards={
+--Blackwood. Provided by art1ink.
+blackwood_base={{.293,.641,2982,1},{.703,.911,2982,2},{.164,.447,2982,3},{.302,.226,2982,4},{.753,.363,2982,5},{.581,.182,2982,6},{.536,.457,2982,7},{.813,.706,2982,8},{.588,.765,2982,9},{.467,.563,2982,10}},
+u30_silenthalls={{.452,.731,2982,11}},
+ZHMain_base={{.777,.623,2982,12}},
+u30_xanmeeroverlook={{.683,.514,2982,13}},
+u30_undertowcavern={{.524,.403,2982,14}},
+VaultDelve_EXT02={{.878,.348,2982,15}},
+arpeniaH_base={{.857,.446,2982,16}},
+u30_bloodruncave={{.536,.298,2982,17}},
+vunalk2_base={{.856,.21,2982,18}},
+
 reach_base={{.821,.717,2857,2},{.469,.309,2857,1}},
 U28_blackreach={{.406,.371,2857,3},{.914,.731,2857,4}},
 Gloomreach_base={{.648,.406,2857,6}},Gloomreach2_base={{.648,.406,2857,6}},Gloomreach2B_base={{.648,.406,2857,6}},Gloomreach2C_base={{.648,.406,2857,6}},Gloomreach3_base={{.648,.406,2857,6}},Gloomreach5_base={{.648,.406,2857,6}},
@@ -2666,7 +2699,7 @@ local UnknownPOItexture={
 [42]="/esoui/art/icons/poi/poi_u26_dwemergear_incomplete.dds",
 [43]="/esoui/art/icons/poi/poi_u26_nord_boat_incomplete.dds"
 }
-function ShowPoiIcons()for i,icon in pairs(UnknownPOItexture) do d("["..i.."]|t26:26:"..icon.."|t")end end
+--function ShowPoiIcons()for i,icon in pairs(UnknownPOItexture) do d("["..i.."]|t26:26:"..icon.."|t")end end
 local MundusDescription={
 [13940]="Increases Weapon Damage",
 [13943]="Increases Maximum Magicka",
@@ -3118,10 +3151,10 @@ local CustomChestData,CustomThievesTrove={},{}
 --local CustomQuestData={}
 local PoiData={}
 local Achievements={
-blackwood_base={[62]={--Provided by remosito
+blackwood_base={
+[62]={--Provided by remosito
 {.7,.9,	374},--Bog Blight Funerary Mask
 {.6,.79,	401},--Soiled Tapestry Scrap
-{.305,.36,	402},--Frayed Tapestry Scrap
 {.64,.8,	403},--Stained Tapestry Scrap
 {.583,.855,	404},--Torn Tapestry Scrap
 {.307,.576,	405},--Tattered Tapestry Scrap
@@ -3131,10 +3164,22 @@ blackwood_base={[62]={--Provided by remosito
 {.58,.63,	409},--Grimy Tapestry Scrap
 {.816,.793,	410},--Dusty Tapestry Scrap
 {.374,.677,	411},--Filthy Tapestry Scrap
+{.566,.453, 412},--Holey Tapestry Scrap
 {.49,.755,	413},--Niss'wo Sacramental Wraps
 {.171,.474,	414},--Moth-Eaten Tapestry Scrap
 {.207,.457,	415},--Ratty Tapestry Scrap
 }},
+bw_easterntunnel={[62]={{.305,.36,402}}},--Frayed Tapestry Scrap
+rkulftzel_base={[62]={{.481,.652,60}}},--Dwarven Spine-Coupling
+theearthforgepublic_base={[62]={{.256,.384,72}}},--Dwarven Breastguard
+solitudecity_base={[62]={--Provided by remosito
+{.796,.675,104},--Companion's Coronet
+{.649,.536,310},--Al-Esh Ascension Coin
+}},
+morthalburialcave_base={[62]={{.383,.258,105}}},--Ysgramor's Chosen Body Marking
+nighthollowkeep1_base={[62]={{.409,.381,335}}},--Pale Order's Golden Band
+U28_blackreach={[62]={{.251,.695,352}}},--Arkthzand Insight Vertex Shroud
+
 --[[
 reach_base={--Provided by Aquifolius
 [60]={{.817,.76,2964}},	--Полёт Красного Орла
@@ -3158,7 +3203,8 @@ blackreach_base={[59]={
 {.502,.358,2669,14},	--Reman War Drum 156808
 {.275,.674,2669,15}	--Ateian Fife 160510
 }},
-westernskryim_base={[59]={	--Provided by Aquifolius
+westernskryim_base={
+[59]={	--Provided by Aquifolius
 {.379,.505,2669,8},	--Long Fire 156802
 {.528,.225,2669,10},	--Jarlsbane 156804
 {.148,.496,2669,11},	--King Thunder 156805
@@ -3166,8 +3212,9 @@ westernskryim_base={[59]={	--Provided by Aquifolius
 {.657,.591,2669,16},	--Shiek-of-Silk 160511
 {.674,.411,2669,17},	--Kothringi Leviathan Bugle 160512
 {.354,.664,2669,18},	--Lodestone 160514
-{.603,.667,2669,19}	--Dozzen Talharpa 160515
-}},
+{.603,.667,2669,19}},	--Dozzen Talharpa 160515
+[62]={{.377,.513,106}},--Ysgramor's Chosen Face Marking
+},
 senchal_base={
 [55]={{.512,.83,2534,9},{.549,.807,2534,12}},
 [56]={{.529,.187,2619,1}},
@@ -3362,6 +3409,7 @@ summerset_base={
 [42]={{.366,.4,2211,1},{.689,.539,2211,1},{.247,.547,2211,1},{.346,.445,2211,1},{.273,.427,2211,1},{.272,.508,2211,1},{.732,.74,2211,1},{.454,.73,2211,1}},
 --A Book and its Cover
 [43]={{.328,.487,2171,5},{.513,.217,2171,5},{.561,.288,2171,5},{.22,.389,2171,5},{.544,.235,2171,5},{.652,.604,2171,5},{.446,.468,2171,5},{.549,.364,2171,5},{0.297,0.3,2171,5},{.626,.532,2171,5}},
+[62]={{.397,.504,	102,3}},--Alinor Allemande--Provided by remosito
 },
 shimmerene_base={[41]={{.578,.676,2099,15}}},
 --Undaunted Rescuer
@@ -3624,6 +3672,7 @@ local FishingZones={
 	[407]=2295,--Murkmire
 	[680]=2412,--Northern Elsweyr
 	[719]=2566,--Southern Elsweyr
+	[834]=2981,--Blackwood
 	murkmire_base=2295,rootwhisper_base=2295,brightthroatvillage_base=2295,lilmothcity_base=2295,
 	imperialcity_base=1186,
 	wrothgar_base=1340,
@@ -3634,7 +3683,7 @@ local FishingZones={
 	summerset_base=2191,
 	artaeum_base=2240,
 }
-local FishingAchievements={[2295]=true,[471]=true,[472]=true,[473]=true,[477]=true,[478]=true,[486]=true,[475]=true,[480]=true,[481]=true,[474]=true,[485]=true,[479]=true,[489]=true,[492]=true,[493]=true,[490]=true,[483]=true,[487]=true,[484]=true,[491]=true,[916]=true,[1186]=true,[1340]=true,[1339]=true,[1351]=true,[1431]=true,[1882]=true,[2027]=true,[2027]=true,[2191]=true,[2240]=true}
+local FishingAchievements={[2981]=true,[2295]=true,[471]=true,[472]=true,[473]=true,[477]=true,[478]=true,[486]=true,[475]=true,[480]=true,[481]=true,[474]=true,[485]=true,[479]=true,[489]=true,[492]=true,[493]=true,[490]=true,[483]=true,[487]=true,[484]=true,[491]=true,[916]=true,[1186]=true,[1340]=true,[1339]=true,[1351]=true,[1431]=true,[1882]=true,[2027]=true,[2027]=true,[2191]=true,[2240]=true}
 local FishingBugFix={[473]={[3]="River"},[2027]={[8]="Oily"}}
 local Volendrung={ava_whole={
 --/script PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, .483,.22)
@@ -3806,8 +3855,8 @@ local CustomPins={	--Types
 --		[60]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
 --		[61]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
 		},
-	[23]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_summerset_up.dds.dds",
-		[62]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
+	[23]={section=true,name="pinType_Antiquities",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_summerset_up.dds.dds",
+		[62]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
 		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
@@ -3815,7 +3864,7 @@ local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[
 --	/script local name,_,_,icon=GetAchievementInfo(2669) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
---	/script d("|t26:26:/esoui/art/treeicons/tutorial_indexicon_blackwood_up.dds")
+--	/script d("|t26:26:/esoui/art/guild/gamepad/gp_guild_options_changeicon.dds|t")
 local function GetSetDescription(setData)
 	if setData then
 		local itemLink=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(setData[1])
@@ -3946,7 +3995,7 @@ local function MapPinAddCallback(i)
 			mapData=mapData[i]
 			if mapData then
 				for i1,pinData in pairs(mapData) do
-					if GetNumAntiquitiesRecovered(pinData[3])~=1 and not DoesAntiquityHaveLead(pinData[3]) then
+					if GetNumAntiquitiesRecovered(pinData[3])<1 then	--and not DoesAntiquityHaveLead(pinData[3]) then
 						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name=ZO_CachedStrFormat("<<C:1>>",GetAntiquityName(pinData[3]))},pinData[1],pinData[2])
 					end
 				end
@@ -4052,28 +4101,28 @@ local function MapPinAddCallback(i)
 	elseif i==8 then
 		local zoneIndex=GetCurrentMapZoneIndex()
 		local mapData=UnknownPOI[GetZoneId(zoneIndex)]
-		for poiIndex=1, GetNumPOIs(zoneIndex) do
-			local normalizedX,normalizedY,poiType,_,_,_,known=GetPOIMapInfo(zoneIndex, poiIndex)
-			if mapData and mapData[poiIndex] then
-				if not known then	--poiType==MAP_PIN_TYPE_INVALID then
-					local pinTag={[1]=i,name=mapData[poiIndex][1],texture=UnknownPOItexture[ mapData[poiIndex][2] ]}
-					if mapData[poiIndex][2]==25 then	--Mundus
-						pinTag.desc=MundusDescription[ mapData[poiIndex][3] ]
-					elseif mapData[poiIndex][2]==8 then	--Crafting station unknown
-						if mapData[poiIndex][3] then
-							pinTag.name,pinTag.desc=GetSetDescription(mapData[poiIndex][3])
+		if mapData then
+			for poiIndex, data in pairs(mapData) do
+				local normalizedX,normalizedY,poiType,_,_,_,known=GetPOIMapInfo(zoneIndex, poiIndex)
+				if not known and (normalizedX>0 or normalizedY>0) then	--poiType==MAP_PIN_TYPE_INVALID then
+					local pinTag={[1]=i,name=data[1],texture=UnknownPOItexture[ data[2] ]}
+					if data[2]==25 then	--Mundus
+						pinTag.desc=MundusDescription[ data[3] ]
+					elseif data[2]==8 then	--Crafting station unknown
+						if data[3] then
+							pinTag.name,pinTag.desc=GetSetDescription(data[3])
 						else
-							pinTag.name=mapData[poiIndex][1]
+							pinTag.name=data[1]
 						end
 					end
 					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
 					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
-				elseif mapData[poiIndex][2]==25 then	--Mundus
-					local pinTag={[1]=i,name=GetAbilityName(mapData[poiIndex][3]),texture="/esoui/art/icons/poi/poi_mundus_complete.dds"} pinTag.desc=MundusDescription[ mapData[poiIndex][3] ]
+				elseif data[2]==25 then	--Mundus
+					local pinTag={[1]=i,name=GetAbilityName(data[3]),texture="/esoui/art/icons/poi/poi_mundus_complete.dds"} pinTag.desc=MundusDescription[ data[3] ]
 					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
 					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
-				elseif mapData[poiIndex][2]==8 and mapData[poiIndex][3] then	--Crafting station known
-					local pinTag={[1]=i,texture="/esoui/art/icons/mapkey/mapkey_crafting.dds"} pinTag.name,pinTag.desc=GetSetDescription(mapData[poiIndex][3])
+				elseif data[2]==8 and data[3] then	--Crafting station known
+					local pinTag={[1]=i,texture="/esoui/art/icons/mapkey/mapkey_crafting.dds"} pinTag.name,pinTag.desc=GetSetDescription(data[3])
 					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
 					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
 				end
