@@ -4,15 +4,16 @@ local Bosses={
 u30_undertowcavern={{.501,.152,2971,1}},--Druvaakh the Smasher
 u30_xanmeeroverlook={{.516,.457,2971,2}},--Raj-Kall Ioraxeek
 VaultDelve_INT03={{.36,.653,2971,3}},--Karzikon the Razorsworn
-arpeniaH_base={{.166,.381,2971,4}},--Shadow Knight Nassuphae
+arpeniaH_base={{.166,.38,2971,4}},arpeniaH2_base={{.163,.38,2971,4}},arpeniaL_base={{.163,.38,2971,4}},arpeniaL3_base={{.163,.38,2971,4}},--Shadow Knight Nassuphae
 u30_bloodruncave={{.289,.648,2971,5}},--Tumma-Maxath
-vunalk2_base={{.293,.427,2971,6}},--Choking Vine
+vunalk1_base={{.29,.427,2971,6}},vunalk2_base={{.29,.427,2971,6}},--Choking Vine
 ZHMain_base={--Zenithar's Abbey
 {.354,.47,2997,1},--Grapnur the Crusher and Burthar Meatwise
 {.205,.719,2997,2},--The Frigid Temptress
 {.366,.174,2997,3},--Gloom-Tooth
 {.546,.487,2997,4},--Arbitrator Tasellis
 {.88,.535,2997,5},--Fulciinius the Bone Miser
+{.6,.6,2995},--Ra'back the Trap Master
 },
 u30_silenthalls={--The Silent Halls
 {.604,.348,2996,1},--Kao'kuul
@@ -20,8 +21,8 @@ u30_silenthalls={--The Silent Halls
 {.229,.593,2996,3},--The Rootwhisperer
 {.556,.178,2996,4},--Vor'chul the Beastbreaker
 {.455,.756,2996,5},--Dread Irenan
+{.623,.281,2994},--Warlord Iaza
 },
-
 briarrockruins_ext={{.121,.583,2853,1,{167824,167526}}},
 Gloomreach_base={{.287,.513,2852}},Gloomreach2_base={{.287,.513,2852}},Gloomreach2B_base={{.287,.513,2852}},Gloomreach2C_base={{.287,.513,2852}},Gloomreach3_base={{.287,.513,2852}},Gloomreach5_base={{.287,.513,2852}},
 labyrinthian_base={{.812,.697,2717,1},{.842,.286,2717,2}},labyrinthianb_base={{.391,.572,2717,3},{.688,.408,2717,4},{.833,.598,2717,5},{.137,.516,2714}},
@@ -234,18 +235,11 @@ khartagpoint_base={{.757,.195,1858,1}},
 ashalmawia02_base={{.349,.315,1859,1}},
 hallsofregulation_2={{.728,.402,2016,1}},
 }
-local BossesAchievements={[2714]=true,[2715]=true,[2717]=true,[2718]=true,[2440]=true,[2442]=true,[2444]=true,[2445]=true,[744]=true,[734]=true,[741]=true,[742]=true,[733]=true,[732]=true,[377]=true,[738]=true,[739]=true,[740]=true,[1238]=true,[1239]=true,[1052]=true,[2095]=true,[2096]=true,[2181]=true,[2182]=true,[2007]=true,[300]=true,[470]=true,[1235]=true,[1236]=true,[1855]=true,[1846]=true,[1057]=true,[1058]=true,[1059]=true,[1061]=true,[1062]=true,[1063]=true,[1064]=true,[1425]=true,[1857]=true,[1691]=true,[1523]=true,[1856]=true,[1854]=true,[368]=true,[370]=true,[374]=true,[376]=true,[390]=true,[396]=true,}
+local BossesAchievements={[2996]=true,[2997]=true,[2971]=true,[2714]=true,[2715]=true,[2717]=true,[2718]=true,[2440]=true,[2442]=true,[2444]=true,[2445]=true,[744]=true,[734]=true,[741]=true,[742]=true,[733]=true,[732]=true,[377]=true,[738]=true,[739]=true,[740]=true,[1238]=true,[1239]=true,[1052]=true,[2095]=true,[2096]=true,[2181]=true,[2182]=true,[2007]=true,[300]=true,[470]=true,[1235]=true,[1236]=true,[1855]=true,[1846]=true,[1057]=true,[1058]=true,[1059]=true,[1061]=true,[1062]=true,[1063]=true,[1064]=true,[1425]=true,[1857]=true,[1691]=true,[1523]=true,[1856]=true,[1854]=true,[368]=true,[370]=true,[374]=true,[376]=true,[390]=true,[396]=true,}
 --[[--World event
 elsweyr_base={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.623},{.421,.462},{.635,.265},{.445,.527}},
 clockwork_base={{.634,.604,2047}},
 --]]
---[[Book index, collection index. With tbugm the book index is the
-first entry then collection index is 3rd. However, you put them
-backwards for the pin. So if book index is 9 and collection index
-is 4 then it is 4,9 not the other way around.
-
-{0.439162,0.685270,4,9}
-]]--
 local SkyShards={
 --Blackwood. Provided by art1ink.
 blackwood_base={{.293,.641,2982,1},{.703,.911,2982,2},{.164,.447,2982,3},{.302,.226,2982,4},{.753,.363,2982,5},{.581,.182,2982,6},{.536,.457,2982,7},{.813,.706,2982,8},{.588,.765,2982,9},{.467,.563,2982,10}},
@@ -254,10 +248,9 @@ ZHMain_base={{.777,.623,2982,12}},
 u30_xanmeeroverlook={{.683,.514,2982,13}},
 u30_undertowcavern={{.524,.403,2982,14}},
 VaultDelve_EXT02={{.878,.348,2982,15}},
-arpeniaH_base={{.857,.446,2982,16}},
+arpeniaH_base={{.857,.45,2982,16}},arpeniaH2_base={{.857,.45,2982,16}},arpeniaL_base={{.857,.45,2982,16}},arpeniaL3_base={{.857,.45,2982,16}},
 u30_bloodruncave={{.536,.298,2982,17}},
-vunalk2_base={{.856,.21,2982,18}},
-
+vunalk1_base={{.856,.21,2982,18}},vunalk2_base={{.856,.21,2982,18}},
 reach_base={{.821,.717,2857,2},{.469,.309,2857,1}},
 U28_blackreach={{.406,.371,2857,3},{.914,.731,2857,4}},
 Gloomreach_base={{.648,.406,2857,6}},Gloomreach2_base={{.648,.406,2857,6}},Gloomreach2B_base={{.648,.406,2857,6}},Gloomreach2C_base={{.648,.406,2857,6}},Gloomreach3_base={{.648,.406,2857,6}},Gloomreach5_base={{.648,.406,2857,6}},
@@ -545,8 +538,19 @@ hallsofregulation_base={{.369,.564,1844,5}},
 shadowcleft_base={{.836,.570,1844,6}},
 hallsofregulation_2={{.728,.402,1844,5}},
 }
-local SkyShardsAchievements={[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
+local SkyShardsAchievements={[2982]=true,[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
+blackwood_base={
+--Trials of Saint Alessia
+--Nine Commands of the Eight Divines
+--The Order of the Ancestor Moth
+--Reality and Other Falsehoods
+--Ayleid Inscriptions Translated
+{.23,.63,19,6},--Eulogy for Emperor Varen
+{.16,.376,19,7},--House Tharn of Nibenay
+{.736,.525,6,7},--Freedom's Price
+{.626,.737,20,7},--Varieties of Faith: The Argonians
+{.701,.245,26,1}},--Varieties of Faith: The Khajiit
 reach_base={{0.390826,0.674602,24,4},{0.439162,0.685270,4,9}},
 ELS_DG={{-2.821,-2.378,28,9}},
 belarata_base={{.668,.795,18,1}},
@@ -714,6 +718,12 @@ vvardenfell_base={{.404,.809,20,3},{.882,.612,20,3},{.34,.528,20,3},{.502,.244,8
 hewsbane_base={{.382,.595,11,3}},
 }
 local TreasureMaps={
+blackwood_base={--Provided by Shantoo
+{.377,.19,178465,1},--Woodworker Survey
+{.557,.155,178468,1},--Enchanter Survey
+{.732,.558,178466,1},--Jewellery Survey
+{.514,.655,178464,1},--Blacksmith Survey
+{.149,.441,3066}},--Treasure Map II
 reach_base={{.386,.681,171474}},U28_blackreach={{.156,.725,171475}},--Provided by SuppeFuss165
 westernskryim_base={
 {.33,.297,166460,1},--Blacksmith Survey
@@ -834,9 +844,9 @@ local UnknownPOI={
 [46]={"Fort Redmane Wayshrine",1},
 [47]={"Blueblood Wayshrine",1},
 [48]={"Stonewastes Wayshrine",1},
-[50]={"Pentric Run",8},--
-[51]={"Sariellen's Sword",8},--
-[52]={"Withered Root",8},--
+[50]={"Pentric Run",8,{173216,5}},
+[51]={"Sariellen's Sword",8,{172842,7}},
+[52]={"Withered Root",8,{172468,3}},
 [56]={"Doomvault Vulpinaz Wayshrine",1},
 [57]={"Blackwood Crossroads Wayshrine",1},
 [58]={"Hutan-Tzel Wayshrine",1},
@@ -2716,6 +2726,10 @@ local MundusDescription={
 [13985]="Increases Maximum Stamina",
 }
 local ChestData={
+blackwood_base={
+[1]={{.6806,.5714},{.5976,.7887},{.2178,.3269},{.2389,.326},{.3249,.2742},{.1383,.594},{.1762,.5768},{.3772,.5909},{.4069,.5939},{.4441,.6135},{.4812,.6868},{.2704,.4945},{.5516,.8252},{.3785,.1246},{.7252,.823},{.7456,.8421},{.8145,.7872},{.6678,.5191},{.378,.5376},{.6201,.486},{.6458,.4488},{.5811,.3414},{.6641,.3445},{.6207,.1586},{.5308,.1415},{.6717,.2822},{.7418,.869},{.616,.3455},{.6302,.3946},{.589,.4075},{.5227,.4286},{.4791,.4639},{.4363,.451},{.4295,.5026},{.487,.5723},{.4567,.6665},{.5433,.7863},{.6732,.7723},{.7502,.7344},{.7543,.7631},{.7845,.8419},{.8354,.8388},{.6701,.8275},{.7944,.7231},{.7076,.7996},{.3814,.220},{.3714,.273},{.3442,.2329},{.3357,.4232},{.341,.5551},{.6936,.880},{.2013,.4344},{.1493,.410},{.2592,.3803},{.2766,.3425},{.4816,.545},{.3389,.5057},{.2871,.5428},{.1837,.4611},{.3092,.3579},{.2429,.3543},{.2862,.5904},{.6054,.7139},{.7613,.4091}},
+[2]={{.3567,.266},{.2694,.5002},{.5428,.4635},{.4423,.3215},{.220,.357},{.6213,.7072}},
+},
 summerset_base={
 [1]={{.5940,.3580},{.6963,.7736},{.6714,.7940},{.2313,.6253},{.1910,.6366},{.2451,.5789},{.2481,.6164},{.6421,.3628},{.3659,.5265},{.5577,.2544},{.4846,.1889},{.4962,.1723},{.2240,.4214},{.2679,.4283},{.4837,.7502},{.7461,.6808},{.6342,.6185},{.6648,.6875},{.2874,.5632},{.3622,.5539},{.3056,.3127},{.1712,.3165},{.5971,.3145},{.6002,.5555},{.3356,.5120},{.4208,.4555},{.5233,.2650},{.5092,.2861},{.5449,.6842},{.5873,.6518},{.5343,.3815},{.2562,.2578},{.2555,.4530},{.7362,.6723},{.5074,.3134},{.2789,.5188},{.5353,.2191},{.6024,.2465},{.5757,.6817},{.6847,.7819},{.7281,.7313},{.3840,.4631},{.6031,.6198},{.4939,.2082},{.3511,.5131},{.5265,.2286},{.2281,.6065},{.2875,.5633},{.1713,.3166},{.5688,.6475},{.5616,.6828},{.2138,.4088},{.2886,.2222},{.2992,.1925},{.3370,.5066},{.3912,.5148},{.2791,.5190},{.2329,.5723},{.2036,.3158},{.7286,.7313},{.7156,.7662},{.6423,.3630},{.4846,.1887},{.5233,.2648},{.5186,.2450},{.3537,.5391},{.6126,.5020},{.6962,.7738},{.5572,.4262},{.4836,.7503},{.5643,.2262},{.6581,.2895},{.5357,.2194},{.2435,.3971},{.5673,.2888},{.2554,.4531},{.2676,.4283},{.3622,.5537},{.5577,.2545},{.3746,.3985},{.3395,.4891},{.1812,.4126},{.7363,.6724},{.2281,.6065},{.2482,.6165},{.5343,.3811},{.2085,.2707},{.6671,.5306},{.4939,.2083},{.6841,.7821},{.2573,.5582},{.2709,.5143},{.2684,.5320},{.5610,.6549},{.4978,.6620},{.6199,.2744}},
 [2]={{.4965,.6939},{.5201,.6598},{.2719,.5503},{.2919,.4966},{.3000,.3518},{.6717,.7956},{.3491,.4726},{.4473,.4544},{.2788,.3793},{.3646,.3723},{.5140,.7624},{.2702,.2570}}
@@ -3148,10 +3162,11 @@ innerseaarmature_base={[1]={{.227,.921},{.838,.427},{.178,.917},{.609,.143},{.19
 crowswood_base={[1]={{.362,.223},{.430,.290},{.242,.339},{.246,.244},{.522,.905},{.428,.303},{.693,.325},{.359,.386},{.291,.581},{.358,.528},{.754,.479},{.658,.406},{.468,.428},{.185,.68},{.358,.234},{.643,.605},{.518,.375},{.586,.409},{.260,.818},{.848,.629},{.772,.281},{.405,.282},{.663,.178},{.580,.382},{.401,.311},{.307,.763},{.607,.366},{.677,.693},{.646,.391},{.352,.459},{.337,.364},{.535,.124},{.255,.234},{.528,.908},{.372,.384},{.654,.175},{.675,.679},{.264,.810},{.756,.487},{.840,.628},{.410,.288},{.299,.762},{.542,.125}}},
 }
 local CustomChestData,CustomThievesTrove={},{}
---local CustomQuestData={}
 local PoiData={}
 local Achievements={
 blackwood_base={
+[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.39,.552},{.638,.308},{.391,.552}},--Random encounters. Provided by Lerozain
+[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71}},--Oblivon portals. Provided by art1ink
 [62]={--Provided by remosito
 {.7,.9,	374},--Bog Blight Funerary Mask
 {.6,.79,	401},--Soiled Tapestry Scrap
@@ -3167,8 +3182,12 @@ blackwood_base={
 {.566,.453, 412},--Holey Tapestry Scrap
 {.49,.755,	413},--Niss'wo Sacramental Wraps
 {.171,.474,	414},--Moth-Eaten Tapestry Scrap
-{.207,.457,	415},--Ratty Tapestry Scrap
-}},
+{.207,.457,	415}},--Ratty Tapestry Scrap
+[63]={{.378,.536,3083,1},{.15,.581,3083,2},{.598,.489,3083,3},{.738,.808,3083,4}},--Lost in the Wilds
+[64]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
+},
+u30_oblivion={[63]={{.351,.381,3083,5}}},
+u30_xanmeeroverlook={[64]={.841,.648,3081,1}},u30_silenthalls={[64]={.285,.48,3081,2}},
 bw_easterntunnel={[62]={{.305,.36,402}}},--Frayed Tapestry Scrap
 rkulftzel_base={[62]={{.481,.652,60}}},--Dwarven Spine-Coupling
 theearthforgepublic_base={[62]={{.256,.384,72}}},--Dwarven Breastguard
@@ -3855,16 +3874,22 @@ local CustomPins={	--Types
 --		[60]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
 --		[61]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
 		},
-	[23]={section=true,name="pinType_Antiquities",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_summerset_up.dds.dds",
-		[62]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
+	[23]={section=true,name="pinType_Antiquities",id={},pin={},texture=UnknownPOItexture[24],
+		[62]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture=UnknownPOItexture[24],k=1},
+		},
+	[24]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds",
+		[63]={name="pinType_Lost_in_Wilds",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor4.dds"},
+		[64]={name="pinType_Bane_of_Sul-Xan",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor2.dds"},
+		[65]={name="pinType_Oblivon_Portals",done=false,maxDistance=0.05,level=101,texture=UnknownPOItexture[26],k=.7},
+		[66]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
 		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
-local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true}
---	/script local name,_,_,icon=GetAchievementInfo(2669) StartChatInput(icon)
+local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true}
+--	/script local name,_,_,icon=GetAchievementInfo(3081) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
---	/script d("|t26:26:/esoui/art/guild/gamepad/gp_guild_options_changeicon.dds|t")
+--	/script d("|t26:26:/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds|t")
 local function GetSetDescription(setData)
 	if setData then
 		local itemLink=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(setData[1])
@@ -3913,124 +3938,8 @@ local function GetFishingAchievement(subzone)
 	return false
 end
 
-local function MapPinAddCallback(i)
---	d("["..tostring(i).."] id="..tostring(PinId[i]).." enabled:"..tostring(PinManager:IsCustomPinEnabled(PinId[i])))
-	if not CustomPins[i] then d("MapPins: "..tostring(i).." is wrong pin type.") return end
-	if UpdatingMapPin[i]==true or GetMapType()>MAPTYPE_ZONE or not PinManager:IsCustomPinEnabled(PinId[i]) then return end
-	local MapContentType=GetMapContentType()
---	if i==2 and MapContentType~=MAP_CONTENT_DUNGEON then return end
-	if i==5 and MapContentType==MAP_CONTENT_DUNGEON and IsUnitUsingVeteranDifficulty("player") then return end
-	if not IsPlayerActivated() then
-		UpdatingMapPin[i]=true
-		EVENT_MANAGER:RegisterForEvent(AddonName.."_MapPin_"..i,EVENT_PLAYER_ACTIVATED,
-			function()
-				EVENT_MANAGER:UnregisterForEvent(AddonName.."_Pin_"..i,EVENT_PLAYER_ACTIVATED)
-				UpdatingMapPin[i]=false MapPinAddCallback(i)
-			end)
-		return
---[[
-	elseif UpdatingMapPin[i]~=2 then
-		UpdatingMapPin[i]=true
-		zo_callLater(function()UpdatingMapPin[i]=2 MapPinAddCallback(i)end,250)
-		return
---]]
-	end
-	UpdatingMapPin[i]=true
---	pl("Map pin "..i.." updating")
-
-	local subzone=string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "maps/[%w%-]+/([%w%-]+_[%w%-]+)")
-	if i<=4 then
-		local mapData
-		if i==1 or i==2 then mapData=Bosses[subzone] elseif i==3 or i==4 then mapData=SkyShards[subzone] end
-		if mapData then
---			local num_added=0
-			for _,pinData in pairs(mapData) do
-				local AchName,Completed,Required=GetAchievementCriterion(pinData[3],pinData[4])
-				if (Completed==Required)==CustomPins[i].done then
-					PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3],pinData[4],pinData[5]},pinData[1],pinData[2])
---					num_added=num_added+1
-				end
-			end
---			if num_added>0 then d("["..i.."] "..num_added.." pins added") end
-		end
-	elseif i==15 then
-		local mapData=TimeBreach[subzone]
-		local level=GetSkillLineXPInfo(5,PsijicSkillLine)
-		if mapData then
-			for i1,pinData in ipairs(mapData) do
-				if pinData[3]==level/10+2 and not (SavedVars.TimeBreachClosed[subzone] and SavedVars.TimeBreachClosed[subzone][i1]) then
-					PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3], pinData[4]},pinData[1],pinData[2])
-				end
-			end
-		end
-	elseif i==16 then
-		local mapData=Shrines[subzone]
-		if mapData then
-			for i1,pinData in pairs(mapData) do
-				CustomPins[i].texture=ShrineIcon[ pinData[3] ]
-				PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,texture=ShrineIcon[ pinData[3] ]},pinData[1],pinData[2])
-			end
-		end
-	elseif i==17 then
-		local mapData=FishingNodes[subzone]
-		local notDone=GetFishingAchievement(subzone)
-		if mapData and notDone then
-			for i1,pinData in pairs(mapData) do
-				if notDone[ pinData[3] ] then
-					CustomPins[i].texture=FishIcon[ pinData[3] ]
-					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,texture=FishIcon[ pinData[3] ]},pinData[1],pinData[2])
-				end
-			end
-		end
-	elseif i==21 then
-		local mapData=Volendrung[subzone]
-		if mapData then
-			for i1,pinData in pairs(mapData) do
-				PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Volendrung"..i1},pinData[1],pinData[2])
-			end
-		end
-	elseif i==62 then
-		local mapData=Achievements[subzone]
-		if mapData then
-			mapData=mapData[i]
-			if mapData then
-				for i1,pinData in pairs(mapData) do
-					if GetNumAntiquitiesRecovered(pinData[3])<1 then	--and not DoesAntiquityHaveLead(pinData[3]) then
-						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name=ZO_CachedStrFormat("<<C:1>>",GetAntiquityName(pinData[3]))},pinData[1],pinData[2])
-					end
-				end
-			end
-		end
-	elseif i>=30 then
-		local mapData=Achievements[subzone]
-		if mapData then
-			mapData=mapData[i]
-			if mapData then
-				for _,pinData in pairs(mapData) do
-					local Completed
-					if i==34 then --Lightbringer
-						local zone=ZoneAchievement[subzone]
-						if zone then
-							local _,c1,r1=GetAchievementCriterion(873,zone)
-							local _,c2,r2=GetAchievementCriterion(871,zone)
-							local _,c3,r3=GetAchievementCriterion(869,zone)
-							Completed=(c1+c2+c3)>=(r1+r2+r3)
-						end
-					elseif pinData[4] then
-						local _,c1,r1=GetAchievementCriterion(pinData[3],pinData[4])
-						Completed=c1>=r1
-					else
-						Completed=IsAchievementComplete(pinData[3])
-					end
-					local HaveItem=AchievementItems[ pinData[3] ] and AchievementItems[ pinData[3] ][ pinData[4] ] and true or false
-					if Completed==CustomPins[i].done and HaveItem==CustomPins[i].done then
---						if HaveItem~=CustomPins[i].done then CustomPins[11].tint=ZO_ColorDef:New(1,.1,.4,.8) else CustomPins[11].tint=ZO_ColorDef:New(1,1,1,1) end
-						PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3], pinData[4]},pinData[1],pinData[2])
-					end
-				end
-			end
-		end
-	elseif i==5 then
+local MapPinCallback={
+	[5]=function(i,subzone)
 		local mapData=Lorebooks[subzone]
 		if mapData then
 			for _, pinData in pairs(mapData) do
@@ -4040,7 +3949,8 @@ local function MapPinAddCallback(i)
 				end
 			end
 		end
-	elseif i==6 then
+	end,
+	[6]=function(i,subzone)
 		local mapData=TreasureMaps[subzone]
 		if mapData then
 			for _, itemData in pairs(SHARED_INVENTORY:GenerateFullSlotData(nil, BAG_BACKPACK)) do
@@ -4050,7 +3960,7 @@ local function MapPinAddCallback(i)
 							local pinTag=pinData[4] and
 								(
 								type(pinData[4])=="string" and {[1]=i,[2]=itemData.slotIndex,texture="esoui/art/icons/gear_reach_"..pinData[4].."_c.dds"}
---								or pinData[4]==4 and	--Jewelry survey
+	--								or pinData[4]==4 and	--Jewelry survey
 								or {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_"..(itemData.stackCount>1 and 4 or 3)..".dds"}
 								)
 							or {[1]=i,[2]=itemData.slotIndex,texture="/"..AddonName.."/img/Treasure_2.dds"}	--Treasure map
@@ -4066,7 +3976,8 @@ local function MapPinAddCallback(i)
 				end
 			end
 		end
-	elseif i==7 then
+	end,
+	[7]=function(i,subzone)
 		local id=_G[CustomPins[i].name]
 		local mapData=ChestData[subzone]
 		local x,y=GetMapPlayerPosition("player")
@@ -4098,7 +4009,8 @@ local function MapPinAddCallback(i)
 			end
 			CustomPins[i].tint=ZO_ColorDef:New(1,1,1,.8)
 		end
-	elseif i==8 then
+	end,
+	[8]=function(i,subzone)
 		local zoneIndex=GetCurrentMapZoneIndex()
 		local mapData=UnknownPOI[GetZoneId(zoneIndex)]
 		if mapData then
@@ -4125,6 +4037,164 @@ local function MapPinAddCallback(i)
 					local pinTag={[1]=i,texture="/esoui/art/icons/mapkey/mapkey_crafting.dds"} pinTag.name,pinTag.desc=GetSetDescription(data[3])
 					local id=_G[CustomPins[i].name] PinManager:CreatePin(id,pinTag,normalizedX,normalizedY)
 					local size=(BUI and BUI.name=="BanditsUserInterface" and BUI.init.MiniMap) and 40*BUI.Vars.PinScale/100 or 40 ZO_MapPin.PIN_DATA[id].size=size
+				end
+			end
+		end
+	end,
+	[15]=function(i,subzone)--Psijic portals
+		local mapData=TimeBreach[subzone]
+		local level=GetSkillLineXPInfo(5,PsijicSkillLine)
+		if mapData then
+			for i1,pinData in ipairs(mapData) do
+				if pinData[3]==level/10+2 and not (SavedVars.TimeBreachClosed[subzone] and SavedVars.TimeBreachClosed[subzone][i1]) then
+					PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3], pinData[4]},pinData[1],pinData[2])
+				end
+			end
+		end
+	end,
+	[16]=function(i,subzone)
+		local mapData=Shrines[subzone]
+		if mapData then
+			for i1,pinData in pairs(mapData) do
+				CustomPins[i].texture=ShrineIcon[ pinData[3] ]
+				PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,texture=ShrineIcon[ pinData[3] ]},pinData[1],pinData[2])
+			end
+		end
+	end,
+	[17]=function(i,subzone)
+		local mapData=FishingNodes[subzone]
+		local notDone=GetFishingAchievement(subzone)
+		if mapData and notDone then
+			for i1,pinData in pairs(mapData) do
+				if notDone[ pinData[3] ] then
+					CustomPins[i].texture=FishIcon[ pinData[3] ]
+					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,texture=FishIcon[ pinData[3] ]},pinData[1],pinData[2])
+				end
+			end
+		end
+	end,
+	[21]=function(i,subzone)
+		local mapData=Volendrung[subzone]
+		if mapData then
+			for i1,pinData in pairs(mapData) do
+				PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Volendrung"..i1},pinData[1],pinData[2])
+			end
+		end
+	end,
+	[34]=function(i,subzone)--Lightbringer
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for _,pinData in pairs(mapData) do
+					local Completed
+					local zone=ZoneAchievement[subzone]
+					if zone then
+						local _,c1,r1=GetAchievementCriterion(873,zone)
+						local _,c2,r2=GetAchievementCriterion(871,zone)
+						local _,c3,r3=GetAchievementCriterion(869,zone)
+						Completed=(c1+c2+c3)>=(r1+r2+r3)
+					end
+					if not Completed then
+						PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3],pinData[4]},pinData[1],pinData[2])
+					end
+				end
+			end
+		end
+	end,
+	[62]=function(i,subzone)
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					if GetNumAntiquitiesRecovered(pinData[3])<1 then	--and not DoesAntiquityHaveLead(pinData[3]) then
+						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name=ZO_CachedStrFormat("<<C:1>>",GetAntiquityName(pinData[3]))},pinData[1],pinData[2])
+					end
+				end
+			end
+		end
+	end,
+	[65]=function(i,subzone)--Blackwood oblivion portals
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Oblivion portal"},pinData[1],pinData[2])
+				end
+			end
+		end
+	end,
+	[66]=function(i,subzone)--Blackwood random encounters
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Random encounter"},pinData[1],pinData[2])
+				end
+			end
+		end
+	end,
+}
+
+local function MapPinAddCallback(i)
+--	d("["..tostring(i).."] id="..tostring(PinId[i]).." enabled:"..tostring(PinManager:IsCustomPinEnabled(PinId[i])))
+	if not CustomPins[i] then d("MapPins: "..tostring(i).." is wrong pin type.") return end
+	if UpdatingMapPin[i]==true or GetMapType()>MAPTYPE_ZONE or not PinManager:IsCustomPinEnabled(PinId[i]) then return end
+	local MapContentType=GetMapContentType()
+	if i==5 and MapContentType==MAP_CONTENT_DUNGEON and IsUnitUsingVeteranDifficulty("player") then return end
+	if not IsPlayerActivated() then
+		UpdatingMapPin[i]=true
+		EVENT_MANAGER:RegisterForEvent(AddonName.."_MapPin_"..i,EVENT_PLAYER_ACTIVATED,
+			function()
+				EVENT_MANAGER:UnregisterForEvent(AddonName.."_Pin_"..i,EVENT_PLAYER_ACTIVATED)
+				UpdatingMapPin[i]=false MapPinAddCallback(i)
+			end)
+		return
+--[[
+	elseif UpdatingMapPin[i]~=2 then
+		UpdatingMapPin[i]=true
+		zo_callLater(function()UpdatingMapPin[i]=2 MapPinAddCallback(i)end,250)
+		return
+--]]
+	end
+	UpdatingMapPin[i]=true
+--	pl("Map pin "..i.." updating")
+
+	local subzone=string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "maps/[%w%-]+/([%w%-]+_[%w%-]+)")
+	if MapPinCallback[i] then
+		MapPinCallback[i](i,subzone)
+	elseif i<=4 then
+		local mapData
+		if i==1 or i==2 then mapData=Bosses[subzone] elseif i==3 or i==4 then mapData=SkyShards[subzone] end
+		if mapData then
+			for _,pinData in pairs(mapData) do
+				local AchName,Completed,Required=GetAchievementCriterion(pinData[3],pinData[4])
+				if (Completed==Required)==CustomPins[i].done then
+					PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3],pinData[4],pinData[5]},pinData[1],pinData[2])
+				end
+			end
+		end
+	elseif i>=30 then
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for _,pinData in pairs(mapData) do
+					local Completed
+					if pinData[4] then
+						local _,c1,r1=GetAchievementCriterion(pinData[3],pinData[4])
+						Completed=c1>=r1
+					else
+						Completed=IsAchievementComplete(pinData[3])
+					end
+					local HaveItem=AchievementItems[ pinData[3] ] and AchievementItems[ pinData[3] ][ pinData[4] ] and true or false
+					if Completed==CustomPins[i].done and HaveItem==CustomPins[i].done then
+--						if HaveItem~=CustomPins[i].done then CustomPins[11].tint=ZO_ColorDef:New(1,.1,.4,.8) else CustomPins[11].tint=ZO_ColorDef:New(1,1,1,1) end
+						PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3], pinData[4]},pinData[1],pinData[2])
+					end
 				end
 			end
 		end
@@ -4681,6 +4751,9 @@ local PinTooltipCreator={
 		elseif pinTag[1]==62 then
 			icon=CustomPins[62].texture
 			name=pinTag.name
+		elseif pinTag[1]==65 or pinTag[1]==66 then
+			icon=CustomPins[ pinTag[1] ].texture
+			name=pinTag.name
 		elseif pinTag[1]<=4 or pinTag[1]>=30 then
 			if pinTag[1]==34 then
 				icon=CustomPins[34].texture
@@ -4807,7 +4880,7 @@ local function OnLoad(eventCode,addonName)
 		return id
 	end
 
-	for i=1,23 do
+	for i=1,24 do
 		local filter=CustomPins[i]
 		if filter.section then
 			for i0,pinLayout in pairs(filter) do
@@ -4835,8 +4908,7 @@ local function OnLoad(eventCode,addonName)
 		StartChatInput('{'..string.gsub(math.floor(x*1000)/1000,"[0][.]",".")..","..string.gsub(math.floor(y*1000)/1000,"[0][.]",".")..","..LastAchivement..'},')
 	end
 	SLASH_COMMANDS["/loc2"]=function()
-		local x,y=GetMapPlayerWaypoint()
-		StartChatInput('{'..string.gsub(math.floor(x*1000)/1000,"[0][.]",".")..","..string.gsub(math.floor(y*1000)/1000,"[0][.]",".")..","..LastAchivement..'},')
+		StartChatInput(string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "%w+/%w+/%w+/(%w+_%w+)")..'={'..string.gsub(string.format("%.3f,%.3f",GetMapPlayerWaypoint()),"[0][.]",".")..'},')
 	end
 --	SLASH_COMMANDS["/mpdm"]=function() SavedGlobal.dm=not SavedGlobal.dm d("Map Pins developer mode is now "..(SavedGlobal.dm and "Enabled" or "Disabled")) end
 	SLASH_COMMANDS["/pinsize"]=function(n)
@@ -4922,31 +4994,6 @@ function MP_MakeBase()
 --		end
 	end
 	d("Thieves trove added: "..count)
-
-	--Quests
-	count=0
-	for n=1,6 do
-		d("Quests: Working on base "..n)
---		if #AddQuestData[n]["data"]>0 then
-			for zone in pairs(AddQuestData[n]["data"]) do
-				for i,data in pairs(AddQuestData[n]["data"][zone]) do
-					local confirm=true
-					local x,y,t,name=data[1],data[2],data[3],data[4]
-					if CustomQuestData["data"][zone]==nil then CustomQuestData["data"][zone]={} end
-					for ii,data in pairs(CustomQuestData["data"][zone]) do
-						if data[4]==name then
-							confirm=false --break
-						end
-					end
-					if confirm then
-						count=count+1
-						table.insert(CustomQuestData["data"][zone],{x,y,t,name})
-					end
-				end
-			end
---		end
-	end
-	d("Quests added: "..count)
 end
 
 function MP_MakeBase()
