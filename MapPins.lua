@@ -723,43 +723,22 @@ blackwood_base={--Provided by Shantoo
 {.557,.155,178468,1},--Enchanter Survey
 {.732,.558,178466,1},--Jewellery Survey
 {.514,.655,178464,1},--Blacksmith Survey
-{.149,.441,3066}},--Treasure Map II
+{.463,.449,178467,1},--Clothier Survey
+--Provided by art1ink:
+{.311,.647,175547},--Treasure Map I
+{.149,.441,175548},--Treasure Map II
+{.822,.766,175549},--Treasure Map III
+{.554,.149,175550},--Treasure Map IV
+{.527,.7,175551},--Treasure Map V
+{.389,.102,175552},--Treasure Map VI
+{.765,.854,175544},--CE Treasure Map I
+{.651,.427,175545},--CE Treasure Map II
+{.317,.354,175546}},--CE Treasure Map III
 reach_base={{.386,.681,171474}},U28_blackreach={{.156,.725,171475}},--Provided by SuppeFuss165
-westernskryim_base={
-{.33,.297,166460,1},--Blacksmith Survey
-{.567,.684,166461,1},--Clothier Survey
-{.194,.430,166462,1},--Enchanting Survey
-{.755,.571,166465,1},--Woodworker Survey
-{.562,.488,166459,1},--Alchemy Survey
-{.44,.58,166464,4},--JewelryCraftingSurvey
-{.407,.51,166035},--CE Treasure Map
-{.54,.4627,166040},--TreasureMapI
-{.537,.591,166041},--TreasureMapII
-{.289,.62,166042},--TreasureMapIII
-{.264,.554,166043},--TreasureMapIV
-},
-blackreach_base={
-{.824,.482,166036},--CE Treasure Map 1
-{.894,.554,166037},--CE Treasure Map 2
-{.21,.674,166038},--TreasureMapI
-{.224,.587,166039},--TreasureMapII
-},
+westernskryim_base={{.33,.297,166460,1},{.567,.684,166461,1},{.194,.430,166462,1},{.755,.571,166465,1},{.562,.488,166459,1},{.44,.58,166464,4},{.407,.51,166035},{.54,.4627,166040},{.537,.591,166041},{.289,.62,166042},{.264,.554,166043}},
+blackreach_base={{.824,.482,166036},{.894,.554,166037},{.21,.674,166038},{.224,.587,166039}},
 southernelsweyr_base={{.468,.636,156716},{.293,.256,156715}},
-elsweyr_base={
-{.319,.725,147922},{.699,.251,147923},{.811,.361,147924},--CE TreasureMap
-{.6116,.4083,151613},--TreasureMapI
-{.4213,.2241,151614},--TreasureMapII
-{.4007,.5826,151615},--TreasureMapIII
-{.2691,.7504,151616},--TreasureMapIV
-{.4872,.6790,151617},--TreasureMapV
-{.6343,.4535,151618},--TreasureMapVI
-{.4410,.3880,151602,1},--EnchanterSurvey
-{.3157,.5561,151599,1},--ClothierSurvey
-{.4283,.4209,151601,1},--AlchemistSurvey
-{.2685,.4400,151598,1},--BlacksmithSurvey
-{.4918,.6791,151600,1},--WoodworkerSurvey
-{.6120,.6430,151603,4},--JewelryCraftingSurvey
-},
+elsweyr_base={{.319,.725,147922},{.699,.251,147923},{.811,.361,147924},{.6116,.4083,151613},{.4213,.2241,151614},{.4007,.5826,151615},{.2691,.7504,151616},{.4872,.6790,151617},{.6343,.4535,151618},{.4410,.3880,151602,1},{.3157,.5561,151599,1},{.4283,.4209,151601,1},{.2685,.4400,151598,1},{.4918,.6791,151600,1},{.6120,.6430,151603,4}},
 murkmire_base={{.546,.378,145510},{.45,.408,145512}},
 summerset_base={{.335,.324,139008},{.204,.626,139009},{.598,.56,139007},{.486,.197,43748},{.367,.4,43750},{.356,.568,43751},{.169,.32,43752},{.672,.782,43753},{.701,.678,43749}},
 khenarthisroost_base={{.611,.757,43695},{.225,.314,43696},{.410,.584,43697},{.773,.337,43698},{.616,.832,44939},{.399,.366,45010}},
@@ -3165,8 +3144,8 @@ local CustomChestData,CustomThievesTrove={},{}
 local PoiData={}
 local Achievements={
 blackwood_base={
-[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.39,.552},{.638,.308},{.391,.552}},--Random encounters. Provided by Lerozain
-[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71}},--Oblivon portals. Provided by art1ink
+[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.39,.552},{.638,.308},{.391,.552},{.603,.579},{.614,.24},{.53,.38}},--Random encounters. Provided by Lerozain
+[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71},{.533,.79},{.515,.26}},--Oblivon portals. Provided by art1ink
 [62]={--Provided by remosito
 {.7,.9,	374},--Bog Blight Funerary Mask
 {.6,.79,	401},--Soiled Tapestry Scrap
@@ -3183,11 +3162,11 @@ blackwood_base={
 {.49,.755,	413},--Niss'wo Sacramental Wraps
 {.171,.474,	414},--Moth-Eaten Tapestry Scrap
 {.207,.457,	415}},--Ratty Tapestry Scrap
-[63]={{.378,.536,3083,1},{.15,.581,3083,2},{.598,.489,3083,3},{.738,.808,3083,4}},--Lost in the Wilds
+[63]={{.537,.38,3083},{.378,.536,3083,1},{.15,.581,3083,2},{.598,.489,3083,3},{.738,.808,3083,4}},--Lost in the Wilds
 [64]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
 },
 u30_oblivion={[63]={{.351,.381,3083,5}}},
-u30_xanmeeroverlook={[64]={.841,.648,3081,1}},u30_silenthalls={[64]={.285,.48,3081,2}},
+u30_xanmeeroverlook={[64]={{.841,.648,3081,1}}},u30_silenthalls={[64]={{.285,.48,3081,2}}},
 bw_easterntunnel={[62]={{.305,.36,402}}},--Frayed Tapestry Scrap
 rkulftzel_base={[62]={{.481,.652,60}}},--Dwarven Spine-Coupling
 theearthforgepublic_base={[62]={{.256,.384,72}}},--Dwarven Breastguard
@@ -3880,7 +3859,7 @@ local CustomPins={	--Types
 	[24]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds",
 		[63]={name="pinType_Lost_in_Wilds",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor4.dds"},
 		[64]={name="pinType_Bane_of_Sul-Xan",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor2.dds"},
-		[65]={name="pinType_Oblivon_Portals",done=false,maxDistance=0.05,level=101,texture=UnknownPOItexture[26],k=.7},
+		[65]={name="pinType_Oblivon_Portals",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.25},
 		[66]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
 		},
 	}
@@ -3889,7 +3868,7 @@ local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[
 --	/script local name,_,_,icon=GetAchievementInfo(3081) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
---	/script d("|t26:26:/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds|t")
+--	/script d("|t26:26:/esoui/art/icons/poi/poi_portal_complete.dds|t")
 local function GetSetDescription(setData)
 	if setData then
 		local itemLink=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(setData[1])
@@ -4622,14 +4601,19 @@ local function RegisterEvents()
 	else
 		EVENT_MANAGER:UnregisterForEvent(AddonName,EVENT_CLIENT_INTERACT_RESULT)
 	end
---	EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_QUEST_ADDED, OnQuestAdded)
-	--Bandits User Interface Minimap
 	if SavedVars[7] then
-		CALLBACK_MANAGER:RegisterCallback("BUI_MiniMap_Update", TrackChestsRange)
+		if BUI and BUI.name=="BanditsUserInterface" then
+			CALLBACK_MANAGER:RegisterCallback("BUI_MiniMap_Update", TrackChestsRange)
+		else
+			WORLD_MAP_SCENE:RegisterCallback("StateChange", function(oldState, newState)
+				if newState==SCENE_SHOWING then TrackChestsRange() end
+			end)
+		end
 	else
 		CALLBACK_MANAGER:UnregisterCallback("BUI_MiniMap_Update")
+		WORLD_MAP_SCENE:UnregisterCallback("StateChange")
 	end
-	if SavedVars[8] then
+	if SavedVars[8] and (BUI and BUI.name=="BanditsUserInterface") then
 		CALLBACK_MANAGER:RegisterCallback("BUI_MiniMap_Shown", ResizePins)
 	else
 		CALLBACK_MANAGER:UnregisterCallback("BUI_MiniMap_Shown")
@@ -4639,6 +4623,7 @@ local function RegisterEvents()
 			if GetSkillAbilityId(5,i,1,false)==103478 then PsijicSkillLine=i break end
 		end
 	end
+--	EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_QUEST_ADDED, OnQuestAdded)
 end
 
 local function AddPinFilter(i,pinCheckboxText)
