@@ -365,16 +365,16 @@ newtcave_base={{.380,.324,692,13}},
 quickwatercave_base={{.396,.549,692,14}},
 vahtacen_base={{.14,.78,692,15}},
 imperialcity_base={{.611,.637,1160,1},{.839,.381,1160,2},{.393,.360,1160,3},{.415,.346,1160,4},{.158,.541,1160,5},{.467,.671,1160,6}},
-Imperialsewers_ebon1={{.447,.330,1160,7},{.414,.402,1160,8},{.900,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
-Imperialsewers_ebon2={{.447,.330,1160,7},{.414,.402,1160,8},{.900,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
+Imperialsewers_ebon1={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
+Imperialsewers_ebon2={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
+Imperialsewer_ebonheart3={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
 Imperialsewers_aldmeri1={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
 Imperialsewers_aldmeri2={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
+Imperialsewers_aldmeri3={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
 Imperialsewer_daggerfall1={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
 Imperialsewer_daggerfall2={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
-Imperialsewershub_base={{.447,.330,1160,7},{.414,.402,1160,8},{.900,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
-Imperialsewer_ebonheart3={{.447,.330,1160,7},{.414,.402,1160,8},{.900,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
-Imperialsewers_aldmeri3={{.447,.330,1160,7},{.414,.402,1160,8},{.900,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
-Imperialsewer_daggerfall3={{.447,.330,1160,7},{.414,.402,1160,8},{.900,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
+Imperialsewer_daggerfall3={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
+Imperialsewershub_base={{.447,.330,1160,7},{.414,.402,1160,8},{.9,.621,1160,9},{.754,.550,1160,10},{.197,.631,1160,11},{.320,.557,1160,12},{.525,.548,1160,13}},
 deshaan_base={{.088,.472,547,1},{.183,.514,547,2},{.331,.639,547,3},{.418,.480,547,4},{.472,.395,547,5},{.673,.652,547,6},{.779,.588,547,7},{.804,.472,547,8},{.859,.487,547,9},{.201,.448,547,10},{.912,.438,547,11},{.237,.460,547,12},{.304,.568,547,13},{.579,.457,547,14},{.624,.611,547,15},{.729,.388,547,16}},
 narsis_base={{.526,.366,547,2}},
 mournhold_base={{.377,.340,547,4}},
@@ -720,10 +720,11 @@ hewsbane_base={{.382,.595,11,3}},
 local TreasureMaps={
 blackwood_base={--Provided by Shantoo
 {.377,.19,178465,1},--Woodworker Survey
-{.557,.155,178468,1},--Enchanter Survey
+{.564,.146,178468,1},--Enchanter Survey
 {.732,.558,178466,1},--Jewellery Survey
-{.514,.655,178464,1},--Blacksmith Survey
+{.519,.651,178464,1},--Blacksmith Survey
 {.463,.449,178467,1},--Clothier Survey
+{.746,.803,178469,1},--Alchemy Survey
 --Provided by art1ink:
 {.311,.647,175547},--Treasure Map I
 {.149,.441,175548},--Treasure Map II
@@ -3145,29 +3146,31 @@ local PoiData={}
 local Achievements={
 blackwood_base={
 [66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.39,.552},{.638,.308},{.391,.552},{.603,.579},{.614,.24},{.53,.38}},--Random encounters. Provided by Lerozain
-[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71},{.533,.79},{.515,.26}},--Oblivon portals. Provided by art1ink
+[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71},{.533,.79},{.515,.26},{.47,.528}},--Oblivon portals. Provided by art1ink
 [62]={--Provided by remosito
 {.7,.9,	374},--Bog Blight Funerary Mask
-{.6,.79,	401},--Soiled Tapestry Scrap
-{.64,.8,	403},--Stained Tapestry Scrap
-{.583,.855,	404},--Torn Tapestry Scrap
-{.307,.576,	405},--Tattered Tapestry Scrap
-{.664,.675,	406},--Threadbare Tapestry Scrap
-{.317,.7,	407},--Ragged Tapestry Scrap
-{.812,.634,	408},--Ripped Tapestry Scrap
-{.58,.63,	409},--Grimy Tapestry Scrap
-{.816,.793,	410},--Dusty Tapestry Scrap
-{.374,.677,	411},--Filthy Tapestry Scrap
-{.566,.453, 412},--Holey Tapestry Scrap
+{.6,.79,	401},--Soiled Tapestry
+{.64,.8,	403},--Stained Tapestry
+{.583,.855,	404},--Torn Tapestry
+{.307,.576,	405},--Tattered Tapestry
+{.664,.675,	406},--Threadbare Tapestry
+{.317,.7,	407},--Ragged Tapestry
+{.812,.634,	408},--Ripped Tapestry
+{.58,.63,	409},--Grimy Tapestry
+{.816,.793,	410},--Dusty Tapestry
+{.374,.677,	411},--Filthy Tapestry
+{.566,.453, 412},--Holey Tapestry
 {.49,.755,	413},--Niss'wo Sacramental Wraps
-{.171,.474,	414},--Moth-Eaten Tapestry Scrap
-{.207,.457,	415}},--Ratty Tapestry Scrap
-[63]={{.537,.38,3083},{.378,.536,3083,1},{.15,.581,3083,2},{.598,.489,3083,3},{.738,.808,3083,4}},--Lost in the Wilds
+{.171,.474,	414},--Moth-Eaten Tapestry
+{.207,.457,	415}},--Ratty Tapestry
+[63]={{.537,.38,3083},{.378,.536,3083,1},{.15,.581,3083,2},{.598,.489,3083,3},{.738,.808,3083,4},
+	{.569,.487,3083},--Vasha the Wicked
+	},--Lost in the Wilds
 [64]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
 },
 u30_oblivion={[63]={{.351,.381,3083,5}}},
 u30_xanmeeroverlook={[64]={{.841,.648,3081,1}}},u30_silenthalls={[64]={{.285,.48,3081,2}}},
-bw_easterntunnel={[62]={{.305,.36,402}}},--Frayed Tapestry Scrap
+bw_easterntunnel={[62]={{.305,.36,402}}},--Frayed Tapestry
 rkulftzel_base={[62]={{.481,.652,60}}},--Dwarven Spine-Coupling
 theearthforgepublic_base={[62]={{.256,.384,72}}},--Dwarven Breastguard
 solitudecity_base={[62]={--Provided by remosito
@@ -3709,6 +3712,44 @@ local Volendrung={ava_whole={
 {.392,.361,3},
 {.483,.22,3},	--Border of the Pact and Covenant
 }}
+local ImperialCity={--Provided by remosito
+imperialcity_base={
+[70]={--Bosses
+{.658,.383,"Glorgoloch the Destroyer / King Khrogo"},--ARENA
+{.682,.615,"Lady Malygda / Ysenda Resplendent"},--Arboretum
+{.505,.833,"Immolator Charr / Mazaluhad"},--TEMPLE
+{.206,.679,"Amoncrul"},--NOBLES
+{.182,.634,"Baron Thirsk"},--NOBLES
+{.236,.359,"Zoal the Ever-Wakeful / The Screeching Matron"},--ELVEN GARDENS
+{.496,.295,"Nunatak / Volghass"}},--MEMORIAL
+[71]={--Respawn
+--ALLIANCE_ALDMERI_DOMINION
+{.647,.313,1},--ARENA
+{.847,.607,1},--Arboretum
+{.637,.809,1},--TEMPLE
+{.295,.538,1},--NOBLE
+{.345,.363,1},--ELVEN GARDENS
+{.565,.195,1},--MEMORIAL
+--ALLIANCE_DAGGERFALL_COVENANT
+{.734,.472,3},--ARENA
+{.797,.718,3},--Arboretum
+{.381,.785,3},--TEMPLE
+{.275,.759,3},--NOBLE
+{.314,.288,3},--ELVEN GARDENS
+{.541,.298,3},--MEMORIAL
+--ALLIANCE_EBONHEART_PACT
+{.851,.452,2},--ARENA
+{.863,.533,2},--Arboretum
+{.55,.72,2},--TEMPLE
+{.35,.712,2},--NOBLE
+{.308,.455,2},--ELVEN GARDENS
+{.409,.234,2}},--MEMORIAL
+}}
+local AllianceColors={
+[ALLIANCE_ALDMERI_DOMINION]={1,1,0,.8},
+[ALLIANCE_EBONHEART_PACT]={1,.2,.2,.8},
+[ALLIANCE_DAGGERFALL_COVENANT]={.2,.2,1,.8}
+}
 local Localization={
 	en={Lake="Lake",Foul="Foul",River="River",Salt="Salt",Oily="Oily",Mystic="Mystic",Running="Running"},
 	ru={Lake="озерная вода",Foul="грязная вода",River="речная вода",Salt="морская вода",Oily="маслянистая вода",Mystic="мистическая вода",Running="речная вода"},
@@ -3862,9 +3903,14 @@ local CustomPins={	--Types
 		[65]={name="pinType_Oblivon_Portals",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.25},
 		[66]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
 		},
+	[25]={section=true,name="pinType_Imperial_City",id={},pin={},texture="/esoui/art/compass/ava_imperialcity_neutral.dds",
+		[70]={name="pinType_Bosses",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},
+		[71]={name="pinType_Respawns",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1},
+		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
 local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true}
+local PinsImperial={[3]=true,[4]=true,[5]=true,[7]=true,[8]=true,[25]=true}
 --	/script local name,_,_,icon=GetAchievementInfo(3081) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
@@ -4057,6 +4103,29 @@ local MapPinCallback={
 		if mapData then
 			for i1,pinData in pairs(mapData) do
 				PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Volendrung"..i1},pinData[1],pinData[2])
+			end
+		end
+	end,
+	[70]=function(i,subzone)--Imperial City bosses
+		local mapData=ImperialCity[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name=pinData[3]},pinData[1],pinData[2])
+				end
+			end
+		end
+	end,
+	[71]=function(i,subzone)--Imperial City player respawns
+		local mapData=ImperialCity[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					CustomPins[i].tint=ZO_ColorDef:New(unpack(AllianceColors[ pinData[3] ]))
+					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="ImperialCityRespawn"..i1},pinData[1],pinData[2])
+				end
 			end
 		end
 	end,
@@ -4717,7 +4786,22 @@ local function AddPinFilter(i,pinCheckboxText)
 			SetEnabled(control,SavedVars[i],true)
 		end
 	end
+	--imperialPvPPanel
+	if PinsImperial[i] then
+		control=AddCheckbox(WORLD_MAP_FILTERS.imperialPvPPanel)
+		if control then
+			ZO_CheckButton_SetToggleFunction(control,function(self,state) SavedVars[i]=state SetEnabled(self,state) end)
+			SetEnabled(control,SavedVars[i],true)
+		end
+	end
 end
+
+local PinTooltipSupres={
+[7]=true,
+[16]=true,
+[17]=true,
+[71]=true,--Imperial City player respawns
+}
 
 local PinTooltipCreator={
 	tooltip=1,
@@ -4733,23 +4817,24 @@ local PinTooltipCreator={
 			for _,id in pairs(pinTag[4]) do
 				desc1=desc1..("\n|H1:item:%d:359:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(id)
 			end
+		elseif pinTag[1]==34 then	--Lightbringer
+			icon=CustomPins[34].texture
+			name="achievements"
+			desc=zo_iconFormat("/esoui/art/icons/perks_mages_guild_001.dds",24,24).." Lightbringer\n"
+			..zo_iconFormat("/esoui/art/icons/perks_mages_guild_004.dds",24,24).." Give to Poor\n"
+			..zo_iconFormat("/esoui/art/icons/item_generic_coinbag.dds",24,24).." Crime Pays"
 		elseif pinTag[1]==62 then
 			icon=CustomPins[62].texture
 			name=pinTag.name
 		elseif pinTag[1]==65 or pinTag[1]==66 then
 			icon=CustomPins[ pinTag[1] ].texture
 			name=pinTag.name
-		elseif pinTag[1]<=4 or pinTag[1]>=30 then
-			if pinTag[1]==34 then
-				icon=CustomPins[34].texture
-				name="achievements"
-				desc=zo_iconFormat("/esoui/art/icons/perks_mages_guild_001.dds",24,24).." Lightbringer\n"
-				..zo_iconFormat("/esoui/art/icons/perks_mages_guild_004.dds",24,24).." Give to Poor\n"
-				..zo_iconFormat("/esoui/art/icons/item_generic_coinbag.dds",24,24).." Crime Pays"
-			else
-				name,desc,_,icon=GetAchievementInfo(pinTag[2])
-				if pinTag[3] then desc=GetAchievementCriterion(pinTag[2], pinTag[3]) end
-			end
+		elseif pinTag[1]==70 then
+			icon=CustomPins[70].texture
+			name=pinTag.name
+		elseif pinTag[1]<=4 or pinTag[1]>=30 then	--Main tooltip for achievements
+			name,desc,_,icon=GetAchievementInfo(pinTag[2])
+			if pinTag[3] then desc=GetAchievementCriterion(pinTag[2], pinTag[3]) end
 		elseif pinTag[1]==5 then
 			name, icon, _=GetLoreBookInfo(1, pinTag[2], pinTag[3])
 		elseif pinTag[1]==6 then
@@ -4855,7 +4940,7 @@ local function OnLoad(eventCode,addonName)
 	MakeMapFiltersScroll()
 
 	local function AddPin(pin,pinLayout)
-		local TooltipCreator=((pin~=7 and pin~=16 and pin~=17) and PinTooltipCreator or nil)
+		local TooltipCreator=(not PinTooltipSupres[pin] and PinTooltipCreator or nil)
 		local name=pinLayout.name
 		pinLayout.size=pinLayout.size or SavedGlobal.pinsize*pinLayout.k
 		ZO_WorldMap_AddCustomPin(name,function() MapPinAddCallback(pin) end,nil,pinLayout,TooltipCreator)
@@ -4865,7 +4950,7 @@ local function OnLoad(eventCode,addonName)
 		return id
 	end
 
-	for i=1,24 do
+	for i=1,25 do
 		local filter=CustomPins[i]
 		if filter.section then
 			for i0,pinLayout in pairs(filter) do
