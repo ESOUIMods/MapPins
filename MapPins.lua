@@ -242,7 +242,9 @@ clockwork_base={{.634,.604,2047}},
 --]]
 local SkyShards={
 --Blackwood. Provided by art1ink.
-blackwood_base={{.293,.641,2982,1},{.703,.911,2982,2},{.164,.447,2982,3},{.302,.226,2982,4},{.753,.363,2982,5},{.581,.182,2982,6},{.536,.457,2982,7},{.813,.706,2982,8},{.588,.765,2982,9},{.467,.563,2982,10}},
+blackwood_base={
+	{.293,.641,2982,1},{.703,.911,2982,2},{.164,.447,2982,3},{.302,.226,2982,4},{.753,.363,2982,5},{.581,.182,2982,6},{.536,.457,2982,7},{.813,.706,2982,8},{.588,.765,2982,9},{.467,.563,2982,10},
+	{.577,.645,2982,11},{.458,.312,2982,12},{.548,.772,2982,13},{.207,.501,2982,14},{.743,.515,2982,15},{.371,.262,2982,16},{.641,.182,2982,17},{.839,.694,2982,18}},
 u30_silenthalls={{.452,.731,2982,11}},
 ZHMain_base={{.777,.623,2982,12}},
 u30_xanmeeroverlook={{.683,.514,2982,13}},
@@ -540,17 +542,18 @@ hallsofregulation_2={{.728,.402,1844,5}},
 }
 local SkyShardsAchievements={[2982]=true,[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
+u30_leyawiincity={{.253,.455,10,8}},--Nine Commands of the Eight Divines
 blackwood_base={
---Trials of Saint Alessia
---Nine Commands of the Eight Divines
---The Order of the Ancestor Moth
---Reality and Other Falsehoods
---Ayleid Inscriptions Translated
+{.381,.388,9,8},--Trials of Saint Alessia
+{.477,.56,13,7},--The Order of the Ancestor Moth
+{.482,.633,15,7},--Reality and Other Falsehoods
+{.533,.187,19,1},--Ayleid Inscriptions Translated
 {.23,.63,19,6},--Eulogy for Emperor Varen
 {.16,.376,19,7},--House Tharn of Nibenay
 {.736,.525,6,7},--Freedom's Price
-{.626,.737,20,7},--Varieties of Faith: The Argonians
-{.701,.245,26,1}},--Varieties of Faith: The Khajiit
+{.627,.737,20,7},--Varieties of Faith: The Argonians
+{.701,.245,26,1},--Varieties of Faith: The Khajiit
+{.679,.252,21,6}},--Pirates of the Abecean
 reach_base={{0.390826,0.674602,24,4},{0.439162,0.685270,4,9}},
 ELS_DG={{-2.821,-2.378,28,9}},
 belarata_base={{.668,.795,18,1}},
@@ -719,7 +722,7 @@ hewsbane_base={{.382,.595,11,3}},
 }
 local TreasureMaps={
 blackwood_base={--Provided by Shantoo
-{.377,.19,178465,1},--Woodworker Survey
+{.366,.19,178465,1},--Woodworker Survey
 {.564,.146,178468,1},--Enchanter Survey
 {.732,.558,178466,1},--Jewellery Survey
 {.519,.651,178464,1},--Blacksmith Survey
@@ -802,7 +805,7 @@ local UnknownPOI={
 [19]={"Zenithar's Abbey",13},
 [20]={"Sul-Xan Ritual Site",18},
 [21]={"Welke",11},
-[22]={"Bloodrun Cave",5},
+[22]={"Bloodrun Cave",3},
 [23]={"Bloodrun Wayshrine",1},
 [24]={"Farmer's Nook",32},
 [25]={"Old Deathwart's Pond",18},
@@ -3145,8 +3148,8 @@ local CustomChestData,CustomThievesTrove={},{}
 local PoiData={}
 local Achievements={
 blackwood_base={
-[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.39,.552},{.638,.308},{.391,.552},{.603,.579},{.614,.24},{.53,.38}},--Random encounters. Provided by Lerozain
-[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71},{.533,.79},{.515,.26},{.47,.528}},--Oblivon portals. Provided by art1ink
+[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.638,.308},{.391,.552},{.603,.579},{.614,.24},{.53,.38}},--Random encounters. Provided by Lerozain
+[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71},{.533,.79},{.515,.26},{.47,.528},{.26,.516}},--Oblivon portals. Provided by art1ink
 [62]={--Provided by remosito
 {.7,.9,	374},--Bog Blight Funerary Mask
 {.6,.79,	401},--Soiled Tapestry
@@ -3163,9 +3166,11 @@ blackwood_base={
 {.49,.755,	413},--Niss'wo Sacramental Wraps
 {.171,.474,	414},--Moth-Eaten Tapestry
 {.207,.457,	415}},--Ratty Tapestry
-[63]={{.537,.38,3083},{.378,.536,3083,1},{.15,.581,3083,2},{.598,.489,3083,3},{.738,.808,3083,4},
-	{.569,.487,3083},--Vasha the Wicked
-	},--Lost in the Wilds
+[63]={{.378,.536,3083},--Lost in the Wilds
+	{.15,.581,3083,1},{.172,.539,3083,1},{.182,.518,3083,1},--Fialdar the Vicious
+	{.526,.465,3083,2},{.569,.487,3083,2},{.598,.489,3083,2},--Vasha the Wicked
+	{.683,.832,3083,3},{.709,.818,3083,3},{.738,.808,3083,3},--Bingham the Quick
+	},
 [64]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
 },
 u30_oblivion={[63]={{.351,.381,3083,5}}},
@@ -3180,6 +3185,7 @@ solitudecity_base={[62]={--Provided by remosito
 morthalburialcave_base={[62]={{.383,.258,105}}},--Ysgramor's Chosen Body Marking
 nighthollowkeep1_base={[62]={{.409,.381,335}}},--Pale Order's Golden Band
 U28_blackreach={[62]={{.251,.695,352}}},--Arkthzand Insight Vertex Shroud
+u30_leyawiincity={[67]={{.711,.503,1200}}},--Leyawiin's Master Burglar
 
 --[[
 reach_base={--Provided by Aquifolius
@@ -3440,7 +3446,7 @@ southernelsweyr_base={
 {.173,.623,7213},	--[7213] Gloves
 },
 --]]
-local AchievementsId={[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
+local AchievementsId={[3080]=67,[3081]=64,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
 local ZoneAchievement={
 auridon_base=1,
 grahtwood_base=2,
@@ -3537,9 +3543,9 @@ local PiecesOfHistory={
 [153473]=11,--Kesta
 [153474]=12,--Jarro
 }
-local IsChest={["Chest"]=true,["Truhe^f"]=true,["coffre^m"]=true,["Сундук"]=true,}
-local IsTimeBreach={["Time Breach"]=true,["Zeitriss^m"]=true,["Rupture temporelle^f"]=true,["Временная брешь"]=true}
-local IsThievesTrove={["Thieves Trove"]=true,["Diebesgut^ns"]=true,["trésor des voleurs^m"]=true,["Воровской клад"]=true}
+local IsChest={["Chest"]=true,["Truhe^f"]=true,["coffre^m"]=true,["Сундук"]=true,["宝箱"]=true}
+local IsTimeBreach={["Time Breach"]=true,["Zeitriss^m"]=true,["Rupture temporelle^f"]=true,["Временная брешь"]=true,["時の裂け目"]=true}
+local IsThievesTrove={["Thieves Trove"]=true,["Diebesgut^ns"]=true,["trésor des voleurs^m"]=true,["Воровской клад"]=true,["盗賊の宝"]=true}
 local PsijicMap={[6551]=1,[6581]=2,[6584]=3,[6622]=4,[6598]=5,[6588]=6,[6620]=7,[6601]=8,[6604]=9,[6638]=10}
 local Shrines={
 therift_base={{.723,.252,1},{.789,.422,2}},
@@ -3694,6 +3700,7 @@ local Volendrung={ava_whole={
 {.408,.636,1},
 {.34,.709,1},
 {.531,.876,1},
+{.525,.619,1},
 --ALLIANCE_EBONHEART_PACT
 {.752,.486,2},	--Pact is nearest
 {.685,.532,2},
@@ -3703,6 +3710,7 @@ local Volendrung={ava_whole={
 {.484,.546,2},
 {.711,.393,2},
 {.595,.382,2},
+{.844,.166,2},
 --ALLIANCE_DAGGERFALL_COVENANT
 {.199,.372,3},
 {.349,.164,3},
@@ -3902,6 +3910,7 @@ local CustomPins={	--Types
 		[64]={name="pinType_Bane_of_Sul-Xan",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor2.dds"},
 		[65]={name="pinType_Oblivon_Portals",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.25},
 		[66]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
+		[67]={name="pinType_Leyawiin_Master_Burglar",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor1.dds"},
 		},
 	[25]={section=true,name="pinType_Imperial_City",id={},pin={},texture="/esoui/art/compass/ava_imperialcity_neutral.dds",
 		[70]={name="pinType_Bosses",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},
@@ -3911,7 +3920,7 @@ local CustomPins={	--Types
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
 local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true}
 local PinsImperial={[3]=true,[4]=true,[5]=true,[7]=true,[8]=true,[25]=true}
---	/script local name,_,_,icon=GetAchievementInfo(3081) StartChatInput(icon)
+--	/script local name,_,_,icon=GetAchievementInfo(3080) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
 --	/script d("|t26:26:/esoui/art/icons/poi/poi_portal_complete.dds|t")
@@ -4487,8 +4496,8 @@ local function OnAchievementUpdate(_,achievementId,link)
 
 	local AchName=GetAchievementCriterion(achievementId,1)
 	if BossesAchievements[achievementId]
-	or string.match(AchName,"Explorer")~=nil
-	or string.match(AchName,"Group Challenge")~=nil
+	or string.match(AchName,"Explorer")
+	or string.match(AchName,"Group Challenge")
 	then
 		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[1].name])--d("Dungeon boss killed")
 	end
