@@ -7,13 +7,13 @@ VaultDelve_INT03={{.36,.653,2971,3}},--Karzikon the Razorsworn
 arpeniaH_base={{.166,.38,2971,4}},arpeniaH2_base={{.163,.38,2971,4}},arpeniaL_base={{.163,.38,2971,4}},arpeniaL3_base={{.163,.38,2971,4}},--Shadow Knight Nassuphae
 u30_bloodruncave={{.289,.648,2971,5}},--Tumma-Maxath
 vunalk1_base={{.29,.427,2971,6}},vunalk2_base={{.29,.427,2971,6}},--Choking Vine
-ZHMain_base={--Zenithar's Abbey
+ZHGroupEvent_base={--Zenithar's Abbey
 {.354,.47,2997,1},--Grapnur the Crusher and Burthar Meatwise
 {.205,.719,2997,2},--The Frigid Temptress
 {.366,.174,2997,3},--Gloom-Tooth
 {.546,.487,2997,4},--Arbitrator Tasellis
 {.88,.535,2997,5},--Fulciinius the Bone Miser
-{.6,.6,2995},--Ra'back the Trap Master
+{.6,.5,2995},--Ra'back the Trap Master
 },
 u30_silenthalls={--The Silent Halls
 {.604,.348,2996,1},--Kao'kuul
@@ -543,7 +543,7 @@ hallsofregulation_2={{.728,.402,1844,5}},
 local SkyShardsAchievements={[2982]=true,[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
 u30_leyawiincity={{.253,.455,10,8}},--Nine Commands of the Eight Divines
-blackwood_base={
+blackwood_base={--Provided by art1ink
 {.381,.388,9,8},--Trials of Saint Alessia
 {.477,.56,13,7},--The Order of the Ancestor Moth
 {.482,.633,15,7},--Reality and Other Falsehoods
@@ -554,12 +554,69 @@ blackwood_base={
 {.627,.737,20,7},--Varieties of Faith: The Argonians
 {.701,.245,26,1},--Varieties of Faith: The Khajiit
 {.679,.252,21,6}},--Pirates of the Abecean
-reach_base={{0.390826,0.674602,24,4},{0.439162,0.685270,4,9}},
+markunderstonekeep_base={--Provided by art1ink
+{.63,.172,20,5},--Nords of Skyrim
+{.238,.162,20,8}},--Varieties of Faith: The Nords
+reach_base={--Provided by art1ink
+{.415,.599,1,4},--The Werewolf's Hide
+{.346,.487,3,3},--Bloodfiends of Rivenspire
+{.573,.491,4,2},--Living with Lycanthropy
+{0.439162,0.685270,4,9},--A Life Barbaric and Brutal
+{.583,.44,22.5},--The Crown of Freydis
+{.54,.288,22,7},--All About Giants
+{.504,.626,24,10},--Clans of the Reach: A Guide
+{0.390826,0.674602,24,4},--Thenephan's Mysteries of Mead
+},
+--Northern Elsweyr	provided by art1ink
+rimmen_base={{.439,.503,28,8}},--Master Zoaraym's Tale, Part 1
+riverholdcity_base={{.543,.606,26,1}},--Varieties of Faith: The Khajiit
+stitches_base={{.575,.505,28,9}},--Master Zoaraym's Tale, Part 2
+elsweyr_base={
+{.500,.166,26,1},--Varieties of Faith: The Khajiit
+{.714,.265,28,7},--Moon-Sugar for Glossy Fur? Yes!
+{.785,.287,28,8},--Master Zoaraym's Tale, Part 1
+{.387,.521,28,9},--Master Zoaraym's Tale, Part 2
+{.363,.304,5,1},--The Legend of Vastarie
+{.235,.57,6,10},--On the Knahaten Flu
+{.138,.75,1,2},--A Warning to the Aldmeri Dominion
+{.412,.6,25,7},--The Rise of Queen Ayrenn
+{.579,.69,28,1},--The Moon Cats and their Dance
+{.727,.398,28,2},--Litter-Mates of Darkness
+},
+--Southern Elsweyr	provided by art1ink
+Senchalpalace01_base={{.145,.425,21,8}},--A Nereid Stole My Husband
 ELS_DG={{-2.821,-2.378,28,9}},
+southernelsweyr_base={
+{.183,.651,6,8},--A Mother's Nursery Rhyme
+{.399,.615,6,10},--On The Knahaten Flu
+{.664,.696,21,6},--Pirates of Abecean
+{.298,.459,26,1},--Varieties of Faith: The Khajiit
+{.184,.313,28,1},--The Moon Cats and Their Dance
+{.385,.383,28,5},--The Eagle and the Cat
+{.371,.25,28,6},--Elven Eyes, Elven Spies
+{.448,.356,28,8},--Master Zoaraym's Tale, Part 1
+{.918,.712,28,9},--Master Zoaraym's Tale, Part 2
+},
+--Western Skyrim	provided by art1ink
+morthalburialcave_base={{.368,.713,22,5}},--The Crown of Freydis
+solitudecity_base={{.774,.77,22,1}},--The Brothers' War
+frozencoast_base={{.23,.742,22,7}},--All About Giants
+lightlesshollow_mines01={{.705,.809,20,9}},--Varieties of Faith: The Nords
+knightfall3_base={{.123,.767,3,10}},--House Ravenwatch Proclamation
+blackreach_base={
+{.947,.468,20,9},--Varieties of Faith: The Nords
+{.342,.805,24,6},--The Road to Sovngarde
+{.102,.515,24,3},--The Wandering Skald
+{.453,.135,3,10},--House Ravenwatch Proclamation
+},
+westernskryim_base={
+{.264,.667,20,5},--Nords of Skyrim
+{.147,.507,22,4},--Orcs of Skyrim
+{.705,.614,22,5},--The Crown of Freydis
+{.744,.323,22,7},--All About Giants
+},
 belarata_base={{.668,.795,18,1}},
-elsweyr_base={{.579,.69,28,1},{.363,.304,26,9},{.714,.265,28,7}},
 abahslanding_base={{.183,.781,18,5}},
-riverholdcity_base={{.544,.606,26,1}},
 garlasagea_base={{0.581,0.75,19,1}},
 goldcoast_base={{0.858,0.505,19,6},{.828,.615,18,7}},
 kvatchcity_base={{.287,.514,9,8}},
@@ -3148,7 +3205,7 @@ local CustomChestData,CustomThievesTrove={},{}
 local PoiData={}
 local Achievements={
 blackwood_base={
-[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.638,.308},{.391,.552},{.603,.579},{.614,.24},{.53,.38}},--Random encounters. Provided by Lerozain
+[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.638,.308},{.391,.552},{.603,.579},{.614,.24}},--Random encounters. Provided by Lerozain
 [65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71},{.533,.79},{.515,.26},{.47,.528},{.26,.516}},--Oblivon portals. Provided by art1ink
 [62]={--Provided by remosito
 {.7,.9,	374},--Bog Blight Funerary Mask
@@ -3189,7 +3246,7 @@ u30_leyawiincity={[67]={{.711,.503,1200}}},--Leyawiin's Master Burglar
 
 --[[
 reach_base={--Provided by Aquifolius
-[60]={{.817,.76,2964}},	--Полёт Красного Орла
+[60]={{.817,.76,2964}},	--Red Eagle's Flight	|H1:achievement:2927:1:1631279175|h|h
 [61]={	--Подношения древним духам
 {.556,.571,2964},	--Ритуальный камень в лагере Пепельных Сердец
 {.665,.701,2964},	--Ритуальный камень в лагере Тёмных Перьев
@@ -4220,7 +4277,8 @@ local function MapPinAddCallback(i)
 	UpdatingMapPin[i]=true
 --	pl("Map pin "..i.." updating")
 
-	local subzone=string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "maps/[%w%-]+/([%w%-]+_[%w%-]+)")
+	local subzone=	string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "maps/[%w%-]+/([%w%-]+_[%w%-]+)")
+--				string.match(string.gsub(GetMapTileTexture(),"UI_Map_",""), "%w+/%w+/%w+/(%w+_%w+)")
 	if MapPinCallback[i] then
 		MapPinCallback[i](i,subzone)
 	elseif i<=4 then
