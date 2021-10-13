@@ -1,5 +1,8 @@
 local AddonName="MapPins"
 local Bosses={
+--The Deadlands. Provided by art1ink.
+u32_dreaded={{.501,.443,3135}},--The Brandfire Reformatory (Kynreeve Brosuroth)
+u32_folly={{.547,.451,3136}},--False Martyrs' Folly (Kurkron the Mangler)
 --Blackwood. Provided by art1ink.
 u30_undertowcavern={{.501,.152,2971,1}},--Druvaakh the Smasher
 u30_xanmeeroverlook={{.516,.457,2971,2}},--Raj-Kall Ioraxeek
@@ -7,14 +10,14 @@ VaultDelve_INT03={{.36,.653,2971,3}},--Karzikon the Razorsworn
 arpeniaH_base={{.166,.38,2971,4}},arpeniaH2_base={{.163,.38,2971,4}},arpeniaL_base={{.163,.38,2971,4}},arpeniaL3_base={{.163,.38,2971,4}},--Shadow Knight Nassuphae
 u30_bloodruncave={{.289,.648,2971,5}},--Tumma-Maxath
 vunalk1_base={{.29,.427,2971,6}},vunalk2_base={{.29,.427,2971,6}},--Choking Vine
-ZHGroupEvent_base={--Zenithar's Abbey
+ZHMain_base={--Zenithar's Abbey
 {.354,.47,2997,1},--Grapnur the Crusher and Burthar Meatwise
 {.205,.719,2997,2},--The Frigid Temptress
 {.366,.174,2997,3},--Gloom-Tooth
 {.546,.487,2997,4},--Arbitrator Tasellis
 {.88,.535,2997,5},--Fulciinius the Bone Miser
-{.6,.5,2995},--Ra'back the Trap Master
 },
+ZHGroupEvent_base={{.613,.518,2995}},--Ra'back the Trap Master
 u30_silenthalls={--The Silent Halls
 {.604,.348,2996,1},--Kao'kuul
 {.328,.709,2996,2},--The Silent Sentry
@@ -241,6 +244,18 @@ elsweyr_base={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.
 clockwork_base={{.634,.604,2047}},
 --]]
 local SkyShards={
+--Deadland. Provided by art1ink.
+u32deadlandszone_base={--Deadland
+{.464,.677,3140,1},
+{.711,.389,3140,2},
+{.656,.302,3140,3},
+{.131,.541,3140,5},
+{.893,.268,3140.6},
+},
+u32_fargravezone={{.601,.347,3140,4}},
+u32_theshambles={{.489,.502,3140,4}},
+u32_dreaded={{.263,.248,3140,5}},
+u32_folly={{.755,.552,3140.6}},
 --Blackwood. Provided by art1ink.
 blackwood_base={
 	{.293,.641,2982,1},{.703,.911,2982,2},{.164,.447,2982,3},{.302,.226,2982,4},{.753,.363,2982,5},{.581,.182,2982,6},{.536,.457,2982,7},{.813,.706,2982,8},{.588,.765,2982,9},{.467,.563,2982,10},
@@ -843,6 +858,45 @@ vvardenfell_base={{.44,.243,126122,1},{.841,.731,126111,1},{.672,.627,126110,1},
 clockwork_base={{.181,.597,43746},{.803,.424,43747}},
 }
 local UnknownPOI={
+[1286]={ --The Deadlands
+[1]={"Raging Coast Wayshrine",1},
+[2]={"The Blood Pit Wayshrine",1},
+[3]={"Ardent Hope Wayshrine",1},
+[4]={"Wretched Spire Wayshrine",1},
+[5]={"False Martyrs' Folly Wayshrine",1},
+[6]={"Annihilarch's Summit Wayshrine",1},
+[8]={"Burning Gyre Keep",31},
+[9]={"Ardent Hope",17},
+[11]={"The Brandfire Reformatory",3},
+[12]={"Destruction's Solace",9},
+[13]={"The Abomination Cradle",18},
+[14]={"Annihilarch's Summit",5},
+[15]={"False Martyrs' Folly",3},
+[16]={"Wretched Spire",32},
+[17]={"Portal to Fargrave",26},
+[18]={"Portal to Fargrave",26},
+[19]={"Stormwright's Cleft",8,{179193,7}},
+[20]={"The Razorworks",8,{178819,3}},
+[22]={"The Tempest Engine",2},
+[23]={"Traitor's Ascent",2},
+[24]={"Charnel Pulpit",2},
+[25]={"Chantry of the Moon Reiver",2},
+[26]={"Ravaged Crossing",2},
+[28]={"Jynd's Foundry",10},
+[29]={"Wounded Crossing Wayshrine",1},
+[30]={"The Scourshales Wayshrine",1},
+[31]={"Den of the Unmaker",18},
+},
+[1282]={ --Fargrave
+[2]={"Fargrave Outskirts Wayshrine",1},
+[5]={"Fargrave Wayshrine",1},
+},
+[1283]={ --The Shambles
+[1]={"Forgotten Feretory",8,{179567,5}},
+[2]={"Skein Row",2},
+[3]={"The Bathhouse",28},
+[4]={"The Shambles Wayshrine",1},
+},
 [1261]={
 [1]={"Borderwatch",31},
 [2]={"White Stallion Inn",2},
@@ -3224,9 +3278,9 @@ blackwood_base={
 {.171,.474,	414},--Moth-Eaten Tapestry
 {.207,.457,	415}},--Ratty Tapestry
 [63]={{.378,.536,3083},--Lost in the Wilds
-	{.15,.581,3083,1},{.172,.539,3083,1},{.182,.518,3083,1},--Fialdar the Vicious
-	{.526,.465,3083,2},{.569,.487,3083,2},{.598,.489,3083,2},--Vasha the Wicked
-	{.683,.832,3083,3},{.709,.818,3083,3},{.738,.808,3083,3},--Bingham the Quick
+	{.15,.581,3083,2},{.172,.539,3083,2},{.182,.518,3083,2},--Fialdar the Vicious
+	{.526,.465,3083,3},{.569,.487,3083,3},{.598,.489,3083,3},--Vasha the Wicked
+	{.683,.832,3083,4},{.709,.818,3083,4},{.738,.808,3083,4},--Bingham the Quick
 	},
 [64]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
 },
@@ -3242,7 +3296,7 @@ solitudecity_base={[62]={--Provided by remosito
 morthalburialcave_base={[62]={{.383,.258,105}}},--Ysgramor's Chosen Body Marking
 nighthollowkeep1_base={[62]={{.409,.381,335}}},--Pale Order's Golden Band
 U28_blackreach={[62]={{.251,.695,352}}},--Arkthzand Insight Vertex Shroud
-u30_leyawiincity={[67]={{.711,.503,1200}}},--Leyawiin's Master Burglar
+u30_leyawiincity={[67]={{.711,.503,3080}}},--Leyawiin's Master Burglar
 
 --[[
 reach_base={--Provided by Aquifolius
@@ -3261,12 +3315,21 @@ dragonhome_base={[59]={{.663,.706,2669,5}}},--Shadow of Rahjin 156799
 chillwinddepths_base={[59]={{.953,.497,2669,6}}},--Lilytongue 156800
 labyrinthian_base={[59]={{.602,.558,2669,7}}},--Sky talker 156801
 thescraps_base={[59]={{.602,.307,2669,9}}},--Hightmourn Dizi 156803
-blackreach_base={[59]={
+blackreach_base={
+[59]={
 {.586,.243,2669,3},	--Chime of the Endless 156797
 {.919,.455,2669,13},	--Pan Flute of Morachellis 156807
 {.502,.358,2669,14},	--Reman War Drum 156808
 {.275,.674,2669,15}	--Ateian Fife 160510
-}},
+},
+[68]={--Mining Sample Collector
+{.482,.781,2759,1},--Kelbarn's Mining Samples	7373
+{.073,.413,2759,2},--Inguya's Mining Samples	7375
+{.622,.303,2759,3},--Reeh-La's Mining Samples	7377
+{.896,.338,2759,4},--Adanzda's Mining Samples	7385
+{.418,.666,2759,5},--Ghamborz's Mining Samples	7379
+}
+},
 westernskryim_base={
 [59]={	--Provided by Aquifolius
 {.379,.505,2669,8},	--Long Fire 156802
@@ -3542,7 +3605,7 @@ alikr_base=17,
 bangkorai_base=18,
 coldharbour_base=19,
 }
-local AchievementItems={[1712]={},[1250]={},[2099]={},[1958]={},[2320]={},[2463]={},[2534]={},[2669]={}}
+local AchievementItems={[1712]={},[1250]={},[2099]={},[1958]={},[2320]={},[2463]={},[2534]={},[2669]={},[2759]={}}
 local TimeBreach={
 summerset_base={{.587,.543,2},{.226,.599,2},{.292,.373,2},{.621,.322,2},{.561,.432,2},{.676,.62,2},{.479,.743,2},{.339,.424,2},{.738,.713,2}},
 glenumbra_base={{.735,.199,2},{.336,.509,2},{.436,.807,2}},
@@ -3894,11 +3957,19 @@ local InstrumentsTooltip={
 	{v=18,desc="Western Skryim: Lodestone"},
 	{v=19,desc="Western Skryim: Dozzen Talharpa"},
 	}
+local MiningSampleCollector={[7373]=1,[7375]=2,[7377]=3,[7385]=4,[7379]=5}
+local MiningSampleTooltip={
+	{v=1,desc="Kelbarn's Mining Samples"},
+	{v=2,desc="Inguya's Mining Samples"},
+	{v=3,desc="Reeh-La's Mining Samples"},
+	{v=4,desc="Adanzda's Mining Samples"},
+	{v=5,desc="Ghamborz's Mining Samples"},
+}
 local CustomPins={	--Types
 	[1]={name="pinType_Delve_bosses",done=false,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},--tint=ZO_ColorDef:New(1,1,1,1),
 	[2]={name="pinType_Delve_bosses_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_groupboss_complete.dds",k=1.25},
 	[3]={name="pinType_Skyshards",done=false,id={},pin={},maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Skyshard_1.dds",k=1},
-	[4]={name="pinType_Skyshards_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/tutorial/gamepad/achievement_categoryicon_skyshards.dds",k=1.38},
+--	[4]={name="pinType_Skyshards_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/tutorial/gamepad/achievement_categoryicon_skyshards.dds",k=1.38},
 	[5]={name="pinType_Lore_books",done=false,id={},pin={},maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Lorebook_1.dds",k=1,tint=ZO_ColorDef:New(.6,.6,1,.8)},
 --	[6]={name="pinType_Lore_books_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/"..AddonName.."/img/Lorebook_2.dds",k=1,tint=ZO_ColorDef:New(.6,.6,1,.8)},
 	[6]={name="pinType_Treasure_Maps",done=false,id={},pin={},maxDistance=0.05,level=101,texture=function(self) return self.m_PinTag.texture end,def_texture="/"..AddonName.."/img/Treasure_1.dds",k=1.4},
@@ -3958,6 +4029,7 @@ local CustomPins={	--Types
 		[59]={name="pinType_Instrumental_Triumph",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
 --		[60]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
 --		[61]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
+		[68]={name="Mining_Sample_Collector",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_mine_compete.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_minerquest.dds"},
 		},
 	[23]={section=true,name="pinType_Antiquities",id={},pin={},texture=UnknownPOItexture[24],
 		[62]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture=UnknownPOItexture[24],k=1},
@@ -3978,6 +4050,7 @@ local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8
 local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true}
 local PinsImperial={[3]=true,[4]=true,[5]=true,[7]=true,[8]=true,[25]=true}
 --	/script local name,_,_,icon=GetAchievementInfo(3080) StartChatInput(icon)
+--	/script local name,_,_,icon=GetAchievementInfo(2759) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
 --	/script d("|t26:26:/esoui/art/icons/poi/poi_portal_complete.dds|t")
@@ -4460,6 +4533,7 @@ local function ScanInventory()
 			elseif MuralMenderFragments[itemId] then AchievementItems[2463][ MuralMenderFragments[itemId] ]=true
 			elseif PiecesOfHistory[itemId] then AchievementItems[2534][ PiecesOfHistory[itemId] ]=true
 			elseif Instruments[itemId] then AchievementItems[2669][ Instruments[itemId] ]=true
+			elseif MiningSampleCollector[itemId] then AchievementItems[2759][ MiningSampleCollector[itemId] ]=true
 			end
 		end
 	end
@@ -4511,6 +4585,10 @@ local function OnLootReceived(_, receivedBy, itemName, quantity, itemSound, loot
 		AchievementItems[2669][ Instruments[itemId] ]=true
 		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[59].name])
 		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[59].name) end
+	elseif MiningSampleCollector[itemId] then
+		AchievementItems[2759][ MiningSampleCollector[itemId] ]=true
+		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[68].name])
+		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[68].name) end
 	end
 end
 
@@ -4819,16 +4897,25 @@ local function AddPinFilter(i,pinCheckboxText)
 			end
 		elseif CustomPins[i].name=="pinType_Greymoor" then
 			tooltipText=function()
-				local text=""
+				local text1=""
+				for i,data in ipairs(MiningSampleTooltip) do
+					local _,c,r=GetAchievementCriterion(2759,data.v)
+					local HaveItem=AchievementItems[2759] and AchievementItems[2759][data.v] and true or false
+					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
+					text1=text1..info..data.desc
+				end
+				local text2=""
 				for i,data in ipairs(InstrumentsTooltip) do
 					local _,c,r=GetAchievementCriterion(2669,data.v)
 					local HaveItem=AchievementItems[2669] and AchievementItems[2669][data.v] and true or false
 					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
-					text=text..info..data.desc
+					text2=text2..info..data.desc
 				end
-				return zo_iconFormat(CustomPins[59].def_texture,24,24).." "..string.gsub(string.gsub(CustomPins[59].name,"pinType_",""),"_"," ")
-					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t"
-					..text
+				return zo_iconFormat((CustomPins[68].def_texture and CustomPins[68].def_texture or CustomPins[68].texture),24,24).." "..string.gsub(string.gsub(CustomPins[68].name,"pinType_",""),"_"," ")
+					..text1
+					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t\n"
+					..zo_iconFormat(CustomPins[59].def_texture,24,24).." "..string.gsub(string.gsub(CustomPins[59].name,"pinType_",""),"_"," ")
+					..text2
 			end
 		end
 		if tooltipText~="" then
@@ -5006,6 +5093,9 @@ local function OnLoad(eventCode,addonName)
 	RegisterEvents()
 	MakeMapFiltersScroll()
 
+	--APIVersion: 101032
+	SavedVars[4]=false
+
 	local function AddPin(pin,pinLayout)
 		local TooltipCreator=(not PinTooltipSupres[pin] and PinTooltipCreator or nil)
 		local name=pinLayout.name
@@ -5019,20 +5109,22 @@ local function OnLoad(eventCode,addonName)
 
 	for i=1,25 do
 		local filter=CustomPins[i]
-		if filter.section then
-			for i0,pinLayout in pairs(filter) do
-				if type(pinLayout)=="table" and pinLayout.name then
-					CustomPins[i0]=pinLayout
-					pinLayout.filter=i
-					local id=AddPin(i0,pinLayout)
-					filter.id[i0]=id PinId[i0]=id
-					table.insert(filter.pin,i0)
+		if filter then
+			if filter.section then
+				for i0,pinLayout in pairs(filter) do
+					if type(pinLayout)=="table" and pinLayout.name then
+						CustomPins[i0]=pinLayout
+						pinLayout.filter=i
+						local id=AddPin(i0,pinLayout)
+						filter.id[i0]=id PinId[i0]=id
+						table.insert(filter.pin,i0)
+					end
 				end
+			else
+				local id=AddPin(i,filter) filter.id[i]=id PinId[i]=id
 			end
-		else
-			local id=AddPin(i,filter) filter.id[i]=id PinId[i]=id
+			AddPinFilter(i,zo_iconFormat((filter.def_texture and filter.def_texture or filter.texture),24,24).." "..string.gsub(string.gsub(filter.name,"pinType_",""),"_"," "))
 		end
-		AddPinFilter(i,zo_iconFormat((filter.def_texture and filter.def_texture or filter.texture),24,24).." "..string.gsub(string.gsub(filter.name,"pinType_",""),"_"," "))
 	end
 
 	SLASH_COMMANDS["/loc"]=function()
