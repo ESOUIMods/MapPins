@@ -557,6 +557,13 @@ hallsofregulation_2={{.728,.402,1844,5}},
 }
 local SkyShardsAchievements={[2982]=true,[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
+--The Deadlands Provided by art1ink
+u32deadlandszone_base={
+{.179,.588,17,5},--On Oblivion
+{.696,.507,8,4},--The House of Troubles
+{.707,.453,29,9},--Oath of a Dishonored Clan
+{.432,.484,29,4},--I was Summoned by a Mortal
+},
 u30_leyawiincity={{.253,.455,10,8}},--Nine Commands of the Eight Divines
 blackwood_base={--Provided by art1ink
 {.381,.388,9,8},--Trials of Saint Alessia
@@ -612,7 +619,7 @@ southernelsweyr_base={
 {.448,.356,28,8},--Master Zoaraym's Tale, Part 1
 {.918,.712,28,9},--Master Zoaraym's Tale, Part 2
 },
---Western Skyrim	provided by art1ink
+--Western Skyrim provided by art1ink
 morthalburialcave_base={{.368,.713,22,5}},--The Crown of Freydis
 solitudecity_base={{.774,.77,22,1}},--The Brothers' War
 frozencoast_base={{.23,.742,22,7}},--All About Giants
@@ -865,6 +872,7 @@ local UnknownPOI={
 [4]={"Wretched Spire Wayshrine",1},
 [5]={"False Martyrs' Folly Wayshrine",1},
 [6]={"Annihilarch's Summit Wayshrine",1},
+[7]={"The Blood Pit",29},
 [8]={"Burning Gyre Keep",31},
 [9]={"Ardent Hope",17},
 [11]={"The Brandfire Reformatory",3},
@@ -882,6 +890,7 @@ local UnknownPOI={
 [24]={"Charnel Pulpit",2},
 [25]={"Chantry of the Moon Reiver",2},
 [26]={"Ravaged Crossing",2},
+[27]={"Zynoahz's Gaol",10},
 [28]={"Jynd's Foundry",10},
 [29]={"Wounded Crossing Wayshrine",1},
 [30]={"The Scourshales Wayshrine",1},
@@ -897,13 +906,13 @@ local UnknownPOI={
 [3]={"The Bathhouse",28},
 [4]={"The Shambles Wayshrine",1},
 },
-[1261]={
+[1261]={ --Blackwood
 [1]={"Borderwatch",31},
 [2]={"White Stallion Inn",2},
 [3]={"Undertow Cavern",3},
 [4]={"Leyawiin",7},
 [6]={"Plateau of the Traveler",2},
-[7]={"Tidewater Cave",3},
+[7]={"Tidewater Cave",5},
 [8]={"Deepscorn Hollow",5},
 [9]={"Shardius's Excavation",18},
 [10]={"Fort Blueblood",2},
@@ -941,15 +950,15 @@ local UnknownPOI={
 [50]={"Pentric Run",8,{173216,5}},
 [51]={"Sariellen's Sword",8,{172842,7}},
 [52]={"Withered Root",8,{172468,3}},
-[56]={"Doomvault Vulpinaz Wayshrine",1},
-[57]={"Blackwood Crossroads Wayshrine",1},
-[58]={"Hutan-Tzel Wayshrine",1},
-[59]={"Vunalk Wayshrine",1},
-[60]={"Ayleid Well",11},
-[61]={"Ayleid Well",11},
-[62]={"Ayleid Well",11},
-[63]={"Ayleid Well",11},
-[64]={"Ayleid Well",11},
+[68]={"Ayleid Well",11},
+[69]={"Ayleid Well",11},
+[70]={"Ayleid Well",11},
+[71]={"Ayleid Well",11},
+[72]={"Ayleid Well",11},
+[73]={"Doomvault Vulpinaz Wayshrine",1},
+[74]={"Blackwood Crossroads Wayshrine",1},
+[75]={"Hutan-Tzel Wayshrine",1},
+[76]={"Vunalk Wayshrine",1},
 },
 [1208]={
 [1]={"Nchuand-Zel",14},
@@ -1005,7 +1014,7 @@ local UnknownPOI={
 [1]={"Dusktown",32},
 [2]={"Greymoor Keep",15},
 [3]={"The Lightless Hollow",5},
---[4]={"Dusktown Wayshrine",1},
+[4]={"Dusktown Wayshrine",1},
 [5]={"Greymoor Keep Wayshrine",1},
 [6]={"Lightless Hollow Wayshrine",1},
 [7]={"Dark Moon Grotto Wayshrine",1},
