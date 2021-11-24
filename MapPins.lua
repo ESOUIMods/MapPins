@@ -3,6 +3,8 @@ local Bosses={
 --The Deadlands. Provided by art1ink.
 u32_dreaded={{.501,.443,3135}},--The Brandfire Reformatory (Kynreeve Brosuroth)
 u32_folly={{.547,.451,3136}},--False Martyrs' Folly (Kurkron the Mangler)
+u30_oblivion={{.411,.217,3076},{.208,.599,3076},{.223,.43,3076},{.427,.454,3076},{.745,.493,3076},{.442,.549,3076},{.538,.485,3076},{.771,.555,3076},{.551,.706,3076},{.585,.294,3076}},--Atoll of Immolation
+u32deadlandszone_base={{.234,.636,3197},{.465,.612,3197},{.786,.291,3197},{.619,.47,3197}},--Havocrel Spawn Locations
 --Blackwood. Provided by art1ink.
 u30_undertowcavern={{.501,.152,2971,1}},--Druvaakh the Smasher
 u30_xanmeeroverlook={{.516,.457,2971,2}},--Raj-Kall Ioraxeek
@@ -248,14 +250,11 @@ local SkyShards={
 u32deadlandszone_base={--Deadland
 {.464,.677,3140,1},
 {.711,.389,3140,2},
-{.656,.302,3140,3},
-{.131,.541,3140,5},
-{.893,.268,3140.6},
-},
+{.656,.302,3140,3}},
 u32_fargravezone={{.601,.347,3140,4}},
 u32_theshambles={{.489,.502,3140,4}},
 u32_dreaded={{.263,.248,3140,5}},
-u32_folly={{.755,.552,3140.6}},
+u32_folly={{.755,.552,3140,6}},
 --Blackwood. Provided by art1ink.
 blackwood_base={
 	{.293,.641,2982,1},{.703,.911,2982,2},{.164,.447,2982,3},{.302,.226,2982,4},{.753,.363,2982,5},{.581,.182,2982,6},{.536,.457,2982,7},{.813,.706,2982,8},{.588,.765,2982,9},{.467,.563,2982,10},
@@ -558,12 +557,18 @@ hallsofregulation_2={{.728,.402,1844,5}},
 local SkyShardsAchievements={[2982]=true,[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
 --The Deadlands Provided by art1ink
+u32_fargravezone={
+{.527,.239,14,5},-- Myths of Sheogorath, Volume 1
+{.345,.616,2,8}},--To Dream Beyond Dreams
+u32_theshambles={{.366,.32,14,5}},-- Myths of Sheogorath, Volume 1
+u32_fargrave={{.406,.176,2,8}},--To Dream Beyond Dreams
 u32deadlandszone_base={
 {.179,.588,17,5},--On Oblivion
 {.696,.507,8,4},--The House of Troubles
 {.707,.453,29,9},--Oath of a Dishonored Clan
 {.432,.484,29,4},--I was Summoned by a Mortal
-},
+{.438,.653,23,10}},--Dark Ruins
+--Blackwood Provided by art1ink
 u30_leyawiincity={{.253,.455,10,8}},--Nine Commands of the Eight Divines
 blackwood_base={--Provided by art1ink
 {.381,.388,9,8},--Trials of Saint Alessia
@@ -800,6 +805,10 @@ vvardenfell_base={{.404,.809,20,3},{.882,.612,20,3},{.34,.528,20,3},{.502,.244,8
 hewsbane_base={{.382,.595,11,3}},
 }
 local TreasureMaps={
+u32deadlandszone_base={--Provided by art1ink:
+{.245,.806,183005},--The Deadlands Treasure Map I
+{.763,.385,183006},--The Deadlands Treasure Map II
+},
 blackwood_base={--Provided by Shantoo
 {.366,.19,178465,1},--Woodworker Survey
 {.564,.146,178468,1},--Enchanter Survey
@@ -3267,9 +3276,51 @@ crowswood_base={[1]={{.362,.223},{.430,.290},{.242,.339},{.246,.244},{.522,.905}
 local CustomChestData,CustomThievesTrove={},{}
 local PoiData={}
 local Achievements={
+--Cunning Scamp Exterminator and Trove Scamp Exterminator	Provided by art1ink.
+Imperialsewers_aldmeri1={
+[72]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
+[73]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}},
+},
+Imperialsewers_aldmeri2={
+[72]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
+[73]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}},
+},
+Imperialsewers_aldmeri3={
+[72]={{.846,.653,1270},{.895,.659,1270},{.894,.626,1270},{.815,.655,1270},{.882,.67,1270},{.871,.636,1270},{.701,.513,1270},{.73,.504,1270},{.706,.543,1270},{.718,.554,1270},{.735,.567,1270},{.761,.572,1270},{.774,.568,1270},{.784,.588,1270},{.774,.597,1270},{.756,.59,1270},{.732,.589,1270}},
+[73]={{.846,.653,1272},{.895,.659,1272},{.894,.626,1272},{.815,.655,1272},{.882,.67,1272},{.871,.636,1272},{.701,.513,1272},{.73,.504,1272},{.706,.543,1272},{.718,.554,1272},{.735,.567,1272},{.761,.572,1272},{.774,.568,1272},{.784,.588,1272},{.774,.597,1272},{.756,.59,1272},{.732,.589,1272}},
+},
+Imperialsewers_ebon1={
+[72]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
+[73]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}},
+},
+Imperialsewers_ebon2={
+[72]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
+[73]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}},
+},
+Imperialsewer_ebonheart3={
+[72]={{.492,.252,1270},{.444,.323,1270},{.489,.316,1270},{.443,.35,1270},{.466,.421,1270},{.44,.413,1270},{.413,.377,1270},{.385,.376,1270}},
+[73]={{.492,.252,1272},{.444,.323,1272},{.489,.316,1272},{.443,.35,1272},{.466,.421,1272},{.44,.413,1272},{.413,.377,1272},{.385,.376,1272}},
+},
+Imperialsewer_daggerfall1={
+[72]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
+[73]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}},
+},
+Imperialsewer_daggerfall2={
+[72]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
+[73]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}},
+},
+Imperialsewer_daggerfall3={
+[72]={{.111,.623,1270},{.147,.598,1270},{.142,.617,1270},{.167,.595,1270},{.193,.595,1270},{.221,.678,1270},{.186,.653,1270},{.284,.52,1270},{.275,.556,1270},{.335,.564,1270},{.328,.532,1270},{.332,.51,1270}},
+[73]={{.111,.623,1272},{.147,.598,1272},{.142,.617,1272},{.167,.595,1272},{.193,.595,1272},{.221,.678,1272},{.186,.653,1272},{.284,.52,1272},{.275,.556,1272},{.335,.564,1272},{.328,.532,1272},{.332,.51,1272}},
+},
+craglorn_base={
+[26]={{.24,.503,3},{.569,.444,3},{.753,.615,3},{.727,.588,3},{.688,.58,3},{.669,.57,3},{.74,.453,3},{.227,.59,3},{.259,.59,3},{.308,.62,3},{.906,.724,3},{.877,.699,3},{.474,.627,3},{.328,.549,3},{.76,.503,3},{.569,.444,3},{.482,.55,3},{.309,.361,3},{.38,.667,3},{.402,.442,3},{.274,.29,3},{.518,.393,3},{.556,.461,3}},--Celestial Rift
+},
+u32deadlandszone_base={
+[26]={{.874,.464,1},{.498,.666,1},{.545,.571,1},{.68,.417,1},{.771,.41,1},{.773,.339,1},{.681,.304,1},{.457,.556,1},{.326,.527,1},{.394,.515,1},{.29,.576,1},{.249,.725,1},{.35,.687,1},{.492,.593,1},{.568,.328,1},{.55,.444,1},{.193,.561,1},{.78,.254,1}},--Oblivon portals. Provided by art1ink
+},
 blackwood_base={
-[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.638,.308},{.391,.552},{.603,.579},{.614,.24}},--Random encounters. Provided by Lerozain
-[65]={{.373,.179},{.418,.317},{.144,.592},{.385,.507},{.448,.617},{.184,.428},{.737,.369},{.644,.36},{.313,.616},{.252,.355},{.654,.54},{.747,.83},{.612,.442},{.605,.23},{.636,.71},{.533,.79},{.515,.26},{.47,.528},{.26,.516}},--Oblivon portals. Provided by art1ink
+[26]={{.373,.179,1},{.418,.317,1},{.144,.592,1},{.385,.507,1},{.448,.617,1},{.184,.428,1},{.737,.369,1},{.644,.36,1},{.313,.616,1},{.252,.355,1},{.654,.54,1},{.747,.83,1},{.612,.442,1},{.605,.23,1},{.636,.71,1},{.533,.79,1},{.515,.26,1},{.47,.528,1},{.26,.516,1}},--Oblivon portals. Provided by art1ink
 [62]={--Provided by remosito
 {.7,.9,	374},--Bog Blight Funerary Mask
 {.6,.79,	401},--Soiled Tapestry
@@ -3292,6 +3343,8 @@ blackwood_base={
 	{.683,.832,3083,4},{.709,.818,3083,4},{.738,.808,3083,4},--Bingham the Quick
 	},
 [64]={{.617,.905,3081,3},{.763,.773,3081,4}},--Bane of the Sul-Xan
+[65]={{.24,.614,3082},{.21,.441,3082},{.361,.207,3082},{.362,.344,3082},{.391,.552,3082},{.532,.688,3082},{.643,.749,3082},{.603,.579,3082},{.683,.514,3082},{.638,.308,3082}},--Most Admired	Provided by art1ink
+[66]={{.643,.749},{.683,.514},{.362,.344},{.21,.441},{.442,.293},{.361,.207},{.638,.308},{.391,.552},{.603,.579},{.614,.24}},--Random encounters. Provided by Lerozain
 },
 u30_oblivion={[63]={{.351,.381,3083,5}}},
 u30_xanmeeroverlook={[64]={{.841,.648,3081,1}}},u30_silenthalls={[64]={{.285,.48,3081,2}}},
@@ -3306,7 +3359,6 @@ morthalburialcave_base={[62]={{.383,.258,105}}},--Ysgramor's Chosen Body Marking
 nighthollowkeep1_base={[62]={{.409,.381,335}}},--Pale Order's Golden Band
 U28_blackreach={[62]={{.251,.695,352}}},--Arkthzand Insight Vertex Shroud
 u30_leyawiincity={[67]={{.711,.503,3080}}},--Leyawiin's Master Burglar
-
 --[[
 reach_base={--Provided by Aquifolius
 [60]={{.817,.76,2964}},	--Red Eagle's Flight	|H1:achievement:2927:1:1631279175|h|h
@@ -3487,6 +3539,7 @@ northpoint_base={[33]={{.856,.877,872,1}}},
 orsinium_base={[37]={{.015,.398,1316,1}},[38]={{.369,.626,1250,11},{.369,.626,1250,12},{.825,.345,1250,19}}},
 rawlkha_base={[45]={{.620,.289,704,15}},[32]={{.698,.364,1379,5}}},
 reapersmarch_base={
+[26]={{.774,.299,2},{.727,.149,2},{.419,.64,2}},--Dark Fissure	Provided by art1ink
 [34]={{.333,.748},{.507,.157},{.518,.601},{.741,.291},{.770,.216}},
 [33]={{.369,.731,872,6},{.372,.244,872,6},{.509,.341,872,6},{.484,.467,872,6}},
 [45]={{.477,.523,704,7}},
@@ -3522,6 +3575,7 @@ stormhaven_base={
 },
 stormhold_base={[45]={{.340,.284,704,8}},[32]={{.539,.455,1381,3}}},
 therift_base={
+[26]={{.698,.601,2},{.36,.436,2}},
 [34]={{.145,.366},{.207,.429},{.350,.474},{.508,.566},{.595,.332}},
 [33]={{.478,.465,872,12},{.493,.360,872,12},{.712,.671,872,12},{.740,.632,872,12}},
 [45]={{.682,.486,704,14}},
@@ -3978,9 +4032,9 @@ local CustomPins={	--Types
 	[1]={name="pinType_Delve_bosses",done=false,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},--tint=ZO_ColorDef:New(1,1,1,1),
 	[2]={name="pinType_Delve_bosses_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_groupboss_complete.dds",k=1.25},
 	[3]={name="pinType_Skyshards",done=false,id={},pin={},maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Skyshard_1.dds",k=1},
-	[4]={name="pinType_Skyshards_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/tutorial/gamepad/achievement_categoryicon_skyshards.dds",k=1.38},
+--	[4]={name="pinType_Skyshards_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/tutorial/gamepad/achievement_categoryicon_skyshards.dds",k=1.38},
 	[5]={name="pinType_Lore_books",done=false,id={},pin={},maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Lorebook_1.dds",k=1,tint=ZO_ColorDef:New(.6,.6,1,.8)},
-	[6]={name="pinType_Lore_books_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/"..AddonName.."/img/Lorebook_2.dds",k=1,tint=ZO_ColorDef:New(.6,.6,1,.8)},
+--	[6]={name="pinType_Lore_books_done",done=true,id={},pin={},maxDistance=0.05,level=30,texture="/"..AddonName.."/Lorebook_2.dds",k=1,tint=ZO_ColorDef:New(.6,.6,1,.8)},
 	[6]={name="pinType_Treasure_Maps",done=false,id={},pin={},maxDistance=0.05,level=101,texture=function(self) return self.m_PinTag.texture end,def_texture="/"..AddonName.."/img/Treasure_1.dds",k=1.4},
 	[7]={name="pinType_Treasure_Chests",done=false,id={},pin={},maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Chest_1.dds",k=1.1,tint=ZO_ColorDef:New(1,1,1,.8)},	--,tint=ZO_ColorDef:New(.8,.8,.5,.9)
 	[8]={name="pinType_Unknown_POI",done=false,id={},pin={},maxDistance=0.05,level=10,texture=function(self) return self.m_PinTag.texture end,def_texture="/esoui/art/icons/poi/poi_areaofinterest_incomplete.dds",size=40,tint=ZO_ColorDef:New(.7,.7,.7,.6)},
@@ -4018,7 +4072,7 @@ local CustomPins={	--Types
 	[18]={section=true,name="pinType_Clockwork_City",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_cwc_up.dds",	--"/art/fx/texture/clockworksigil.dds",
 		[47]={name="pinType_Precursor_Maker",done=false,maxDistance=0.05,level=101,texture="/esoui/art/menubar/gamepad/gp_playermenu_icon_settings.dds",k=1,def_texture="/esoui/art/icons/achievement_update16_001.dds"},
 		},
-	[19]={section=true,name="pinType_Murkmire",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_murkmire_up.dds",	--"/esoui/art/icons/store_murkmiredlc_collectable.dds",
+		[19]={section=true,name="pinType_Murkmire",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_murkmire_up.dds",	--"/esoui/art/icons/store_murkmiredlc_collectable.dds",
 		[48]={name="pinType_Chronic_Chronogler",done=false,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_museum.dds"},
 		[49]={name="pinType_Poems_of_Nothing",done=false,maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Scroll_1.dds",k=1},
 		[50]={name="pinType_Achievement_quests",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1},	--esoui/art/floatingmarkers/quest_icon.dds
@@ -4046,23 +4100,26 @@ local CustomPins={	--Types
 	[24]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds",
 		[63]={name="pinType_Lost_in_Wilds",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor4.dds"},
 		[64]={name="pinType_Bane_of_Sul-Xan",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor2.dds"},
-		[65]={name="pinType_Oblivon_Portals",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.25},
+		[65]={name="pinType_Most_Admired",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_rds.dds"},
 		[66]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
 		[67]={name="pinType_Leyawiin_Master_Burglar",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor1.dds"},
 		},
 	[25]={section=true,name="pinType_Imperial_City",id={},pin={},texture="/esoui/art/compass/ava_imperialcity_neutral.dds",
 		[70]={name="pinType_Bosses",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},
 		[71]={name="pinType_Respawns",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1},
+		[72]={name="pinType_Cunning_Scamp",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_ic_telvarscamp.dds"},
+		[73]={name="pinType_Trove_Scamp",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_ic_treasurescamp.dds"},
 		},
+	[26]={name="pinType_Portals/Fissures/Rift",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.26},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
-local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true}
+local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true,[26]=true}
 local PinsImperial={[3]=true,[4]=true,[5]=true,[7]=true,[8]=true,[25]=true}
 --	/script local name,_,_,icon=GetAchievementInfo(3080) StartChatInput(icon)
 --	/script local name,_,_,icon=GetAchievementInfo(2759) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
 --	/script StartChatInput(GetCollectibleIcon(602))
---	/script d("|t26:26:/esoui/art/icons/poi/poi_portal_complete.dds|t")
+--	/script d("|t26:26:/esoui/art/treeicons/tutorial_idexicon_deadlands_up.dds|t")
 local function GetSetDescription(setData)
 	if setData then
 		local itemLink=("|H1:item:%d:370:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h"):format(setData[1])
@@ -4311,17 +4368,23 @@ local MapPinCallback={
 			end
 		end
 	end,
-	[65]=function(i,subzone)--Blackwood oblivion portals
-		local mapData=Achievements[subzone]
-		if mapData then
-			mapData=mapData[i]
-			if mapData then
-				for i1,pinData in pairs(mapData) do
-					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Oblivion portal"},pinData[1],pinData[2])
-				end
-			end
-		end
-	end,
+    [26]=function(i,subzone)--Portals
+        local mapData=Achievements[subzone]
+        if mapData then
+            mapData=mapData[i]
+            if mapData then
+                for i1,pinData in pairs(mapData) do
+                    if pinData[3]==1 then
+                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Oblivion portal"},pinData[1],pinData[2])
+                    elseif pinData[3]==2 then
+                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Dark fissure"},pinData[1],pinData[2])
+					elseif pinData[3]==3 then
+                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Celestial Rift"},pinData[1],pinData[2])
+                    end
+                end
+            end
+        end
+    end,
 	[66]=function(i,subzone)--Blackwood random encounters
 		local mapData=Achievements[subzone]
 		if mapData then
@@ -4854,7 +4917,7 @@ local function AddPinFilter(i,pinCheckboxText)
 		for pin,id in pairs(CustomPins[i].id) do
 			local needsRefresh=PinManager:IsCustomPinEnabled(id)~=state
 			local filterType=GetMapFilterType()
-			if filterType==MAP_FILTER_TYPE_STANDARD or filterType==MAP_FILTER_TYPE_AVA_CYRODIIL then ZO_CheckButton_SetCheckState(control,state) end
+			if filterType==MAP_FILTER_TYPE_STANDARD or filterType==MAP_FILTER_TYPE_AVA_CYRODIIL or filterType==MAP_FILTER_TYPE_AVA_IMPERIAL then ZO_CheckButton_SetCheckState(control,state) end
 			PinManager:SetCustomPinEnabled(id,state)
 			if needsRefresh then
 --				pl("["..id.."] "..CustomPins[pin].name..": Refresh")
@@ -4989,7 +5052,10 @@ local PinTooltipCreator={
 		elseif pinTag[1]==62 then
 			icon=CustomPins[62].texture
 			name=pinTag.name
-		elseif pinTag[1]==65 or pinTag[1]==66 then
+		elseif pinTag[1]==26 then	--Portals
+			icon=CustomPins[ pinTag[1] ].texture
+			name=pinTag.name
+		elseif pinTag[1]==66 then
 			icon=CustomPins[ pinTag[1] ].texture
 			name=pinTag.name
 		elseif pinTag[1]==70 then
@@ -5116,7 +5182,7 @@ local function OnLoad(eventCode,addonName)
 		return id
 	end
 
-	for i=1,25 do
+	for i=1,26 do
 		local filter=CustomPins[i]
 		if filter then
 			if filter.section then
