@@ -286,74 +286,118 @@ elsweyr={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.623},
 clockwork={{.634,.604,2047}},
 --]]
 local SkyShards={
---High Isle. Provided by art1ink.
-u34_systreszone={
-{.291,.75,3270,1},--High above the river across from the Firepot
-{.514,.782,3270,2},--Under the middle bridge spanning Loch Abhain
-{.26,.852,3270,3},--By a beach near the bridge on High Isle's southern coast
-{.143,.566,3270,4},--Hidden in the rocks above Jheury's Cove on High Isle
-{.312,.34,3270,5},--Just west of a pointed rock on High Isle's northernmost beach
-{.323,.62,3270,6},--In the shadow of All Flags Castle's north wall
-{.5,.654,3270,7},--Overlooking the volcanic vent north of Tor Draioch
-{.782,.451,3270,8},--In the heart of the river canyon east of Amenos Station
-{.8,.263,3270,9},--On the shore of the Flooded Coast below Snake's Eye View
-{.668,.206,3270,10},--By a bay full of wrecked ships along Skulltooth Coast
-{.864,.404,3270,11},--Follow a climbing path on the southern side of Ghost Haven Bay
-{.62,.689,3270,12},--In the hedge maze of the Spire of the Crimson Coin
-{.33,.912,3270,13},--On a ledge above a pool in the back of Breakwater Cave
-{.214,.446,3270.14},--Guarded by the dead in Death's Valor Keep
-{.275,.706,3270,15},--At one end of a natural bridge in the heart of the Firepot
-{.48,.485,3270,16},--At the end of a winding path high above Shipwreck Shoals
-{.816,.202,3270,17},--By a blue tree within the caverns of Coral Cliffs
-{.602,.356,3270,18},--Hidden high among the rocky ridges of Whalefall
+u34_systreszone={--High Isle. Provided by art1ink
+{.291,.75,3270,1,504},
+{.514,.782,3270,2,505},
+{.26,.852,3270,3,506},
+{.143,.566,3270,4,507},
+{.312,.34,3270,5,508},
+{.323,.62,3270,6,509},
+{.5,.654,3270,7,510},
+{.782,.451,3270,8,511},
+{.8,.263,3270,9,512},
+{.668,.206,3270,10,513},
+{.864,.404,3270,11,514},
+{.62,.689,3270,12,515},
+{.33,.912,3270,13,516},
+{.214,.446,3270,14,517},
+{.275,.706,3270,15.518},
+{.48,.485,3270,16,519},
+{.816,.202,3270,17,520},
+{.602,.356,3270,18,521},
 },
-u34_ghosthaven={{.628,.591,3270,11}},--Follow a climbing path on the southern side of Ghost Haven Bay
-u34_ghosthavenEXT={{.833,.733,3270,11}},--Follow a climbing path on the southern side of Ghost Haven Bay
-u34_crimsoncoin_EXT={{.773,.512,3270,12}},--In the hedge maze of the Spire of the Crimson Coin
-u34_breakwatercave={{.517,.195,3270,13}},--On a ledge above a pool in the back of Breakwater Cave
-u34_hauntedsepulcherext={{.484,.926,3270,14}},--Guarded by the dead in Death's Valor Keep
-u34_firepotcave={{.372,.605,3270,15}},-- At one end of a natural bridge in the heart of the Firepot.
-u34_shipwreckshoalsext={{.359,.658,3270,16}},--At the end of a winding path high above Shipwreck Shoals
-u34_coralcliffsint={{.316,.346,3270,17}},--By a blue tree within the caverns of Coral Cliffs
-u34_whalefall_cay={{.472,.589,3270,18}},--Hidden high among the rocky ridges of Whalefall
---Deadland. Provided by art1ink.
-u32deadlandszone={
-{.464,.677,3140,1},
-{.711,.389,3140,2},
-{.656,.302,3140,3},
-{.131,.542,3140,5},
-{.888,.269,3140,6}},
-u32_fargravezone={{.601,.347,3140,4}},
-u32_theshambles={{.489,.502,3140,4}},
-u32_dreaded_refuge_ext={{.263,.248,3140,5}},
-u32_folly_delve={{.755,.552,3140,6}},
---Blackwood. Provided by art1ink.
-blackwood={
-	{.293,.641,2982,1},{.703,.911,2982,2},{.164,.447,2982,3},{.302,.226,2982,4},{.753,.363,2982,5},{.581,.182,2982,6},{.536,.457,2982,7},{.813,.706,2982,8},{.588,.765,2982,9},{.467,.563,2982,10},
-	{.577,.645,2982,11},{.458,.312,2982,12},{.548,.772,2982,13},{.207,.501,2982,14},{.743,.515,2982,15},{.371,.262,2982,16},{.641,.182,2982,17},{.839,.694,2982,18}},
-u30_silenthalls_ext02={{.452,.731,2982,11}},
-ZHMain={{.777,.623,2982,12}},
-u30_xanmeeroverlook_ext={{.683,.514,2982,13}},
-u30_undertowcavern={{.524,.403,2982,14}},
-VaultDelve_EXT02={{.878,.348,2982,15}},
-arpeniaH={{.857,.45,2982,16}},arpeniaH2={{.857,.45,2982,16}},arpeniaL={{.857,.45,2982,16}},arpeniaL3={{.857,.45,2982,16}},
-u30_bloodruncave={{.536,.298,2982,17}},
-vunalk1={{.856,.21,2982,18}},vunalk2={{.856,.21,2982,18}},
-reach={{.821,.717,2857,2},{.469,.309,2857,1}},
-U28_blackreach={{.406,.371,2857,3},{.914,.731,2857,4}},
-Gloomreach={{.648,.406,2857,6}},Gloomreach2={{.648,.406,2857,6}},Gloomreach2B={{.648,.406,2857,6}},Gloomreach2C={{.648,.406,2857,6}},Gloomreach3={{.648,.406,2857,6}},Gloomreach5={{.648,.406,2857,6}},
-briarrockruins_ext={{.341,.621,2857,5}},
-westernskryim={{.269,.556,2687,5},{.62,.432,2687,6},{.316,.705,2687,7},{.67,.651,2687,8},{.243,.441,2687,9},{.505,.578,2687,10},{.75,.68,2687,11},{.745,.323,2687,15},{.368,.611,2687,13},{.117,.437,2687,14},{.485,.302,2687,17}},
+u34_ghosthaven={{.628,.591,3270,11,514}},
+u34_ghosthavenEXT={{.833,.733,3270,11,514}},
+u34_crimsoncoin_EXT={{.773,.512,3270,12,515}},
+u34_breakwatercave={{.517,.195,3270,13,516}},
+u34_hauntedsepulcherext={{.484,.926,3270,14,517}},
+u34_firepotcave={{.372,.605,3270,15,518}},
+u34_shipwreckshoalsext={{.359,.658,3270,16,519}},
+u34_coralcliffsint={{.316,.346,3270,17,520}},
+u34_whalefall_cay={{.472,.589,3270,18,521}},
+u32deadlandszone={--Deadland. Provided by art1ink.
+{.464,.677,3140,1,496},
+{.711,.389,3140,2,497},
+{.656,.302,3140,3,498},
+{.131,.542,3140,5,500},
+{.888,.269,3140,6,501}},
+u32_dreaded_refuge_ext={{.263,.248,3140,5,500}},
+u32_folly_delve={{.755,.552,3140,6,501}},
+u32_fargravezone={{.601,.347,3140,4,499}},
+u32_theshambles={{.489,.502,3140,4,499}},
+blackwood={--Blackwood. Provided by art1ink.
+{.293,.641,2982,1,478},
+{.703,.911,2982,2,479},
+{.164,.447,2982,3,480},
+{.302,.226,2982,4,481},
+{.753,.363,2982,5,482},
+{.581,.182,2982,6,483},
+{.536,.457,2982,7,484},
+{.813,.706,2982,8,485},
+{.588,.765,2982,9,486},
+{.467,.563,2982,10,487},
+{.577,.645,2982,11,488},
+{.458,.312,2982,12,489},
+{.548,.772,2982,13,490},
+{.207,.501,2982,14,491},
+{.743,.515,2982,15,492},
+{.371,.262,2982,16,493},
+{.641,.182,2982,17,494},
+{.839,.694,2982,18,495}},
+u30_silenthalls_ext02={{.452,.731,2982,11,488}},
+ZHMain={{.777,.623,2982,12,489}},
+u30_xanmeeroverlook_ext={{.683,.514,2982,13,490}},
+u30_undertowcavern={{.524,.403,2982,14,491}},
+VaultDelve_EXT02={{.878,.348,2982,15,492}},
+arpeniaH={{.857,.45,2982,16,493}},
+arpeniaH2={{.857,.45,2982,16,493}},
+arpeniaL={{.857,.45,2982,16,493}},
+arpeniaL3={{.857,.45,2982,16,493}},
+u30_bloodruncave={{.536,.298,2982,17,494}},
+vunalk1={{.856,.21,2982,18,495}},
+vunalk2={{.856,.21,2982,18,495}},
+westernskryim={-- Western Skyrim
+{.269,.556,2687,5,458},
+{.62,.432,2687,6,459},
+{.316,.705,2687,7,460},
+{.67,.651,2687,8,461},
+{.243,.441,2687,9,462},
+{.505,.578,2687,10,463},
+{.75,.68,2687,11,464},
+{.368,.611,2687,13,466},
+{.117,.437,2687,14,467},
+{.745,.323,2687,15,468},
+{.485,.302,2687,17,470}},
+blackreach={
+{.912,.465,2687,1,454},
+{.165,.716,2687,2,455},
+{.671,.212,2687,3,456},
+{.535,.751,2687,4,457},
+{.587,.587,2687,12,465},
+{.767,.368,2687,16,469},
+{.083,.366,2687,18,471}},
+Gloomreach={{.648,.406,2857,6,459}},
+Gloomreach2={{.648,.406,2857,6,459}},
+Gloomreach2B={{.648,.406,2857,6,459}},
+Gloomreach2C={{.648,.406,2857,6,459}},
+Gloomreach3={{.648,.406,2857,6,459}},
+Gloomreach5={{.648,.406,2857,6,459}},
+labyrinthian={{.563,.473,2687,11,464}},
+nchuthnkarst={{.683,.601,2687,12,465}},
+chillwinddepths={{.864,.551,2687,13,466}},
+dragonhome={{.586,.611,2687,14,467}},
+frozencoast={{.357,.583,2687,15,468}},
+midnightbarrow={{.704,.405,2687,16,469}},
+shadowgreen_upper={{.452,.615,2687,17,470}},
+thescraps={{.725,.504,2687,18,471}},
+reach={
+{.469,.309,2857,1,454},
+{.821,.717,2857,2,455}},
+U28_blackreach={
+{.406,.371,2857,3,456},
+{.914,.731,2857,4,457}},
+briarrockruins_ext={{.341,.621,2857,5,458}},-- Western Skyrim (end)
 solitudecity={{.912,.832,2687,6}},
-blackreach={{.912,.465,2687,1},{.165,.716,2687,2},{.671,.212,2687,3},{.535,.751,2687,4},{.587,.587,2687,12},{.767,.368,2687,16},{.083,.366,2687,18}},
-labyrinthian={{.563,.473,2687,11}},
-nchuthnkarst={{.683,.601,2687,12}},
-chillwinddepths={{.864,.551,2687,13}},
-dragonhome={{.586,.611,2687,14}},
-frozencoast={{.357,.583,2687,15}},
-midnightbarrow={{.704,.405,2687,16}},
-shadowgreen_upper={{.452,.615,2687,17}},
-thescraps={{.725,.504,2687,18}},
 houseofembersinside={{.396,.384,2562,6}},moonlitcove01={{.759,.228,2562,5}},moonlitcove02={{.759,.228,2562,5}},moonlitcove05={{.759,.228,2562,5}},
 southernelsweyr={{.588,.243,2562,1},{.448,.551,2562,2},{.344,.567,2562,3},{.257,.32,2562,4},{.165,.619,2562,5},{.482,.307,2562,6}},senchal={{.246,.687,2562,2}},
 tombofserpents={{.12,.359,2461,18}},predatorrise={{.631,.273,2461,14}},abodeofignominy={{.75,.788,2461,15}},DesertWind={{.379,.845,2461,13}},thetangle={{.102,.613,2461,17}},thescab={{.56,.496,2461,16}},
@@ -3423,18 +3467,35 @@ u32deadlandszone={
 [26]={{.874,.464,1},{.498,.666,1},{.545,.571,1},{.68,.417,1},{.771,.41,1},{.773,.339,1},{.681,.304,1},{.457,.556,1},{.326,.527,1},{.394,.515,1},{.29,.576,1},{.249,.725,1},{.35,.687,1},{.492,.593,1},{.568,.328,1},{.55,.444,1},{.193,.561,1},{.78,.254,1}},--Oblivon portals. Provided by art1ink
 },
 u34_systreszone={--High Isle & Amenos
+[26]={{.560,.629,5},{.434,.851,5},{.835,.304,5},{.746,.336,5},{.424,.788,5},{.129,.629,5},{.580,.739,5},{.619,.339,5},{.426,.437,5},{.256,.485,5},{.233,.759,5},{.269,.865,5},{.789,.265,5},{.493,.517,5}},--Lava Lasher
 [62]={--Antiquity leads provided by Kelinmiriel for remosito
-{.394,.399, 507},--Ancient Cleaning Tools (Blending Broomstick)
-{.549,.606, 505},--Blazing Stones (Woodfire Chamber)
-{.767,.412, 499},--Clay Pot (Painted Elk Clay Pot)
-{.228,.781, 504},--Damaged Woven Strainer (Woven Straining Bowl)
-{.712,.282, 509},--Druidic Arrows (Nighthunter's Cowl)
-{.483,.632, 506},--Druidic Butcher Knife (Preparation Surface)
-{.214,.509, 503},--Olden Breton Teapot (Druidic Kettle Spout)
-{.663,.229, 501},--Rusty Food Handling Tongs (Cracked Stone Grill Tray)
-{.288,.887, 508},--Stained Water Jug (Clay Cooling Pitcher)
-{.678,.390, 500},--Textured Bowl (Druidic Pestle)
-{.356,.628, 502}},--Time-Worn Stone (Smoothed Stone Grinder)
+{.394,.399,507},--Ancient Cleaning Tools (Blending Broomstick)
+{.549,.606,505},--Blazing Stones (Woodfire Chamber)
+{.767,.412,499},--Clay Pot (Painted Elk Clay Pot)
+{.228,.781,504},--Damaged Woven Strainer (Woven Straining Bowl)
+{.712,.282,509},--Druidic Arrows (Nighthunter's Cowl)
+{.483,.632,506},--Druidic Butcher Knife (Preparation Surface)
+{.214,.509,503},--Olden Breton Teapot (Druidic Kettle Spout)
+{.663,.229,501},--Rusty Food Handling Tongs (Cracked Stone Grill Tray)
+{.288,.887,508},--Stained Water Jug (Clay Cooling Pitcher)
+{.678,.390,500},--Textured Bowl (Druidic Pestle)
+{.356,.628,502}},--Time-Worn Stone (Smoothed Stone Grinder)
+[74]={--Seeker of the Green
+{.18,.529,3298,1},--Druid Shrine near Jheury's Cove
+{.409,.56,3298,2},--Druid Shrine near Albatross Leap
+{.422,.764,3298,3},--Druid Shrine near Y'ffre's Cauldron
+{.539,.588,3298,4},--Druid Shrine near Duford Shipyards
+{.704,.368,3298,5}},--Druid Shrine near Banished Refuge
+[75]={{.448,.593,3424}},--No Regrets
+[76]={--Inventor of Adventur
+{.566,.653,3299},
+{.211,.734,3299},
+{.433,.606,3299},
+{.846,.247,3299}},
+[77]={{.504,.838,3295}},--Gonfalon Bay's Master Burglar
+},
+u34_gonfalonbaycity={
+[77]={{.233,.42,3295}},--Gonfalon Bay's Master Burglar
 },
 blackwood={
 [26]={{.373,.179,1},{.418,.317,1},{.144,.592,1},{.267,.314,1},{.385,.507,1},{.448,.617,1},{.184,.428,1},{.737,.369,1},{.644,.36,1},{.313,.616,1},{.252,.355,1},{.654,.54,1},{.747,.83,1},{.612,.442,1},{.605,.23,1},{.636,.71,1},{.533,.79,1},{.515,.26,1},{.47,.528,1},{.26,.516,1}},--Oblivon portals. Provided by art1ink
@@ -3711,7 +3772,7 @@ stormhaven={
 },
 stormhold={[45]={{.340,.284,704,8}},[32]={{.539,.455,1381,3}}},
 therift={
-[26]={{.698,.601,2},{.36,.436,2},{.617,.59,2},{.571,.292,2},{.085,.309,2},{.161,.272,2},{.345,.357,2},{.542,.307,2},{.657,.369,2},{.532,.613,2},{.740,.630,2},{.768,.686,2},{.158,.401,2},{.138,.469,2}},
+[26]={{.698,.601,2},{.36,.436,2},{.617,.59,2},{.571,.292,2},{.085,.309,2},{.161,.272,2},{.345,.357,2},{.542,.307,2},{.657,.369,2},{.532,.613,2},{.740,.630,2},{.768,.686,2},{.158,.401,2},{.138,.469,2},{.502,.538,2}},
 [34]={{.145,.366},{.207,.429},{.350,.474},{.508,.566},{.595,.332}},
 [33]={{.478,.465,872,12},{.493,.360,872,12},{.712,.671,872,12},{.740,.632,872,12}},
 [45]={{.682,.486,704,14}},
@@ -3772,7 +3833,7 @@ southernelsweyr={
 {.173,.623,7213},	--[7213] Gloves
 },
 --]]
-local AchievementsId={[3080]=67,[3081]=64,[3082]=65,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
+local AchievementsId={[3224]=75,[3298]=74,[3299]=76,[3295]=77,[3080]=67,[3081]=64,[3082]=65,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
 local ZoneAchievement={
 auridon=1,
 grahtwood=2,
@@ -3955,6 +4016,7 @@ redfurtradingpost={{.773,.771,2},{.147,.697,4},{.158,.345,2},{.18,.455,2},{.199,
 reach={{.342,.176,2},{.361,.177,2},{.374,.174,2},{.397,.172,2},{.437,.222,4},{.439,.225,4},{.442,.225,4},{.441,.22,4},{.396,.346,4},{.391,.353,4},{.385,.36,4},{.384,.368,4},{.584,.38,2},{.562,.4,2},{.54,.424,2},{.516,.448,2},{.508,.457,2},{.504,.584,2},{.481,.611,2},{.397,.636,2},{.354,.648,2},{.348,.676,2},{.546,.513,2},{.544,.502,2},{.537,.488,2},{.753,.684,2},{.820,.805,2},{.548,.594,2},{.486,.531,2},{.472,.521,2},{.478,.489,2},{.373,.513,4},{.444,.628,2},{.794,.688,2},{.823,.687,2},{.46,.483,2},{.431,.478,2},{.41,.479,2},{.379,.49,2},{.372,.512,4},{.372,.522,4},{.372,.528,4},{.355,.533,4},{.364,.52,4},{.358,.52,4},{.363,.539,4},{.37,.533,4},{.319,.521,2},{.571,.604,2},{.601,.625,2},{.647,.644,2},{.672,.647,2},{.736,.669,2},{.849,.676,2},{.817,.755,2},{.828,.784,2},{.809,.783,2}},
 riften={{.148,.281,1},{.55,.5,4},{.197,.531,4},{.231,.402,1},{.273,.436,1},{.412,.585,4},{.549,.696,4},{.643,.541,4}},
 rivenspire={{.21,.653,2},{.236,.635,2},{.244,.628,2},{.277,.609,2},{.277,.589,2},{.282,.577,2},{.283,.542,2},{.288,.637,2},{.297,.573,2},{.312,.517,2},{.324,.686,4},{.325,.506,2},{.328,.693,4},{.373,.303,3},{.388,.312,3},{.41,.292,3},{.421,.306,3},{.439,.3,3},{.459,.308,3},{.471,.297,3},{.588,.46,4},{.616,.505,4},{.625,.51,4},{.637,.506,4},{.651,.42,4},{.66,.408,4},{.677,.169,3},{.678,.393,2},{.683,.381,2},{.686,.165,3},{.69,.37,2},{.698,.138,3},{.704,.375,2},{.704,.107,3},{.708,.149,3},{.714,.141,3},{.724,.364,2},{.727,.152,3},{.729,.435,2},{.729,.335,2},{.731,.364,2},{.737,.43,2},{.739,.415,2},{.741,.383,2},{.752,.338,2},{.766,.32,2},{.779,.125,3},{.779,.307,2},{.79,.111,3},{.793,.141,3},{.8,.309,3},{.801,.32,3},{.814,.156,3},{.817,.324,3},{.817,.302,3},{.834,.151,3},{.836,.346,3},{.842,.285,3},{.843,.336,3},{.845,.164,3},{.85,.294,3},{.851,.327,3},{.854,.222,3},{.856,.264,3},{.857,.181,3},{.86,.245,3},{.861,.19,3},{.862,.303,3},{.863,.205,3}},
+sadrithmora={{.187,.372,3}},
 sentinel={{.033,.474,3},{.041,.429,3},{.082,.39,3},{.115,.375,3},{.145,.372,3},{.151,.413,3},{.222,.425,3},{.239,.242,3},{.256,.423,3},{.302,.414,3},{.311,.229,3},{.398,.155,3},{.468,.148,3},{.518,.017,3},{.556,.172,3},{.655,.25,3},{.738,.308,3},{.782,.145,3},{.785,.283,3},{.792,.143,3},{.81,.097,3},{.831,.427,4},{.851,.215,3},{.956,.18,3}},
 shadowfen={{.155,.771,1},{.153,.794,1},{.107,.813,1},{.153,.821,1},{.169,.587,1},{.176,.58,2},{.184,.578,4},{.228,.29,2},{.279,.724,4},{.299,.493,2},{.304,.323,4},{.304,.323,4},{.305,.149,2},{.321,.273,1},{.336,.636,4},{.38,.821,4},{.382,.383,4},{.402,.178,2},{.418,.389,4},{.458,.584,4},{.458,.584,4},{.458,.826,4},{.474,.186,2},{.497,.376,4},{.5,.836,4},{.524,.526,1},{.543,.512,1},{.546,.526,2},{.56,.27,2},{.571,.73,1},{.577,.332,2},{.601,.734,1},{.606,.761,1},{.644,.489,4},{.649,.711,4},{.691,.814,4},{.765,.83,4},{.775,.455,2},{.82,.384,2},{.832,.764,4},{.834,.459,2},{.838,.512,2},{.856,.697,2},{.879,.74,2}},
 skywatch={{.458,.842,3}},
@@ -3970,6 +4032,8 @@ u34_systreszone={{.359,.409,1},{.364,.413,1},{.514,.652,1},{.204,.497,1},{.196,.
 u32deadlandszone={{.581,.485,1},{.694,.363,1},{.669,.382,1},{.647,.377,1},{.607,.381,1},{.619,.398,1},{.504,.368,1},{.504,.366,1},{.5,.362,1},{.615,.384,1},{.701,.377,1},{.693,.395,1},{.706,.396,1},{.778,.415,1},{.838,.281,1},{.821,.338,1},{.753,.367,1},{.828,.294,1},{.889,.462,1}},
 U28_blackreach={{.381,.497,2},{.681,.365,1},{.849,.724,1},{.797,.721,1},{.713,.669,1},{.248,.688,2},{.210,.699,1},{.156,.714,1},{.134,.658,1},{.094,.571,1},{.295,.262,2},{.335,.298,2},{.334,.326,2},{.379,.381,2},{.425,.436,1},{.432,.446,1},{.381,.404,1},{.377,.431,1},{.375,.453,2},{.359,.525,2},{.366,.564,2},{.351,.571,2},{.346,.606,2},{.27,.668,2},{.249,.687,1},{.196,.685,1},{.1,.596,1},{.759,.668,1},{.798,.69,1},{.844,.682,1},{.853,.655,1},{.885,.645,1},{.898,.631,1},{.877,.615,1},{.83,.769,1},{.882,.703,1},{.701,.363,1}},
 u30_leyawiincity={{.625,.295,3}},
+vvardenfell={{.83,.466,3},{.88,.492,3},{.121,.311,3},{.130,.284,3},{.139,.344,3},{.155,.367,3},{.166,.375,3},{.169,.396,3},{.169,.415,3},{.193,.430,3},{.206,.404,3},{.218,.432,3},{.220,.300,2},{.221,.247,3},{.224,.476,3},{.231,.452,3},{.232,.508,3},{.248,.554,3},{.252,.243,4},{.252,.529,3},{.257,.225,3},{.260,.615,3},{.264,.559,1},{.268,.645,3},{.273,.315,4},{.274,.566,3},{.276,.310,4},{.278,.211,3},{.288,.517,1},{.290,.693,1},{.291,.531,1},{.291,.648,3},{.292,.554,1},{.297,.731,1},{.300,.639,1},{.302,.645,1},{.305,.530,1},{.305,.720,1},{.308,.757,1},{.319,.649,1},{.324,.558,1},{.325,.773,3},{.326,.194,3},{.329,.697,1},{.347,.189,3},{.365,.793,3},{.376,.193,3},{.384,.826,3},{.389,.781,1},{.396,.618,4},{.406,.608,4},{.409,.595,4},{.409,.623,4},{.414,.614,4},{.421,.736,4},{.432,.740,4},{.436,.836,3},{.443,.745,4},{.446,.820,1},{.459,.208,3},{.478,.229,3},{.484,.827,3},{.488,.791,2},{.494,.720,4},{.496,.230,3},{.514,.226,3},{.527,.654,4},{.531,.225,3},{.541,.661,4},{.555,.250,3},{.557,.854,3},{.703,.303,2},{.727,.324,2},{.735,.320,2},{.736,.332,2},{.750,.322,2},{.752,.883,3},{.758,.322,2},{.758,.383,2},{.767,.379,2},{.767,.926,3},{.773,.386,2},{.783,.376,3},{.786,.342,3},{.804,.594,3},{.814,.659,4},{.818,.496,3},{.818,.673,4},{.819,.657,4},{.822,.679,4},{.876,.452,3},{.885,.596,3},{.885,.753,3},{.887,.616,3},{.908,.518,3}},
+sadrithmora={{.185,.368,3},{.187,.372,3}},
 velynharbor={{.226,.616,3},{.247,.687,3},{.266,.38,3},{.284,.789,3},{.429,.237,3},{.482,.145,1},{.505,.543,3},{.511,.366,3},{.555,.288,1},{.646,.097,1},{.733,.238,3},{.804,.191,3}},
 villageofthelost={{.199,.467,1},{.213,.528,1},{.355,.275,1},{.388,.764,1},{.42,.635,1},{.453,.472,1},{.771,.396,1}},
 vulkhelguard={{.356,.714,3},{.363,.704,3},{.497,.705,3},{.572,.646,3},{.671,.623,3},{.784,.771,3},{.838,.732,3}},
@@ -4004,12 +4068,13 @@ local FishingZones={
 	--DLC
 	[346]=1186,--Imperial City
 	[379]=1340,--Wrothgar
-	[441]=1351,--Hew's Bane
-	[447]=1431,--Gold Coast
-	[466]=1882,--Vvardenfell
+	[442]=1351,--Hew's Bane
+	[448]=1431,--Gold Coast
+	[467]=1882,--Vvardenfell
 	[589]=2027,--Clockwork City
-	[615]=2191,--Summerset
-	[631]=2240,--Arteum
+	[590]=2027,--Clockwork City Brass Fortress
+	[616]=2191,--Summerset
+	[632]=2240,--Arteum
 	[407]=2295,--Murkmire
 	[681]=2412,--Northern Elsweyr
 	[720]=2566,--Southern Elsweyr
@@ -4025,14 +4090,14 @@ local FishingZones={
 	hewsbane=1351,
 	goldcoast=1431,anvilcity=1431,kvatchcity=1431,
 	vvardenfell=1882,
-	clockwork=2027,
+	clockwork=2027,brassfortress=2027,
 	summerset=2191,lillandrill=2191,
 	artaeum=2240,
 	blackreach=2655,
 	U28_blackreach=2861
 }
 local FishingAchievements={[471]=true,[472]=true,[473]=true,[474]=true,[475]=true,[477]=true,[478]=true,[479]=true,[480]=true,[481]=true,[483]=true,[484]=true,[485]=true,[486]=true,[487]=true,[489]=true,[490]=true,[491]=true,[492]=true,[493]=true,[916]=true,[1186]=true,[1339]=true,[1340]=true,[1351]=true,[1431]=true,[1882]=true,[2191]=true,[2240]=true,[2295]=true,[2412]=true,[2566]=true,[2655]=true,[2861]=true,[2981]=true,[3144]=true}
-local FishingBugFix={[473]={[3]="River"},[2027]={[8]="Oily"}}
+local FishingBugFix={[473]={[3]="River"},[2027]={[8]="Oily"},[472]={[1]="Foul"}}
 local Volendrung={ava_whole_0={
 --/script PingMap(MAP_PIN_TYPE_PLAYER_WAYPOINT, MAP_TYPE_LOCATION_CENTERED, .483,.22)
 --ALLIANCE_ALDMERI_DOMINION
@@ -4269,11 +4334,15 @@ local CustomPins={	--Types
 		[73]={name="pinType_Trove_Scamp",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_ic_treasurescamp.dds"},
 		},
 	[26]={name="pinType_Portals",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.26},
-	[27]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds",
-	},
+	[27]={section=true,name="pinType_High Isle",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_highisle_up.dds",
+		[74]={name="pinType_Seeker_of_the_Green",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds"},
+		[75]={name="pinType_No_Regrets",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/u34_flavor5_drunkedleap.dds"},
+		[76]={name="pinType_Inventor_of_Adventure",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_rds.dds"},
+		[77]={name="pinType_Gonfalon_Bays_Master_Burglar",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor1_lockbox.dds"},
+		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
-local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true,[26]=true}
+local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true,[26]=true,[27]=true}
 local PinsImperial={[3]=true,[4]=true,[5]=true,[7]=true,[8]=true,[25]=true}
 --	/script local name,_,_,icon=GetAchievementInfo(3080) StartChatInput(icon)
 --	/script local name,_,_,icon=GetAchievementInfo(2759) StartChatInput(icon)
@@ -4529,7 +4598,18 @@ local MapPinCallback={
 			end
 		end
 	end,
-    [26]=function(i,subzone)--Portals
+	[66]=function(i,subzone)--Blackwood random encounters
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Random encounter"},pinData[1],pinData[2])
+				end
+			end
+		end
+	end,
+	[26]=function(i,subzone)--Portals
         local mapData=Achievements[subzone]
         if mapData then
             mapData=mapData[i]
@@ -4543,22 +4623,13 @@ local MapPinCallback={
                         PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Celestial Rift"},pinData[1],pinData[2])
 					elseif pinData[3]==4 then
                         PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Shadow Fissures"},pinData[1],pinData[2])
+					elseif pinData[3]==5 then
+                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Lava Lasher"},pinData[1],pinData[2])
                     end
                 end
             end
         end
     end,
-	[66]=function(i,subzone)--Blackwood random encounters
-		local mapData=Achievements[subzone]
-		if mapData then
-			mapData=mapData[i]
-			if mapData then
-				for i1,pinData in pairs(mapData) do
-					PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Random encounter"},pinData[1],pinData[2])
-				end
-			end
-		end
-	end,
 }
 
 local function MapPinAddCallback(i)
@@ -5123,7 +5194,8 @@ local function AddPinFilter(i,pinCheckboxText)
 			tooltipText=zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Celestial Rifts\n"
 			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Dark Fissures\n"
 			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Oblivion Portals\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Shadow Fissures"
+			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Shadow Fissures\n"
+			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Lava Lasher"
 		elseif CustomPins[i].name=="pinType_Clockwork_City" then
 			tooltipText=function()
 				local text=""
@@ -5352,7 +5424,7 @@ local function OnLoad(eventCode,addonName)
 		return id
 	end
 
-	for i=1,26 do
+	for i=1,27 do
 		local filter=CustomPins[i]
 		if filter then
 			if filter.section then
