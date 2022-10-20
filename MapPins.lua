@@ -1,4 +1,92 @@
 local AddonName="MapPins"
+local Localization={
+	en={
+		--Water
+		Lake="Lake",Foul="Foul",River="River",Salt="Salt",Oily="Oily",Mystic="Mystic",Running="Running",
+		--Portals
+		Portals="Portals",Celestial_Rifts="Celestial rifts",Dark_Fissures="Dark fissures",Oblivion_Portals="Oblivion portals",Shadow_Fissures="Shadow fissures",Lava_Lashers="Lava lashers",
+		--Filters
+		Delve_bosses="Delve bosses",Delve_bosses_done="Delve bosses done",
+		Skyshards="Skyshards",Skyshards_done="Skyshards done",
+		Lore_books="Lore books",Lore_books_done="Lore books done",
+		Treasure_Maps="Treasure maps",
+		Treasure_Chests="Treasure chests",
+		Unknown_POI="Unknown POI",
+		Undaunted="Undaunted",
+		Orsinium="Orsinium",
+		Thieves_guild="Thieves guild",
+		Morrowind="Morrowind",
+		Summerset="Summerset",
+		Time_Rifts="Time Rifts",
+		Shrines="Shrines",
+		Fishing_Nodes="Fishing nodes",
+		Clockwork_City="Clockwork City",
+		Murkmire="Murkmire",
+		Elsweyr="Elsweyr",
+		Volendrung="Volendrung",
+		Greymoor="Greymoor",
+		Antiquities="Antiquities", Antiquity_Leads="Antiquity leads",
+		Blackwood="Blackwood",
+		Imperial_City="Imperial City",
+		IC_Bosses="Bosses",
+		IC_Respawns="Respawns",
+		Cunning_Scamp="Cunning Scamp",
+		Trove_Scamp="Trove Scamp",
+		High_Isle="High Isle",
+		World_achievements="World achievements",
+		Orsinium_world_event="Random encounters",
+		Summerset_world_event="Random encounters",
+		Random_Encounters="Random encounters",
+		},
+	ru={
+		--Water
+		Lake="озерная вода",Foul="сточная вода",River="речная вода",Salt="морская вода",Oily="маслянистая вода",Mystic="мистическая вода",Running="речная вода",
+		--Portals
+		Portals="Порталы",Celestial_Rifts="Небесные разломы",Dark_Fissures="Темные трещины",Oblivion_Portals="Порталы Обливиона",Shadow_Fissures="Теневые трещины",Lava_Lashers="Лавовые запруды",
+		--Filters
+		Delve_bosses="Босы подземелий",Delve_bosses_done="Босы подземелий (выполнено)",
+		Skyshards="Небесные осколки",Skyshards_done="Небесные осколки (выполнено)",
+		Lore_books="Книги",Lore_books_done="Книги (выполнено)",
+		Treasure_Maps="Карты сокровищ",
+		Treasure_Chests="Сундуки",
+		Unknown_POI="Неизведанные места",
+		Undaunted="Неустрашимые",
+		Orsinium="Орсиниум",
+		Thieves_guild="Гильдия воров",
+		Morrowind="Моровинд",
+		Summerset="Саммерсет",
+		Time_Rifts="Временные бреши",
+		Shrines="Алтари",
+		Fishing_Nodes="Рыбалка",
+		Clockwork_City="Заводной город",
+		Murkmire="Муркмайр",
+		Elsweyr="Эльсвейр",
+		Volendrung="Волендранг",
+		Greymoor="Грэймур",
+		Antiquities="Древности", Antiquity_Leads="Подскаски древностей",
+		Blackwood="Блэквуд",
+		Imperial_City="Имперский город",
+		IC_Bosses="Босы",
+		IC_Respawns="Места возрождений",
+		Cunning_Scamp="Хитрые скампы",
+		Trove_Scamp="Рыщущие скампы",
+		High_Isle="Высокий Остров",
+		World_achievements="Случайные встречи",
+		Orsinium_world_event="Случайные встречи",
+		Summerset_world_event="Случайные встречи",
+		Random_Encounters="Случайные встречи",
+		},
+	de={
+		Lake="Seewasser",Foul="Brackwasser",River="Flusswasser",Salt="Salzwasser",Oily="Ölwasser",Mystic="Mythenwasser",Running="Fließgewässer",--Water
+		},
+	fr={
+		Lake="Lac",Foul="Sale",River="Rivière",Salt="Mer",Oily="Huile",Mystic="Mystique",Running="courante",--Water
+		},
+	}
+local lang=GetCVar("language.2") if not Localization[lang] then lang="en" end
+local function Loc(string)
+	return Localization[lang][string] or Localization[lang]["en"] or string
+end
 local Bosses={
 --Firesong Provided by art1ink.
 u36_embervine={{.252,.304,3489}},--Embervine Explorer
@@ -4164,7 +4252,7 @@ predatorrise={[54]={{.592,.38,2463,6}}},
 murkmire={
 [48]={{.391,.557,2320,1},{.753,.347,2320,2},{.544,.271,2320,3},{.541,.787,2320,4},{.349,.255,2320,5},{.266,.584,2320,6},{.878,.802,2320,7},{.66,.67,2320,8},{.704,.34,2320,9},{.144,.296,2320,10},{.461,.419,2320,11},{.722,.28,2320,12}},
 [49]={{.745,.291,2341,1},{.395,.304,2341,2},{.77,.726,2341,3},{.755,.554,2341,4},{.191,.436,2341,5},},
-[50]={{.855,.605,2320},{.703,.603,2355,2},{.275,.438,2355,3}},
+[50]={{.855,.605,2355},{.703,.603,2355,2},{.275,.438,2355,3}},
 [51]={{.318,.514,2330},{.426,.597,2330},{.4,.428,2330},{.518,.424,2330},{.65,.629,2330},{.631,.717,2330},{.499,.633,2330},{.352,.382,2330},{.704,.458,2330},{.418,.404,2330}},
 [52]={{.327,.373,2358},{.75,.646,2358},{.92,.802,2358},{.741,.45,2358},{.578,.598,2358},{.382,.527,2358},{.442,.464,2358}},
 [53]={{.864,.635,2357,1},{.556,.306,2357,2},{.444,.501,2357,3},{.219,.631,2357,4}},
@@ -4722,13 +4810,6 @@ local AllianceColors={
 [ALLIANCE_EBONHEART_PACT]={1,.2,.2,.8},
 [ALLIANCE_DAGGERFALL_COVENANT]={.2,.2,1,.8}
 }
-local Localization={
-	en={Lake="Lake",Foul="Foul",River="River",Salt="Salt",Oily="Oily",Mystic="Mystic",Running="Running"},
-	ru={Lake="озерная вода",Foul="сточная вода",River="речная вода",Salt="морская вода",Oily="маслянистая вода",Mystic="мистическая вода",Running="речная вода"},
-	de={Lake="Seewasser",Foul="Brackwasser",River="Flusswasser",Salt="Salzwasser",Oily="Ölwasser",Mystic="Mythenwasser",Running="Fließgewässer"},
-	fr={Lake="Lac",Foul="Sale",River="Rivière",Salt="Mer",Oily="Huile",Mystic="Mystique",Running="courante"},
-	}
-local lang=GetCVar("language.2") if not Localization[lang] then lang="en" end
 local PrecursorItems={
 [129900]=1,	--Left arm
 [129901]=2,	--Right arm
@@ -4820,83 +4901,83 @@ local CustomPins={	--Types
 	[7]={name="pinType_Treasure_Chests",done=false,id={},pin={},maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Chest_1.dds",k=1.1,tint=ZO_ColorDef:New(1,1,1,.8)},	--,tint=ZO_ColorDef:New(.8,.8,.5,.9)
 	[8]={name="pinType_Unknown_POI",done=false,id={},pin={},maxDistance=0.05,level=10,texture=function(self) return self.m_PinTag.texture end,def_texture="/esoui/art/icons/poi/poi_areaofinterest_incomplete.dds",size=40,tint=ZO_ColorDef:New(.7,.7,.7,.6)},
 	[9]={section=true,name="Undaunted",id={},pin={},texture="/esoui/art/icons/crafting_beer_003.dds",
-		[45]={name="pinType_This_One's_On_Me",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/crafting_beer_003.dds",k=1},
-		[46]={name="pinType_Undaunted_Rescuer",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/ability_warrior_007.dds"}
+		[45]={name="pinType_This_One's_On_Me",done=false,ach=704,maxDistance=0.05,level=101,texture="/esoui/art/icons/crafting_beer_003.dds",k=1},
+		[46]={name="pinType_Undaunted_Rescuer",done=false,ach=1082,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/ability_warrior_007.dds"}
 		},
-	[10]={section=true,name="World achievements",id={},pin={},texture="/esoui/art/progression/progression_indexicon_world_up.dds",
-		[33]={name="pinType_I_like_M'aiq",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_066.dds",k=1},
+	[10]={section=true,name="World_achievements",id={},pin={},texture="/esoui/art/progression/progression_indexicon_world_up.dds",
+		[33]={name="pinType_I_like_M'aiq",done=false,ach=872,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_066.dds",k=1},
 		[34]={name="pinType_Lightbringer",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25},
-		[40]={name="pinType_Peacemaker",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/ability_healer_017.dds",k=1},
+		[40]={name="pinType_Peacemaker",done=false,ach=716,maxDistance=0.05,level=101,texture="/esoui/art/icons/ability_healer_017.dds",k=1},
 		},
 	[11]={section=true,name="Orsinium",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_wrothgar_up.dds",	--"/esoui/art/icons/store_orsiniumdlc_collectable.dds",
-		[36]={name="pinType_One_Last_Brawl",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_010.dds",k=1},
+		[36]={name="pinType_One_Last_Brawl",done=false,ach=1247,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_010.dds",k=1},
 		[37]={name="pinType_Orsinium_world_event",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_wrothgar_024.dds"},
-		[38]={name="pinType_Wrothgar_Relic_Hunter",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_008.dds",k=1},
+		[38]={name="pinType_Wrothgar_Relic_Hunter",done=false,ach=1250,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_wrothgar_008.dds",k=1},
 		},
-	[12]={section=true,name="Thieves guild",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_thievesguild_up.dds",	--"/esoui/art/icons/store_thievesguilddlc_collectable.dds",
-		[32]={name="pinType_A_Cutpurse_Above",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_thievesguild_044.dds",k=1},
-		[39]={name="pinType_Breaking_And_Entering",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/perks_theives_guild_004.dds",k=1},
+	[12]={section=true,name="Thieves_guild",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_thievesguild_up.dds",	--"/esoui/art/icons/store_thievesguilddlc_collectable.dds",
+		[32]={name="pinType_A_Cutpurse_Above",done=false,ach=1379,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_thievesguild_044.dds",k=1},
+		[39]={name="pinType_Breaking_And_Entering",done=false,ach=1349,maxDistance=0.05,level=101,texture="/esoui/art/icons/perks_theives_guild_004.dds",k=1},
 		},
 	[13]={section=true,name="Morrowind",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_morrowind_up.dds",	--"/esoui/art/icons/store_morrowind_collectable.dds",
-		[30]={name="pinType_Vivec_Lessons",done=false,maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Scroll_1.dds",k=1,tint=ZO_ColorDef:New(.8,.8,.8,.8)},
-		[31]={name="pinType_Ancestral_Tombs",done=false,maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_crypt_incomplete.dds",k=1},
-		[44]={name="pinType_Pilgrim's_Path",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_vvardenfel_032.dds"},
+		[30]={name="pinType_Vivec_Lessons",done=false,ach=1824,maxDistance=0.05,level=100,texture="/"..AddonName.."/img/Scroll_1.dds",k=1,tint=ZO_ColorDef:New(.8,.8,.8,.8)},
+		[31]={name="pinType_Ancestral_Tombs",done=false,ach=1712,maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_crypt_incomplete.dds",k=1},
+		[44]={name="pinType_Pilgrim's_Path",done=false,ach=1827,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_vvardenfel_032.dds"},
 		},
 	[14]={section=true,name="Summerset",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_summerset_up.dds.dds",	--"/esoui/art/icons/store_summerset_collectable.dds",
-		[41]={name="pinType_Summerset_Relics",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/quest_strosmkai_open_treasure_chest.dds",k=1},
-		[42]={name="pinType_Message_in_Bottle",done=false,maxDistance=0.05,level=100,texture="/esoui/art/icons/crafting_stoneware_bottle_003.dds",k=1},
+		[41]={name="pinType_Summerset_Relics",done=false,ach=2099,maxDistance=0.05,level=101,texture="/esoui/art/icons/quest_strosmkai_open_treasure_chest.dds",k=1},
+		[42]={name="pinType_Message_in_Bottle",done=false,ach=2211,maxDistance=0.05,level=100,texture="/esoui/art/icons/crafting_stoneware_bottle_003.dds",k=1},
 		[43]={name="pinType_Summerset_world_event",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25,def_texture="/esoui/art/icons/achievement_su_rds_01.dds"},
 		},
 	[15]={name="pinType_Time_Rifts",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Treasure_1-2.dds",k=1.8},
 	[16]={name="pinType_Shrines",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_daedricruin_incomplete.dds",k=1.25},
 	[17]={name="pinType_Fishing_Nodes",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/crafting_fishing_merringar.dds",k=1},
 	[18]={section=true,name="pinType_Clockwork_City",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_cwc_up.dds",	--"/art/fx/texture/clockworksigil.dds",
-		[47]={name="pinType_Precursor_Maker",done=false,maxDistance=0.05,level=101,texture="/esoui/art/menubar/gamepad/gp_playermenu_icon_settings.dds",k=1,def_texture="/esoui/art/icons/achievement_update16_001.dds"},
+		[47]={name="pinType_Precursor_Maker",done=false,ach=1958,maxDistance=0.05,level=101,texture="/esoui/art/menubar/gamepad/gp_playermenu_icon_settings.dds",k=1,def_texture="/esoui/art/icons/achievement_update16_001.dds"},
 		},
-		[19]={section=true,name="pinType_Murkmire",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_murkmire_up.dds",	--"/esoui/art/icons/store_murkmiredlc_collectable.dds",
-		[48]={name="pinType_Chronic_Chronogler",done=false,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_museum.dds"},
-		[49]={name="pinType_Poems_of_Nothing",done=false,maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Scroll_1.dds",k=1},
-		[50]={name="pinType_Achievement_quests",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1},	--esoui/art/floatingmarkers/quest_icon.dds
-		[51]={name="pinType_Surreptitiously_Shadowed",done=false,maxDistance=0.05,level=111,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_shadowscale_wisdom.dds"},
-		[52]={name="pinType_Swamp_Rescuer",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_rescue_villagers.dds"},
-		[53]={name="pinType_Vine-Tongue_Traveler",done=false,maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Lorebook_1-2.dds",k=1,def_texture="/esoui/art/icons/mh_hedgeguardian_strang.dds"},
+	[19]={section=true,name="pinType_Murkmire",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_murkmire_up.dds",	--"/esoui/art/icons/store_murkmiredlc_collectable.dds",
+		[48]={name="pinType_Chronic_Chronogler",done=false,ach=2320,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_museum.dds"},
+		[49]={name="pinType_Poems_of_Nothing",done=false,ach=2341,maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Scroll_1.dds",k=1},
+		[50]={name="pinType_Achievement_quests",done=false,ach=2355,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1},	--esoui/art/floatingmarkers/quest_icon.dds
+		[51]={name="pinType_Surreptitiously_Shadowed",done=false,ach=2330,maxDistance=0.05,level=111,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_shadowscale_wisdom.dds"},
+		[52]={name="pinType_Swamp_Rescuer",done=false,ach=2358,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_murkmire_rescue_villagers.dds"},
+		[53]={name="pinType_Vine-Tongue_Traveler",done=false,ach=2357,maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Lorebook_1-2.dds",k=1,def_texture="/esoui/art/icons/mh_hedgeguardian_strang.dds"},
 		},
 	[20]={section=true,name="pinType_Elsweyr",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_elsweyr_up.dds",
-		[54]={name="pinType_Mural_Mender",done=false,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_els_museum_mural.dds"},
-		[55]={name="pinType_Pieces_of_History",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_museum_tapestry.dds"},
-		[56]={name="pinType_Theater_Critic",done=false,maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Scroll_1.dds",k=1,def_texture="/esoui/art/icons/quest_book_003.dds"},
-		[57]={name="pinType_Legacy_Slayer",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25,def_texture="/esoui/art/icons/achievement_u24_familyofpirates.dds"},
-		[58]={name="pinType_Grappling_Bow_Pathfinder",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
+		[54]={name="pinType_Mural_Mender",done=false,ach=2463,maxDistance=0.05,level=101,texture="/esoui/art/inventory/gamepad/gp_inventory_icon_craftbag_stylematerial.dds",k=1,def_texture="/esoui/art/icons/achievement_els_museum_mural.dds"},
+		[55]={name="pinType_Pieces_of_History",done=false,ach=2534,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_museum_tapestry.dds"},
+		[56]={name="pinType_Theater_Critic",done=false,ach=2619,maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Scroll_1.dds",k=1,def_texture="/esoui/art/icons/quest_book_003.dds"},
+		[57]={name="pinType_Legacy_Slayer",done=false,ach=2621,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25,def_texture="/esoui/art/icons/achievement_u24_familyofpirates.dds"},
+		[58]={name="pinType_Grappling_Bow_Pathfinder",done=false,ach=2620,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
 		},
 	[21]={name="pinType_Volendrung",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/miscellaneous/help_icon.dds",k=1.25},
 	[22]={section=true,name="pinType_Greymoor",id={},pin={},texture="/esoui/art/treeicons/tutorial_indexicon_greymoor_up.dds",
-		[59]={name="pinType_Instrumental_Triumph",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
+		[59]={name="pinType_Instrumental_Triumph",done=false,ach=2669,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_sounds_of_success.dds"},
 --		[60]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
 --		[61]={name="pinType_???",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u24_grappletreasures.dds"},
-		[68]={name="Mining_Sample_Collector",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_mine_compete.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_minerquest.dds"},
+		[68]={name="Mining_Sample_Collector",done=false,ach=2759,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_mine_compete.dds",k=1,def_texture="/esoui/art/icons/achievement_u26_skyrim_minerquest.dds"},
 		},
 	[23]={section=true,name="pinType_Antiquities",id={},pin={},texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_antiquities.dds", k=1.40,
 		[62]={name="pinType_Antiquity_Leads",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_antiquities.dds", k=1.40},
 		},
 	[24]={section=true,name="pinType_Blackwood",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_blackwood_up.dds",
-		[63]={name="pinType_Lost_in_Wilds",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor4.dds"},
-		[64]={name="pinType_Bane_of_Sul-Xan",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor2.dds"},
-		[65]={name="pinType_Most_Admired",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_rds.dds"},
+		[63]={name="pinType_Lost_in_Wilds",done=false,ach=3083,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor4.dds"},
+		[64]={name="pinType_Bane_of_Sul-Xan",done=false,ach=3081,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor2.dds"},
+		[65]={name="pinType_Most_Admired",done=false,ach=3082,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_rds.dds"},
 		[66]={name="pinType_Random_Encounters",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1},
-		[67]={name="pinType_Leyawiin_Master_Burglar",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor1.dds"},
+		[67]={name="pinType_Leyawiin_Master_Burglar",done=false,ach=3080,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u30_flavor1.dds"},
 		},
 	[25]={section=true,name="pinType_Imperial_City",id={},pin={},texture="/esoui/art/compass/ava_imperialcity_neutral.dds",
-		[70]={name="pinType_Bosses",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},
-		[71]={name="pinType_Respawns",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1},
+		[70]={name="pinType_IC_Bosses",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_groupboss_incomplete.dds",k=1.25},
+		[71]={name="pinType_IC_Respawns",done=false,maxDistance=0.05,level=101,texture="/esoui/art/death/death_soulreservoir_icon.dds",k=1},
 		[72]={name="pinType_Cunning_Scamp",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_ic_telvarscamp.dds"},
 		[73]={name="pinType_Trove_Scamp",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_ic_treasurescamp.dds"},
 		},
 	[26]={name="pinType_Portals",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.26},
-	[27]={section=true,name="pinType_High Isle",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_highisle_up.dds",
-		[74]={name="pinType_Seeker_of_the_Green",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds"},
-		[75]={name="pinType_No_Regrets",done=false,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/u34_flavor5_drunkedleap.dds"},
-		[76]={name="pinType_Inventor_of_Adventure",done=false,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_rds.dds"},
-		[77]={name="pinType_Gonfalon_Bays_Master_Burglar",done=false,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor1_lockbox.dds"},
+	[27]={section=true,name="pinType_High_Isle",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_highisle_up.dds",
+		[74]={name="pinType_Seeker_of_the_Green",done=false,ach=3298,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds"},
+		[75]={name="pinType_No_Regrets",done=false,ach=3424,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/u34_flavor5_drunkedleap.dds"},
+		[76]={name="pinType_Inventor_of_Adventure",done=false,ach=3299,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_rds.dds"},
+		[77]={name="pinType_Gonfalon_Bays_Master_Burglar",done=false,ach=3295,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor1_lockbox.dds"},
 		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
@@ -4943,7 +5024,7 @@ local function GetFishingAchievement(subzone)
 				total[ FishingBugFix[id][i] ]=total[ FishingBugFix[id][i] ]+b-a
 			else
 				for water in pairs(total) do
-					if string.match(AchName,"("..Localization[lang][water]..")")~=nil then
+					if string.match(AchName,"("..Loc(water)..")")~=nil then
 						total[water]=total[water]+b-a
 					end
 				end
@@ -5704,7 +5785,7 @@ local function RegisterEvents()
 --	EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_QUEST_ADDED, OnQuestAdded)
 end
 
-local function AddPinFilter(i,pinCheckboxText)
+local function AddPinFilter(i)
 	local function SetEnabled(control,state,init)
 		for pin,id in pairs(CustomPins[i].id) do
 			local needsRefresh=PinManager:IsCustomPinEnabled(id)~=state
@@ -5724,35 +5805,28 @@ local function AddPinFilter(i,pinCheckboxText)
 
 	local function AddCheckbox(panel)
 		local checkbox=panel.checkBoxPool:AcquireObject()
-		ZO_CheckButton_SetLabelText(checkbox,pinCheckboxText)
+		local icon=zo_iconFormat((CustomPins[i].def_texture and CustomPins[i].def_texture or CustomPins[i].texture),24,24)
+		local name=CustomPins[i].ach and GetAchievementInfo(CustomPins[i].ach) or Loc(string.gsub(CustomPins[i].name,"pinType_",""))
+		ZO_CheckButton_SetLabelText(checkbox,icon.." "..name)
 		panel:AnchorControl(checkbox)
 		local tooltipText=""
-		for _,pin in pairs(CustomPins[i].pin) do
-			if tooltipText~="" then tooltipText=tooltipText.."\n" end
-			if CustomPins[pin].name=="pinType_Lightbringer" then
-				tooltipText=tooltipText
-				..zo_iconFormat("/esoui/art/icons/perks_mages_guild_001.dds",24,24).." Lightbringer\n"
-				..zo_iconFormat("/esoui/art/icons/perks_mages_guild_004.dds",24,24).." Give to Poor\n"
-				..zo_iconFormat("/esoui/art/icons/item_generic_coinbag.dds",24,24).." Crime Pays"
-			else
-				tooltipText=tooltipText..zo_iconFormat((CustomPins[pin].def_texture and CustomPins[pin].def_texture or CustomPins[pin].texture),24,24).." "..string.gsub(string.gsub(CustomPins[pin].name,"pinType_",""),"_"," ")
-			end
-		end
 		if CustomPins[i].name=="pinType_Unknown_POI" then
-			tooltipText=zo_iconFormat("/esoui/art/icons/poi/poi_areaofinterest_incomplete.dds",24,24).." Unknown POI\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_crafting_incomplete.dds",24,24).." Crafting station description\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_mundus_incomplete.dds",24,24).." Mundus description"
+			tooltipText=zo_iconFormat("/esoui/art/icons/poi/poi_areaofinterest_incomplete.dds",24,24).." "..GetString(SI_GAMEPAD_PLAYER_PROGERSS_BAR_UNKNOWN_ZONE).."\n"	--Unknown POI
+			..zo_iconFormat("/esoui/art/icons/poi/poi_crafting_incomplete.dds",24,24).." "..GetString(SI_SPECIALIZEDITEMTYPE213).."\n"	--Crafting station description
+			..zo_iconFormat("/esoui/art/icons/poi/poi_mundus_incomplete.dds",24,24).." "..GetString(SI_ZONECOMPLETIONTYPE12)	--Mundus description
 		elseif CustomPins[i].name=="pinType_Shrines" then
-			tooltipText=zo_iconFormat(ShrineIcon[1],24,24).." Vampire\n"..zo_iconFormat(ShrineIcon[2],24,24).." Werewolf"
+			tooltipText=zo_iconFormat(ShrineIcon[1],24,24).." "..GetString(SI_MONSTERSOCIALCLASS42).."\n"..zo_iconFormat(ShrineIcon[2],24,24).." "..GetString(SI_MONSTERSOCIALCLASS45)	--Vampire, Werewolf
 		elseif CustomPins[i].name=="pinType_Fishing_Nodes" then
-			tooltipText=zo_iconFormat(FishIcon[1],24,24).." Foul\n"..zo_iconFormat(FishIcon[2],24,24).." River\n"..zo_iconFormat(FishIcon[3],24,24).." Salt\n"..zo_iconFormat(FishIcon[4],24,24).." Lake"
-
+			tooltipText=zo_iconFormat(FishIcon[1],24,24).." "..Loc("Foul").."\n"
+			..zo_iconFormat(FishIcon[2],24,24).." "..Loc("River").."\n"
+			..zo_iconFormat(FishIcon[3],24,24).." "..Loc("Salt").."\n"
+			..zo_iconFormat(FishIcon[4],24,24).." "..Loc("Lake")
 		elseif CustomPins[i].name=="pinType_Portals" then
-			tooltipText=zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Celestial Rifts\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Dark Fissures\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Oblivion Portals\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Shadow Fissures\n"
-			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." Lava Lasher"
+			tooltipText=zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Celestial_Rifts").."\n"
+			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Dark_Fissures").."\n"
+			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Oblivion_Portals").."\n"
+			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Shadow_Fissures").."\n"
+			..zo_iconFormat("/esoui/art/icons/poi/poi_portal_complete.dds",24,24).." "..Loc("Lava_Lashers")
 		elseif CustomPins[i].name=="pinType_Clockwork_City" then
 			tooltipText=function()
 				local text=""
@@ -5762,8 +5836,8 @@ local function AddPinFilter(i,pinCheckboxText)
 					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
 					text=text..info..data.desc
 				end
-				return zo_iconFormat(CustomPins[47].def_texture,24,24).." "..string.gsub(string.gsub(CustomPins[47].name,"pinType_",""),"_"," ")
-					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t"
+				return zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(1958))
+--					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t"
 					..text
 			end
 		elseif CustomPins[i].name=="pinType_Greymoor" then
@@ -5782,13 +5856,28 @@ local function AddPinFilter(i,pinCheckboxText)
 					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
 					text2=text2..info..data.desc
 				end
-				return zo_iconFormat((CustomPins[68].def_texture and CustomPins[68].def_texture or CustomPins[68].texture),24,24).." "..string.gsub(string.gsub(CustomPins[68].name,"pinType_",""),"_"," ")
+				return zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(CustomPins[68].ach))
 					..text1
 					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t\n"
-					..zo_iconFormat(CustomPins[59].def_texture,24,24).." "..string.gsub(string.gsub(CustomPins[59].name,"pinType_",""),"_"," ")
+					..zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(CustomPins[59].ach))
 					..text2
 			end
+		else
+			for _,pin in pairs(CustomPins[i].pin) do
+				if tooltipText~="" then tooltipText=tooltipText.."\n" end
+				if CustomPins[pin].name=="pinType_Lightbringer" then
+					tooltipText=tooltipText
+					..zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(873))--Lightbringer
+					..zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(871))--Give to Poor
+					..zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(869))--Crime Pays
+				else
+					local name=CustomPins[pin].ach and GetAchievementInfo(CustomPins[pin].ach) or Loc(string.gsub(CustomPins[pin].name,"pinType_",""))
+					tooltipText=tooltipText..zo_iconFormat((CustomPins[pin].def_texture and CustomPins[pin].def_texture or CustomPins[pin].texture),24,24).." "
+					..name	--string.gsub(name,"_"," ")
+				end
+			end
 		end
+
 		if tooltipText~="" then
 			checkbox:SetHandler("OnMouseEnter", function(self) ZO_Tooltips_ShowTextTooltip(self, LEFT, type(tooltipText)=="string" and tooltipText or tooltipText()) end)
 			checkbox:SetHandler("OnMouseExit", ZO_Tooltips_HideTextTooltip)
@@ -5844,10 +5933,10 @@ local PinTooltipCreator={
 			end
 		elseif pinTag[1]==34 then	--Lightbringer
 			icon=CustomPins[34].texture
-			name="achievements"
-			desc=zo_iconFormat("/esoui/art/icons/perks_mages_guild_001.dds",24,24).." Lightbringer\n"
-			..zo_iconFormat("/esoui/art/icons/perks_mages_guild_004.dds",24,24).." Give to Poor\n"
-			..zo_iconFormat("/esoui/art/icons/item_generic_coinbag.dds",24,24).." Crime Pays"
+			name=GetString(SI_JOURNAL_MENU_ACHIEVEMENTS) or "Achievements"
+			desc=zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(873))--Lightbringer
+			..zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(871))--Give to Poor
+			..zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(869))--Crime Pays
 		elseif pinTag[1]==62 then
 			icon=CustomPins[62].texture
 			name=pinTag.name
@@ -5997,7 +6086,7 @@ local function OnLoad(eventCode,addonName)
 			else
 				local id=AddPin(i,filter) filter.id[i]=id PinId[i]=id
 			end
-			AddPinFilter(i,zo_iconFormat((filter.def_texture and filter.def_texture or filter.texture),24,24).." "..string.gsub(string.gsub(filter.name,"pinType_",""),"_"," "))
+			AddPinFilter(i)
 		end
 	end
 
