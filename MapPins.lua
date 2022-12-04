@@ -1,3 +1,11 @@
+--MapPins - The Elder Scrolls Online addon by Hoft, active support of art1ink and many players that helps with a new pins and localizations.
+--Adds additional pins on your ingame map. Was made to work the fast as posible and with minimal memory usage.
+--Supports CustomCompassPins, that can be installed separately.
+--Apologize for the "one file" format. This was made to use all data and functions as local (stupid views of the author to safety and memory usage).
+--Slash commands: /pinsize 16-40 - sets a size of the pins. /loc - receives current player map and coords. /loc2 - receives player waypoint coords.
+--Full instruction how you can help to add new pins is here (ru, en version): https://forum.bandits-clan.ru/topic/75303-map-pins-collecting-data/?tab=comments#comment-1198876
+--Thanks for help to: GaelicCat, Gamer1986PAN, Runs, Gandalf, Kibert, Bence, Daniel, Kelly, Danzio, demidaddy, Teva, Akotar, Zym, SuppeFuss165, remosito, Telmatoscopus and other players.
+
 local AddonName="MapPins"
 local Localization={
 	en={
@@ -6,37 +14,35 @@ local Localization={
 		--Portals
 		Portals="Portals",Celestial_Rifts="Celestial rifts",Dark_Fissures="Dark fissures",Oblivion_Portals="Oblivion portals",Shadow_Fissures="Shadow fissures",Lava_Lashers="Lava lashers",
 		--Filters
-		Delve_bosses="Delve bosses",Delve_bosses_done="Delve bosses done",
-		Skyshards="Skyshards",Skyshards_done="Skyshards done",
-		Lore_books="Lore books",Lore_books_done="Lore books done",
+		Delve_bosses="Delve bosses",Delve_bosses_done="Delve bosses (done)",
+		Skyshards="Skyshards",Skyshards_done="Skyshards (done)",
+		Lore_books="Lore books",Lore_books_done="Lore books (done)",
 		Treasure_Maps="Treasure maps",
 		Treasure_Chests="Treasure chests",
 		Unknown_POI="Unknown POI",
 		Undaunted="Undaunted",
-		Orsinium="Orsinium",
-		Thieves_guild="Thieves guild",
-		Morrowind="Morrowind",
-		Summerset="Summerset",
 		Time_Rifts="Time Rifts",
 		Shrines="Shrines",
 		Fishing_Nodes="Fishing nodes",
-		Clockwork_City="Clockwork City",
-		Murkmire="Murkmire",
-		Elsweyr="Elsweyr",
 		Volendrung="Volendrung",
-		Greymoor="Greymoor",
-		Antiquities="Antiquities", Antiquity_Leads="Antiquity leads",
-		Blackwood="Blackwood",
-		Imperial_City="Imperial City",
-		IC_Bosses="Bosses",
-		IC_Respawns="Respawns",
-		Cunning_Scamp="Cunning Scamp",
-		Trove_Scamp="Trove Scamp",
-		High_Isle="High Isle",
+		Antiquities="Antiquities",Antiquity_Leads="Antiquity leads",
+		Imperial_City="Imperial City",IC_Bosses="Bosses",IC_Respawns="Respawns",
+		Cunning_Scamp="Cunning Scamp",Trove_Scamp="Trove Scamp",
 		World_achievements="World achievements",
 		Orsinium_world_event="Random encounters",
 		Summerset_world_event="Random encounters",
 		Random_Encounters="Random encounters",
+		--DLC
+		Orsinium="Orsinium",
+		Thieves_guild="Thieves guild",
+		Morrowind="Morrowind",
+		Summerset="Summerset",
+		Clockwork_City="Clockwork City",
+		Murkmire="Murkmire",
+		Elsweyr="Elsweyr",
+		Blackwood="Blackwood",
+		Greymoor="Greymoor",
+		High_Isle="High Isle",
 		},
 	ru={
 		--Water
@@ -51,30 +57,31 @@ local Localization={
 		Treasure_Chests="Сундуки",
 		Unknown_POI="Неизведанные места",
 		Undaunted="Неустрашимые",
-		Orsinium="Орсиниум",
-		Thieves_guild="Гильдия воров",
-		Morrowind="Моровинд",
-		Summerset="Саммерсет",
 		Time_Rifts="Временные бреши",
 		Shrines="Алтари",
 		Fishing_Nodes="Рыбалка",
-		Clockwork_City="Заводной город",
-		Murkmire="Муркмайр",
-		Elsweyr="Эльсвейр",
 		Volendrung="Волендранг",
-		Greymoor="Грэймур",
 		Antiquities="Древности", Antiquity_Leads="Подскаски древностей",
-		Blackwood="Блэквуд",
 		Imperial_City="Имперский город",
 		IC_Bosses="Босы",
 		IC_Respawns="Места возрождений",
 		Cunning_Scamp="Хитрые скампы",
 		Trove_Scamp="Рыщущие скампы",
-		High_Isle="Высокий Остров",
 		World_achievements="Случайные встречи",
 		Orsinium_world_event="Случайные встречи",
 		Summerset_world_event="Случайные встречи",
 		Random_Encounters="Случайные встречи",
+		--DLC
+		Orsinium="Орсиниум",
+		Thieves_guild="Гильдия воров",
+		Morrowind="Моровинд",
+		Summerset="Саммерсет",
+		Clockwork_City="Заводной город",
+		Murkmire="Муркмайр",
+		Elsweyr="Эльсвейр",
+		Greymoor="Грэймур",
+		Blackwood="Блэквуд",
+		High_Isle="Высокий Остров",
 		},
 	de={
 		Lake="Seewasser",Foul="Brackwasser",River="Flusswasser",Salt="Salzwasser",Oily="Ölwasser",Mystic="Mythenwasser",Running="Fließgewässer",--Water
@@ -82,11 +89,52 @@ local Localization={
 	fr={
 		Lake="Lac",Foul="Sale",River="Rivière",Salt="Mer",Oily="Huile",Mystic="Mystique",Running="courante",--Water
 		},
-	}
+	br={
+		--Water
+		Lake="Lake",Foul="Foul",River="River",Salt="Salt",Oily="Oily",Mystic="Mystic",Running="Running",
+		--Portais
+		Portals="Portais",Celestial_Rifts="Fendas Celestiais",Dark_Fissures="Fendas Negras",Oblivion_Portals="Portais de Oblivion",Shadow_Fissures="Shadow Fissures",Lava_Lashers="Lava lashers",
+		--Filtros
+		Delve_bosses="Chefes de Masmorras",Delve_bosses_done="Chefes de Masmorras Concluidas",
+		Skyshards="Fragmento Celeste",Skyshards_done="Fragmento Celeste Coletados",
+		Lore_books="Livros de História",Lore_books_done="Livros de História Coletados",
+		Treasure_Maps="Mapas do tesouro",
+		Treasure_Chests="Baús de tesouro",
+		Unknown_POI="Locais Desconhecidos",
+		Undaunted="Destemidos",
+		Time_Rifts="Fendas Temporais",
+		Shrines="Santuários Vampiro/Lobisomem",
+		Fishing_Nodes="Locais de Pesca",
+		Volendrung="Volendrung",
+		Antiquities="Antiguidades", Antiquity_Leads="Pistas de Antiguidades",
+		Imperial_City="Cidade Imperial",
+		IC_Bosses="Chefes do Mundo",
+		IC_Respawns="Reaparição",
+		Cunning_Scamp="Pirraça Astuto",
+		Trove_Scamp="Pirraça Acumulador",
+		World_achievements="Conquistas Mundiais",
+		Orsinium_world_event="Eventos Aleatórios Orsinium",
+		Summerset_world_event="Eventos Aleatórios Summerset",
+		Random_Encounters="Encontros Aleatórios",
+		--DLC
+		Orsinium="Orsinium",
+		Thieves_guild="Guilda dos Ladrões",
+		Morrowind="Morrowind",
+		Summerset="Summerset",
+		Clockwork_City="Cidade Mecânica",
+		Murkmire="Mangueturvo",
+		Elsweyr="Elsweyr",
+		Blackwood="Blackwood",
+		Greymoor="Greymoor",
+		High_Isle="Alta Ilha",
+	},
+}
 local lang=GetCVar("language.2") if not Localization[lang] then lang="en" end
 local function Loc(string)
 	return Localization[lang][string] or Localization[lang]["en"] or string
 end
+
+--Data base
 local Bosses={
 --Firesong Provided by art1ink.
 u36_embervine={{.252,.304,3489}},--Embervine Explorer
@@ -370,10 +418,6 @@ ashalmawia02={{.349,.315,1859,1}},
 hallsofregulation_2={{.728,.402,2016,1}},
 }
 local BossesAchievements={[3490]=true,[3489]=true,[3284]=true,[3283]=true,[3282]=true,[3281]=true,[3280]=true,[3279]=true,[3278]=true,[3277]=true,[3276]=true,[3275]=true,[2996]=true,[2997]=true,[2971]=true,[2714]=true,[2715]=true,[2717]=true,[2718]=true,[2440]=true,[2442]=true,[2444]=true,[2445]=true,[744]=true,[734]=true,[741]=true,[742]=true,[733]=true,[732]=true,[377]=true,[738]=true,[739]=true,[740]=true,[1238]=true,[1239]=true,[1052]=true,[2095]=true,[2096]=true,[2181]=true,[2182]=true,[2007]=true,[300]=true,[470]=true,[1235]=true,[1236]=true,[1855]=true,[1846]=true,[1057]=true,[1058]=true,[1059]=true,[1061]=true,[1062]=true,[1063]=true,[1064]=true,[1425]=true,[1857]=true,[1691]=true,[1523]=true,[1856]=true,[1854]=true,[368]=true,[370]=true,[374]=true,[376]=true,[390]=true,[396]=true,}
---[[--World event
-elsweyr={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.623},{.421,.462},{.635,.265},{.445,.527}},
-clockwork={{.634,.604,2047}},
---]]
 local SkyShards={
 u36_galenisland={--Firesong Provided by art1ink.
 {.261,.265,3499,1,522},
@@ -4471,12 +4515,16 @@ clockwork={
 brassfortress={[47]={{.646,.649,1958,13}}},	--Reason
 bthanual={[47]={{.518,.464,1958,14}}},	--Staff
 }
---MarchOdSacrifices={{.76,.554},{.737,.5},{.759,.554}},	--Behemoth Sigil
---[[ Topal Corsair
-southernelsweyr={
+--[[	Unwanted achievements
+MarchOdSacrifices={{.76,.554},{.737,.5},{.759,.554}},	--Behemoth Sigil
+southernelsweyr={	--Topal Corsair
 {.278,.295,7212},	--[7212] Shoes
 {.173,.623,7213},	--[7213] Gloves
 },
+--]]
+--[[--Unwanted world events
+elsweyr={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.623},{.421,.462},{.635,.265},{.445,.527}},
+clockwork={{.634,.604,2047}},
 --]]
 local AchievementsId={[3224]=75,[3298]=74,[3299]=76,[3295]=77,[3080]=67,[3081]=64,[3082]=65,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
 local ZoneAchievement={
@@ -5036,6 +5084,7 @@ local function GetFishingAchievement(subzone)
 	return false
 end
 
+--Callbacks
 local MapPinCallback={
 	[5]=function(i,subzone)
 		local mapData=Lorebooks[subzone]
@@ -5489,6 +5538,7 @@ local function ScanInventory()
 	end
 end
 
+--Events
 local function OnBackpackChanged(bagId,_,slotData)
 --	d("Bag changed: "..bagId..(slotData and " Item type: "..tostring(slotData.itemType or "")))
 	if bagId~=BAG_BACKPACK or UpdatingMapPin[6] or not slotData or slotData.itemType~=ITEMTYPE_TROPHY then return end
@@ -5585,12 +5635,14 @@ local function OnAchievementUpdate(achievementId,link)
 		end
 	end
 end
+
 local function OnBookLearned(_,categoryIndex)
 	if categoryIndex==1 then
 		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[5].name])
 		if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[5].name) end
 	end
 end
+
 local function CheckChestData(x,y,zone,subzone)
 	if not zone then return end
 	local delta=subzone and .01 or .003
@@ -5785,6 +5837,7 @@ local function RegisterEvents()
 --	EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_QUEST_ADDED, OnQuestAdded)
 end
 
+--Initialization
 local function AddPinFilter(i)
 	local function SetEnabled(control,state,init)
 		for pin,id in pairs(CustomPins[i].id) do
@@ -5803,10 +5856,16 @@ local function AddPinFilter(i)
 		end
 	end
 
+	local function GetCroppedAchievementInfo(id)
+		local name,_,_,icon=GetAchievementInfo(id)
+		local pos=string.find(name,"<<player")
+		return pos and table.concat({string.sub(name,0,pos-1), string.match(string.sub(name,pos), "<<player{([%D]+)/[%D]+}>>([%D]*)")}) or name, icon
+	end
+
 	local function AddCheckbox(panel)
 		local checkbox=panel.checkBoxPool:AcquireObject()
 		local icon=zo_iconFormat((CustomPins[i].def_texture and CustomPins[i].def_texture or CustomPins[i].texture),24,24)
-		local name=CustomPins[i].ach and GetAchievementInfo(CustomPins[i].ach) or Loc(string.gsub(CustomPins[i].name,"pinType_",""))
+		local name=CustomPins[i].ach and GetCroppedAchievementInfo(CustomPins[i].ach) or Loc(string.gsub(CustomPins[i].name,"pinType_",""))
 		ZO_CheckButton_SetLabelText(checkbox,icon.." "..name)
 		panel:AnchorControl(checkbox)
 		local tooltipText=""
@@ -5836,7 +5895,7 @@ local function AddPinFilter(i)
 					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
 					text=text..info..data.desc
 				end
-				return zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(1958))
+				return zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(1958))
 --					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t"
 					..text
 			end
@@ -5856,10 +5915,10 @@ local function AddPinFilter(i)
 					local info="\n["..(c==r and "|c33EE33" or HaveItem and "|cEEEE22" or "|cEEEEEE")..data.v.."|r] "
 					text2=text2..info..data.desc
 				end
-				return zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(CustomPins[68].ach))
+				return zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(CustomPins[68].ach))
 					..text1
 					.."\n|t300:8:/EsoUI/Art/Miscellaneous/horizontalDivider.dds|t\n"
-					..zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(CustomPins[59].ach))
+					..zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(CustomPins[59].ach))
 					..text2
 			end
 		else
@@ -5867,11 +5926,11 @@ local function AddPinFilter(i)
 				if tooltipText~="" then tooltipText=tooltipText.."\n" end
 				if CustomPins[pin].name=="pinType_Lightbringer" then
 					tooltipText=tooltipText
-					..zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(873))--Lightbringer
-					..zo_strformat("|t24:24:<<4>>|t <<1>>\n", GetAchievementInfo(871))--Give to Poor
-					..zo_strformat("|t24:24:<<4>>|t <<1>>", GetAchievementInfo(869))--Crime Pays
+					..zo_strformat("|t24:24:<<2>>|t <<1>>\n", GetCroppedAchievementInfo(873))--Lightbringer
+					..zo_strformat("|t24:24:<<2>>|t <<1>>\n", GetCroppedAchievementInfo(871))--Give to Poor
+					..zo_strformat("|t24:24:<<2>>|t <<1>>", GetCroppedAchievementInfo(869))--Crime Pays
 				else
-					local name=CustomPins[pin].ach and GetAchievementInfo(CustomPins[pin].ach) or Loc(string.gsub(CustomPins[pin].name,"pinType_",""))
+					local name=CustomPins[pin].ach and GetCroppedAchievementInfo(CustomPins[pin].ach) or Loc(string.gsub(CustomPins[pin].name,"pinType_",""))
 					tooltipText=tooltipText..zo_iconFormat((CustomPins[pin].def_texture and CustomPins[pin].def_texture or CustomPins[pin].texture),24,24).." "
 					..name	--string.gsub(name,"_"," ")
 				end
@@ -6133,7 +6192,8 @@ local function OnLoad(eventCode,addonName)
 end
 
 EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_ADD_ON_LOADED,OnLoad)
---[[
+
+--[[	Helper scripts
 /script zo_callLater(function()d(GetGameCameraInteractableActionInfo())end,1000)
 --	/script MP_MakeBase()
 function MP_MakeBase()
