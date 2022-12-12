@@ -225,9 +225,9 @@ local Localization={
 		Summerset_world_event="Світові події Саммерсету",
 		Random_Encounters="Випадкові зустрічі",
 		},
-	it={	--provided by windedsilver 1.89
+	it={	--provided by windedsilver 1.91
 		--Water
-		Lake="Lago",Foul="Ripugnante",River="Fiume",Salt="Acqua Salata",Oily="Oleosa",Mystic="Mistico",Running="Fluente",
+		Lake="Lago",Foul="Acqua Sporca",River="Fiume",Salt="Mare",Oily="Oleosa",Mystic="Mistico",Running="Fluente",
         --Portals
 		Portals="Portali",Celestial_Rifts="Fenditura Celeste",Dark_Fissures="Fenditure Oscure",Oblivion_Portals="Portali Oblivion",Shadow_Fissures="Fenditure d'Ombra",Lava_Lashers="Sfiati di Lava",
         --Filters
@@ -277,7 +277,7 @@ u36_galenisland={
 {.138,.298,3548},--Preserver of Galen Hunter
 },
 u36_embervine={{.252,.304,3489}},--Embervine Explorer
-u36_LKH={{.583,.523,750,3490}},--Fauns' Thicket Explorer
+u36_LKH={{.583,.523,3490}},--Fauns' Thicket Explorer
 --High Isle. Provided by art1ink.
 u34_firepotcave={{.642,.476,3275}},--Esh'curnu the Bahemoth
 u34_hauntedsepulcherint={{.353,.472,3277}},--Lord Leobet
