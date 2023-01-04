@@ -83,71 +83,71 @@ local Localization={
 		Blackwood="Блэквуд",
 		High_Isle="Высокий Остров",
 		},
-	de={	--provided by Neverlands 1.89
+	de={--provided by Neverlands 1.89
 		--Water
 		Lake="Seewasser",Foul="Brackwasser",River="Flusswasser",Salt="Salzwasser",Oily="Ölwasser",Mystic="Mythenwasser",Running="Fließgewässer",
 		--Portals
-        Portals="Portale",Celestial_Rifts="Himmlische Risse",Dark_Fissures="Dunkle Risse",Oblivion_Portals="Oblivion Portale",Shadow_Fissures="Schattenrisse",Lava_Lashers="Lavaschlote",
-        --Filters
-        Delve_bosses="Anführer in Gewölben",Delve_bosses_done="Besiegte Anführer in Gewölben",
-        Skyshards="Himmelsscherben",Skyshards_done="Gesammelte Himmelsscherben",
-        Lore_books="Lorebücher",Lore_books_done="Gesammelte Lorebücher",
-        Treasure_Maps="Schatzkarten",
-        Treasure_Chests="Schatztruhen",
-        Unknown_POI="Unbekannter, markanter Ort",
-        Undaunted="Unerschrockene",
-        Thieves_guild="Thieves Guild",
-        Time_Rifts="Zeitrisse",
-        Shrines="Schreine",
-        Fishing_Nodes="Fischgründe",
-        Clockwork_City="Clockwork City",
-        Antiquities="Antiquitäten", Antiquity_Leads="Fundorte von Spuren",
-        IC_Bosses="Anführer",
-        IC_Respawns="Respawns",
-        Cunning_Scamp="Listskampen",
-        Trove_Scamp="Gierskampen",
-        High_Isle="High Isle",
-        World_achievements="Weltweite Errungenschaften",
-        Orsinium_world_event="Zufällige Begegnungen",
-        Summerset_world_event="Zufällige Begegnungen",
-        Random_Encounters="Zufällige Begegnungen",
+		Portals="Portale",Celestial_Rifts="Himmlische Risse",Dark_Fissures="Dunkle Risse",Oblivion_Portals="Oblivion Portale",Shadow_Fissures="Schattenrisse",Lava_Lashers="Lavaschlote",
+		--Filters
+		Delve_bosses="Anführer in Gewölben",Delve_bosses_done="Besiegte Anführer in Gewölben",
+		Skyshards="Himmelsscherben",Skyshards_done="Gesammelte Himmelsscherben",
+		Lore_books="Lorebücher",Lore_books_done="Gesammelte Lorebücher",
+		Treasure_Maps="Schatzkarten",
+		Treasure_Chests="Schatztruhen",
+		Unknown_POI="Unbekannter, markanter Ort",
+		Undaunted="Unerschrockene",
+		Thieves_guild="Thieves Guild",
+		Time_Rifts="Zeitrisse",
+		Shrines="Schreine",
+		Fishing_Nodes="Fischgründe",
+		Clockwork_City="Clockwork City",
+		Antiquities="Antiquitäten", Antiquity_Leads="Fundorte von Spuren",
+		IC_Bosses="Anführer",
+		IC_Respawns="Respawns",
+		Cunning_Scamp="Listskampen",
+		Trove_Scamp="Gierskampen",
+		High_Isle="High Isle",
+		World_achievements="Weltweite Errungenschaften",
+		Orsinium_world_event="Zufällige Begegnungen",
+		Summerset_world_event="Zufällige Begegnungen",
+		Random_Encounters="Zufällige Begegnungen",
 		},
-    fr={
-        --Water
-        Lake="Lac",Foul="Sale",River="Rivière",Salt="Mer",Oily="Huile",Mystic="Mystique",Running="courante",
-        --Portals
-        Portals="Portails",Celestial_Rifts="Failles célestes",Dark_Fissures="Fissures noires",Oblivion_Portals="Portails d'Oblivion",Shadow_Fissures="Fissures d'ombres",Lava_Lashers="Fouetteurs de lave",
-        --Filters
-        Delve_bosses="Boss d'Antre",Delve_bosses_done="Boss d'Antre (fini)",
-        Skyshards="Éclats célestes",Skyshards_done="Éclats célestes (fini)",
-        Lore_books="Livres",Lore_books_done="Livres (fini)",
-        Treasure_Maps="Cartes au trésor",
-        Treasure_Chests="Coffres au trésor",
-        Unknown_POI="POI inconnu",
-        Undaunted="Les Indomptables",
-        Time_Rifts="Failles temporelles",
-        Shrines="Autels",
-        Fishing_Nodes="Trous de Pêche",
-        Volendrung="Volendrung",
-        Antiquities="Antiquités",Antiquity_Leads="Pistes d'antiquités",
-        Imperial_City="Cité impériale",IC_Bosses="Boss",IC_Respawns="Réapparitions",
-        Cunning_Scamp="Galopin rusé",Trove_Scamp="Galopin avare",
-        World_achievements="Succès Globaux",
-        Orsinium_world_event="Rencontres aléatoires",
-        Summerset_world_event="Rencontres aléatoires",
-        Random_Encounters="Rencontres aléatoires",
-        --DLC
-        Orsinium="Orsinium",
-        Thieves_guild="La Guilde des voleurs",
-        Morrowind="Morrowind",
-        Summerset="Le Couchant",
-        Clockwork_City="La Cité mécanique",
-        Murkmire="Tourbevase",
-        Elsweyr="Elsweyr",
-        Blackwood="Le Bois Noir",
-        Greymoor="Greymoor",
-        High_Isle="L'Île Haute",
-        },
+	fr={
+		--Water
+		Lake="Lac",Foul="Sale",River="Rivière",Salt="Mer",Oily="Huile",Mystic="Mystique",Running="courante",
+		--Portals
+		Portals="Portails",Celestial_Rifts="Failles célestes",Dark_Fissures="Fissures noires",Oblivion_Portals="Portails d'Oblivion",Shadow_Fissures="Fissures d'ombres",Lava_Lashers="Fouetteurs de lave",
+		--Filters
+		Delve_bosses="Boss d'Antre",Delve_bosses_done="Boss d'Antre (fini)",
+		Skyshards="Éclats célestes",Skyshards_done="Éclats célestes (fini)",
+		Lore_books="Livres",Lore_books_done="Livres (fini)",
+		Treasure_Maps="Cartes au trésor",
+		Treasure_Chests="Coffres au trésor",
+		Unknown_POI="POI inconnu",
+		Undaunted="Les Indomptables",
+		Time_Rifts="Failles temporelles",
+		Shrines="Autels",
+		Fishing_Nodes="Trous de Pêche",
+		Volendrung="Volendrung",
+		Antiquities="Antiquités",Antiquity_Leads="Pistes d'antiquités",
+		Imperial_City="Cité impériale",IC_Bosses="Boss",IC_Respawns="Réapparitions",
+		Cunning_Scamp="Galopin rusé",Trove_Scamp="Galopin avare",
+		World_achievements="Succès Globaux",
+		Orsinium_world_event="Rencontres aléatoires",
+		Summerset_world_event="Rencontres aléatoires",
+		Random_Encounters="Rencontres aléatoires",
+		--DLC
+		Orsinium="Orsinium",
+		Thieves_guild="La Guilde des voleurs",
+		Morrowind="Morrowind",
+		Summerset="Le Couchant",
+		Clockwork_City="La Cité mécanique",
+		Murkmire="Tourbevase",
+		Elsweyr="Elsweyr",
+		Blackwood="Le Bois Noir",
+		Greymoor="Greymoor",
+		High_Isle="L'Île Haute",
+		},
 	br={
 		--Water
 		Lake="Lake",Foul="Foul",River="River",Salt="Salt",Oily="Oily",Mystic="Mystic",Running="Running",
@@ -228,40 +228,40 @@ local Localization={
 	it={	--provided by windedsilver 1.91
 		--Water
 		Lake="Lago",Foul="Acqua Sporca",River="Fiume",Salt="Mare",Oily="Oleosa",Mystic="Mistico",Running="Fluente",
-        --Portals
+		--Portals
 		Portals="Portali",Celestial_Rifts="Fenditura Celeste",Dark_Fissures="Fenditure Oscure",Oblivion_Portals="Portali Oblivion",Shadow_Fissures="Fenditure d'Ombra",Lava_Lashers="Sfiati di Lava",
-        --Filters
+		--Filters
 		Delve_bosses="Boss",Delve_bosses_done="Boss Uccisi",
-        Skyshards="Frammenti Celesti",Skyshards_done="Frammenti Celesti trovati",
-        Lore_books="Libri Storici",Lore_books_done="Libri Storici trovati",
-        Treasure_Maps="Mappe del Tesoro",
-        Treasure_Chests="Forzieri del Tesoro",
-        Unknown_POI="POI Sconosciuto",
-        Undaunted="Temerari",
-        Orsinium="Orsinium",
-        Thieves_guild="Gilda dei Ladri",
-        Morrowind="Morrowind",
-        Summerset="Summerset",
-        Time_Rifts="Fenditure Temporali",
-        Shrines="Tempi",
-        Fishing_Nodes="Zone di Pesca",
-        Clockwork_City="Città Meccanica",
-        Murkmire="Murkmire",
-        Elsweyr="Elsweyr",
-        Volendrung="Volendrung",
-        Greymoor="Greymoor",
-        Antiquities="Antichità", Antiquity_Leads="Indizi di Antichità",
-        Blackwood="Blackwood",
-        Imperial_City="Città Imperiale",
-        IC_Bosses="Boss",
-        IC_Respawns="Respawn",
-        Cunning_Scamp="Furfante Astuto",
-        Trove_Scamp="Furfante Raccoglitore",
-        High_Isle="Isola Alta",
-        World_achievements="Ricompense Globali",
-        Orsinium_world_event="Incontri Casuali",
-        Summerset_world_event="Incontri Casuali",
-        Random_Encounters="Incontri Casuali",
+		Skyshards="Frammenti Celesti",Skyshards_done="Frammenti Celesti trovati",
+		Lore_books="Libri Storici",Lore_books_done="Libri Storici trovati",
+		Treasure_Maps="Mappe del Tesoro",
+		Treasure_Chests="Forzieri del Tesoro",
+		Unknown_POI="POI Sconosciuto",
+		Undaunted="Temerari",
+		Orsinium="Orsinium",
+		Thieves_guild="Gilda dei Ladri",
+		Morrowind="Morrowind",
+		Summerset="Summerset",
+		Time_Rifts="Fenditure Temporali",
+		Shrines="Tempi",
+		Fishing_Nodes="Zone di Pesca",
+		Clockwork_City="Città Meccanica",
+		Murkmire="Murkmire",
+		Elsweyr="Elsweyr",
+		Volendrung="Volendrung",
+		Greymoor="Greymoor",
+		Antiquities="Antichità", Antiquity_Leads="Indizi di Antichità",
+		Blackwood="Blackwood",
+		Imperial_City="Città Imperiale",
+		IC_Bosses="Boss",
+		IC_Respawns="Respawn",
+		Cunning_Scamp="Furfante Astuto",
+		Trove_Scamp="Furfante Raccoglitore",
+		High_Isle="Isola Alta",
+		World_achievements="Ricompense Globali",
+		Orsinium_world_event="Incontri Casuali",
+		Summerset_world_event="Incontri Casuali",
+		Random_Encounters="Incontri Casuali",
 		},
 }
 local lang=GetCVar("language.2") if not Localization[lang] then lang="en" end
@@ -1429,9 +1429,12 @@ u36_galenisland={
 {.22,.582,2,10},--Wayrest, Jewel of the Bay
 {.268,.244,1,9},--Wyresses: The Name-Daughters
 {.214,.658,1,7},--Varieties of Faith: The Bretons
+{.200,.659,9,5},--Triumphs of a Monarch, Ch. 3
+{.31,.401,2,3},--The Knightly Orders of High Rock
 },
 u36_VastyrCity={
 {.766,.664,1,5},--Guide to the Daggerfall Covenant
+{.464,.372,9,5},--Triumphs of a Monarch, Ch. 3
 {.517,.366,1,7}},--Varieties of Faith: The Bretons
 u36_VastyrCityCastle2ndFl={{.563,.669,1,7}},--Varieties of Faith: The Bretons
 --High Isle. Provided by art1ink.
@@ -5180,7 +5183,7 @@ local CustomPins={	--Types
 		},
 	[15]={name="pinType_Time_Rifts",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Treasure_1-2.dds",k=1.8},
 	[16]={name="pinType_Shrines",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_daedricruin_incomplete.dds",k=1.25},
-	[17]={name="pinType_Fishing_Nodes",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/achievements_indexicon_fishing_up.dds",k=1.40},
+	[17]={name="pinType_Fishing_Nodes",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/achievements_indexicon_fishing_up.dds",k=1.25},
 	[18]={section=true,name="pinType_Clockwork_City",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_cwc_up.dds",	--"/art/fx/texture/clockworksigil.dds",
 		[47]={name="pinType_Precursor_Maker",done=false,ach=1958,maxDistance=0.05,level=101,texture="/esoui/art/menubar/gamepad/gp_playermenu_icon_settings.dds",k=1,def_texture="/esoui/art/icons/achievement_update16_001.dds"},
 		},
@@ -5499,26 +5502,26 @@ local MapPinCallback={
 		end
 	end,
 	[26]=function(i,subzone)--Portals
-        local mapData=Achievements[subzone]
-        if mapData then
-            mapData=mapData[i]
-            if mapData then
-                for i1,pinData in pairs(mapData) do
-                    if pinData[3]==1 then
-                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Oblivion portal"},pinData[1],pinData[2])
-                    elseif pinData[3]==2 then
-                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Dark Fissures"},pinData[1],pinData[2])
+		local mapData=Achievements[subzone]
+		if mapData then
+			mapData=mapData[i]
+			if mapData then
+				for i1,pinData in pairs(mapData) do
+					if pinData[3]==1 then
+						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Oblivion portal"},pinData[1],pinData[2])
+					elseif pinData[3]==2 then
+						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Dark Fissures"},pinData[1],pinData[2])
 					elseif pinData[3]==3 then
-                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Celestial Rift"},pinData[1],pinData[2])
+						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Celestial Rift"},pinData[1],pinData[2])
 					elseif pinData[3]==4 then
-                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Shadow Fissures"},pinData[1],pinData[2])
+						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Shadow Fissures"},pinData[1],pinData[2])
 					elseif pinData[3]==5 then
-                        PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Lava Lasher"},pinData[1],pinData[2])
-                    end
-                end
-            end
-        end
-    end,
+						PinManager:CreatePin(_G[CustomPins[i].name],{[1]=i,name="Lava Lasher"},pinData[1],pinData[2])
+					end
+				end
+			end
+		end
+	end,
 }
 
 local function MapPinAddCallback(i)
@@ -5555,12 +5558,12 @@ local function MapPinAddCallback(i)
 		if mapData then
 			for _,pinData in pairs(mapData) do
 				local AchName,Completed,Required
-                if i==3 or i==4 then
-                    Completed=GetSkyshardDiscoveryStatus(GetZoneSkyshardId(GetSkyshardAchievementZoneId(pinData[3]),pinData[4]))
-                    Required=2
-                else
-                    AchName,Completed,Required=GetAchievementCriterion(pinData[3],pinData[4])
-                end
+				if i==3 or i==4 then
+					Completed=GetSkyshardDiscoveryStatus(GetZoneSkyshardId(GetSkyshardAchievementZoneId(pinData[3]),pinData[4]))
+					Required=2
+				else
+					AchName,Completed,Required=GetAchievementCriterion(pinData[3],pinData[4])
+				end
 				if (Completed==Required)==CustomPins[i].done then
 					PinManager:CreatePin(_G[CustomPins[i].name],{i,pinData[3],pinData[4],pinData[5]},pinData[1],pinData[2])
 				end
