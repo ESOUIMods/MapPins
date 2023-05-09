@@ -3,7 +3,7 @@
 ## Author: |c4B8BFEHoft|r, |c4B8BFEart1ink|r
 ## Version: 1.93
 ## AddOnVersion: 193
-## APIVersion: 101037
+## APIVersion: 101037 101038
 ## SavedVariables: MP_SavedVars MP_SavedGlobal MP_ChestData MP_ThievesTrove
 ## OptionalDependsOn: CustomCompassPins>=32
 

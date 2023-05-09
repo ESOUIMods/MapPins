@@ -43,6 +43,7 @@ local Localization={
 		Blackwood="Blackwood",
 		Greymoor="Greymoor",
 		High_Isle="High Isle",
+		Necrom="Necrom",
 		},
 	ru={
 		--Water
@@ -82,6 +83,7 @@ local Localization={
 		Greymoor="Западный скайрим",
 		Blackwood="Черный лес",
 		High_Isle="Высокий Остров",
+		Necrom="Некром",
 		},
 	de={--provided by Neverlands 1.89
 		--Water
@@ -111,6 +113,7 @@ local Localization={
 		Orsinium_world_event="Zufällige Begegnungen",
 		Summerset_world_event="Zufällige Begegnungen",
 		Random_Encounters="Zufällige Begegnungen",
+		Necrom="Necrom",
 		},
 	fr={
 		--Water
@@ -147,6 +150,7 @@ local Localization={
 		Blackwood="Le Bois Noir",
 		Greymoor="Greymoor",
 		High_Isle="L'Île Haute",
+		Necrom="Necrom",
 		},
 	br={
 		--Water
@@ -186,6 +190,7 @@ local Localization={
 		Blackwood="Blackwood",
 		Greymoor="Greymoor",
 		High_Isle="Alta Ilha",
+		Necrom="Necrom",
 		},
 	ua={--provided by Astaro'I, Eric_m 1.89
 		--Lake="озерна вода",Foul="брудна вода",River="річкова вода",Salt="солона вода",Oily="масляниста вода",Mystic="містична вода",Running="проточна вода",--Water
@@ -224,6 +229,7 @@ local Localization={
 		Orsinium_world_event="Світові події Орсініума",
 		Summerset_world_event="Світові події Саммерсету",
 		Random_Encounters="Випадкові зустрічі",
+		Necrom="Necrom",
 		},
 	it={	--provided by windedsilver 1.91
 		--Water
@@ -262,6 +268,7 @@ local Localization={
 		Orsinium_world_event="Incontri Casuali",
 		Summerset_world_event="Incontri Casuali",
 		Random_Encounters="Incontri Casuali",
+		Necrom="Necrom",
 		},
 }
 local lang=GetCVar("language.2") if not Localization[lang] then lang="en" end
@@ -271,6 +278,29 @@ end
 
 --Data base
 local Bosses={
+--Necrom Provided by art1ink.
+u38_eggmine={{.513,.464,3620}},--Anchre Egg Mine Explorer
+u38_camonnaruhn={{.587,.214,3621}},--Camonnaruhn Explorer
+u38_quires_wind={{.25,.725,3622}},--Quires Wind Explorer
+u38_disquiet_study={{.442,.628,3623}},--Disquiet Study Explore
+U38_CorpuscleBight_01_Base_0={{.52,.113,3624}},--Fathoms Drift Explorer
+u38_apogee_wind={{.53,.795,3625}},--Apogee Explorer
+U38_underweave_process02={--The Underweave Conqueror
+{.327,.311,3659,3},--Qacath the Silent
+},
+U38_underweave_heart={{.512,.844,3659,4}},--Kynreve Kev'ni
+U38_underweave_central={
+{.498,.796,3659,1},--Caz'iunes the Executioner
+{.594,.353,3657},--All-Seeing Ky'zuu (Group Event)
+},
+u38_gorne_main_0={--Gorne Conqueror
+{.579,.126,3660,1},--Stupulag
+{.154,.215,3660,2},--Zygiite
+{.885,.593,3660,3},--Solenm
+{.6,.68,3660,4},--Staxuira
+{.121,.548,3660,5},--Keeag
+{.567,.421,3658},--Gorne Group Event
+},
 --Firesong Provided by art1ink.
 u36_galenisland={
 {.493,.45,3548},--Preserver of Galen Hunter
@@ -557,15 +587,48 @@ khartagpoint={{.757,.195,1858,1}},
 ashalmawia02={{.349,.315,1859,1}},
 hallsofregulation_2={{.728,.402,2016,1}},
 }
-local BossesAchievements={[3490]=true,[3489]=true,[3284]=true,[3283]=true,[3282]=true,[3281]=true,[3280]=true,[3279]=true,[3278]=true,[3277]=true,[3276]=true,[3275]=true,[2996]=true,[2997]=true,[2971]=true,[2714]=true,[2715]=true,[2717]=true,[2718]=true,[2440]=true,[2442]=true,[2444]=true,[2445]=true,[744]=true,[734]=true,[741]=true,[742]=true,[733]=true,[732]=true,[377]=true,[738]=true,[739]=true,[740]=true,[1238]=true,[1239]=true,[1052]=true,[2095]=true,[2096]=true,[2181]=true,[2182]=true,[2007]=true,[300]=true,[470]=true,[1235]=true,[1236]=true,[1855]=true,[1846]=true,[1057]=true,[1058]=true,[1059]=true,[1061]=true,[1062]=true,[1063]=true,[1064]=true,[1425]=true,[1857]=true,[1691]=true,[1523]=true,[1856]=true,[1854]=true,[368]=true,[370]=true,[374]=true,[376]=true,[390]=true,[396]=true,}
+local BossesAchievements={[3660]=true,[3659]=true,[3658]=true,[3657]=true,[3625]=true,[3624]=true,[3623]=true,[3622]=true,[3621]=true,[3620]=true,[3490]=true,[3489]=true,[3284]=true,[3283]=true,[3282]=true,[3281]=true,[3280]=true,[3279]=true,[3278]=true,[3277]=true,[3276]=true,[3275]=true,[2996]=true,[2997]=true,[2971]=true,[2714]=true,[2715]=true,[2717]=true,[2718]=true,[2440]=true,[2442]=true,[2444]=true,[2445]=true,[744]=true,[734]=true,[741]=true,[742]=true,[733]=true,[732]=true,[377]=true,[738]=true,[739]=true,[740]=true,[1238]=true,[1239]=true,[1052]=true,[2095]=true,[2096]=true,[2181]=true,[2182]=true,[2007]=true,[300]=true,[470]=true,[1235]=true,[1236]=true,[1855]=true,[1846]=true,[1057]=true,[1058]=true,[1059]=true,[1061]=true,[1062]=true,[1063]=true,[1064]=true,[1425]=true,[1857]=true,[1691]=true,[1523]=true,[1856]=true,[1854]=true,[368]=true,[370]=true,[374]=true,[376]=true,[390]=true,[396]=true,}
 local SkyShards={
-u36_galenisland={--Firesong Provided by art1ink.
+u38_apocrypha={--Necrom Provided by art1ink
+{.68,.497,3672,5,532},
+{.893,.566,3672,6,533},
+{.502,.458,3672,7,534},
+{.512,.314,3672,8,535},
+{.415,.442,3672,9,536},
+{.219,.33,3672,10,537},
+{.403,.499,3672,11,538},
+{.578,.734,3672,14,541},
+{.904,.665,3672,15,542},
+{.39,.191,3672,16,543},
+{.333,.386,3672,18,545},
+},
+U38_underweave_central={{.351,.619,3672,11}},
+u38_disquiet_study={{.452,.299,3672,14,541}},
+u38_quires_wind={{.564,.656,3672,15,542}},
+U38_CorpuscleBight_02_Base_0={{.424,.121,3672,16,543}},
+u38_apogee_wind={{.481,.471,3672,18,545}},
+u38_telvannipeninsula={
+{.699,.362,3672,1,528},
+{.317,.364,3672,2,529},
+{.517,.781,3672,3,530},
+{.67,.608,3672,4,531},
+{.719,.319,3672,12,539},
+{.787,.502,3672,13,540},
+{.242,.69,3672,17,544}},
+u38_camonnaruhn={{.54,.512,3672,17,544}},
+u38_eggmine={{.289,.529,3672,13,540}},
+u38_gorne_main_0={{.404,.332,3672,12,539}},
+--ancher u38_telvannipeninsula={{.786,.499,0}},
+--ancher u38_eggmine={{.289,.529,750}},
+u38_Tunnel2={{.589,.115,3672,7,534}},
+u36_galenisland={--Firesong Provided by art1ink
 {.261,.265,3499,1,522},
 {.575,.319,3499,2,523},
 {.52,.545,3499,3,524},
 {.289,.531,3499,4,525},
 {.157,.462,3499,5,526},
-{.559,.450,3499,6,527}},
+{.559,.450,3499,6,527},
+},
 u36_LKH={{.457,.751,3499,5,526}},
 u36_embervine={{.377,.193,3499,6,527}},
 u34_systreszone={--High Isle. Provided by art1ink
@@ -1393,6 +1456,11 @@ vvardenfell={-- Vvardenfell
 {.798,.689,1843,16,397},
 {.667,.422,1843,17,398},
 {.612,.329,1843,18,399}},
+nchuleftingth1={
+{.253,.632,1843,11,392},
+{.848,.331,1843,11,392}},
+nchuleftingth3={{.901,.444,1843,11,392}},
+nchuleftingth4={{.721,.39,1843,11,392}},
 nchuleftingth5={{.309,.595,1843,11,392}},
 cavernsofkogoruhnfw03={{.400,.442,1843,12,393}},
 khartagpoint={{.608,.461,1843,13,397}},
@@ -1418,8 +1486,26 @@ hallsofregulation={{.369,.564,1844,5,404}},
 hallsofregulation_2={{.728,.402,1844,5,404}},
 shadowcleft={{.836,.570,1844,6,405}},
 }
-local SkyShardsAchievements={[3499]=true,[3270]=true,[3140]=true,[2982]=true,[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
+local SkyShardsAchievements={[3672]=true,[3499]=true,[3270]=true,[3140]=true,[2982]=true,[2687]=true,[2562]=true,[2461]=true,[2291]=true,[556]=true,[695]=true,[405]=true,[557]=true,[408]=true,[398]=true,[686]=true,[727]=true,[912]=true,[694]=true,[693]=true,[692]=true,[547]=true,[688]=true,[409]=true,[682]=true,[683]=true,[431]=true,[684]=true,[748]=true,[685]=true,[554]=true,[687]=true,[397]=true,[515]=true,[407]=true,[689]=true,[1160]=true,[1320]=true,[1347]=true,[1342]=true,[1843]=true,[1844]=true,[1845]=true}
 local Lorebooks={
+--Necrom Provided by art1ink.
+u38_telvannipeninsula={
+{.787,.355,8,1},-- Aedra and Daedra
+{.840,.343,8,4},--The House of Troubles
+{.449,.556,11,8},-- Where Magical Paths Meet
+{.588,.681,20,1},-- Ancestors and the Dunmer (Abridged)
+},
+u38_apocrypha={
+{.714,.854,17,1},--The Book of Daedra
+{.577,.548,8,9},--Fragmentae Abyssum Hermaeus Morus
+},
+u38_disquiet_study={{.491,.364,8,6}},--Modern Heretics
+u38_ciphersmidden_city={{.447,.46,8,9}},--Fragmentae Abyssum Hermaeus Morus
+u38_teldreloth_ext={{.418,.687,20,1}},-- Ancestors and the Dunmer (Abridged)
+u38_Necrom={
+{.582,.524,8,4},--The House of Troubles
+{.36,.573,8,1},--Aedra and Daedra
+},
 --Firesong Provided by art1ink.
 u36_galenisland={
 {.523,.481,2,4},--The Bretons: Mongrels or Paragons?
@@ -1495,8 +1581,7 @@ reach={--Provided by art1ink
 {.583,.44,22.5},--The Crown of Freydis
 {.54,.288,22,7},--All About Giants
 {.504,.626,24,10},--Clans of the Reach: A Guide
-{.39,.674,24,4},--Thenephan's Mysteries of Mead
-},
+{.39,.674,24,4}},--Thenephan's Mysteries of Mead
 --Northern Elsweyr	provided by art1ink
 rimmen={{.439,.503,28,8}},--Master Zoaraym's Tale, Part 1
 riverholdcity={{.543,.606,26,1}},--Varieties of Faith: The Khajiit
@@ -1511,8 +1596,7 @@ elsweyr={
 {.138,.75,1,2},--A Warning to the Aldmeri Dominion
 {.412,.6,25,7},--The Rise of Queen Ayrenn
 {.579,.69,28,1},--The Moon Cats and their Dance
-{.727,.398,28,2},--Litter-Mates of Darkness
-},
+{.727,.398,28,2}},--Litter-Mates of Darkness
 --Southern Elsweyr	provided by art1ink
 Senchalpalace01={{.145,.425,21,8}},--A Nereid Stole My Husband
 ELS_DG={{-2.821,-2.378,28,9}},
@@ -1596,12 +1680,12 @@ sandblownmine={{.669,.446,13,9}},
 coldrockdiggings={{.808,.438,18,2}},
 divadschagrinmine={{.418,.698,13,8}},
 volenfell={{.141,.441,11,2}},
-auridon={{.349,.115,25,1},{.341,.152,25,1},{.295,.098,25,1},{.324,.062,25,1},{.381,.244,25,2},{.354,.268,25,2},{.364,.306,25,2},{.369,.203,25,2},{.420,.312,25,3},{.451,.323,25,3},{.407,.366,25,3},{.452,.363,25,3},{.525,.303,25,4},{.590,.249,25,4},{.497,.278,25,4},{.601,.456,25,5},{.535,.451,25,5},{.566,.436,25,5},{.562,.476,25,5},{.246,.287,25,6},{.232,.239,25,6},{.216,.286,25,6},{.187,.234,25,6},{.526,.178,25,7},{.520,.213,25,7},{.543,.249,25,7},{.553,.183,25,7},{.28,.16,25,8},{.473,.167,25,9},{.423,.205,25,9},{.387,.148,25,9},{.440,.125,25,9},{.280,.380,25,10},{.329,.330,25,10},{.242,.358,25,10},{.327,.374,25,10},{.497,.436,8,1},{.511,.398,8,1},{.472,.372,8,1},{.502,.337,8,1},{.401,.646,8,2},{.396,.682,8,2},{.429,.700,8,2},{.451,.683,8,2},{.627,.330,9,1},{.620,.312,9,1},{.671,.304,9,1},{.578,.327,9,1},{.636,.395,9,2},{.588,.379,9,2},{.615,.428,9,2},{.642,.432,9,2},{.802,.514,9,3},{.800,.486,9,3},{.831,.498,9,3},{.710,.550,9,4},{.682,.522,9,4},{.579,.532,9,5},{.626,.561,9,5},{.561,.504,9,5},{.599,.489,9,5},{.552,.530,9,6},{.559,.592,9,6},{.565,.558,9,6},{.521,.547,9,6},{.499,.547,9,7},{.457,.518,9,7},{.447,.554,9,7},{.518,.499,9,7},{.499,.575,9,8},{.545,.640,9,8},{.522,.602,9,8},{.491,.610,9,8},{.599,.590,10,1},{.663,.636,10,1},{.569,.638,10,1},{.631,.601,10,1},{.504,.647,10,2},{.460,.655,10,2},{.446,.624,10,2},{.492,.671,10,2},{.494,.764,10,3},{.400,.739,10,3},{.479,.709,10,3},{.467,.764,10,3},{.554,.716,12,1},{.533,.661,12,1},{.522,.693,12,1},{.548,.696,12,1},{.593,.710,12,2},{.622,.719,12,2},{.595,.765,12,2},{.564,.738,12,2},{.682,.711,12,3},{.644,.754,12,3},{.680,.782,12,3},{.673,.745,12,3},{.682,.859,19,1},{.713,.825,19,1},{.635,.850,19,1},{.625,.892,19,1},{.689,.912,19,2},{.578,.949,19,2},{.629,.939,19,2},{.610,.905,19,2},{.511,.906,19,3},{.545,.855,19,3},{.564,.874,19,3},{.566,.902,19,3},{.595,.847,19,4},{.622,.822,19,4},{.601,.794,19,4},{.570,.825,19,4},{.533,.817,19,5},{.488,.826,19,5},{.563,.790,19,5},{.546,.774,19,5},{.322,.113,11,7}},
+auridon={{.349,.115,25,1},{.341,.152,25,1},{.295,.098,25,1},{.324,.062,25,1},{.381,.244,25,2},{.354,.268,25,2},{.364,.306,25,2},{.369,.203,25,2},{.420,.312,25,3},{.451,.323,25,3},{.407,.366,25,3},{.452,.363,25,3},{.525,.303,25,4},{.590,.249,25,4},{.497,.278,25,4},{.601,.456,25,5},{.535,.451,25,5},{.566,.436,25,5},{.562,.476,25,5},{.246,.287,25,6},{.232,.239,25,6},{.216,.286,25,6},{.187,.234,25,6},{.526,.178,25,7},{.520,.213,25,7},{.539,.243,25,7},{.553,.183,25,7},{.28,.16,25,8},{.469,.16,25,9},{.423,.205,25,9},{.387,.148,25,9},{.440,.125,25,9},{.280,.380,25,10},{.329,.330,25,10},{.242,.358,25,10},{.327,.374,25,10},{.497,.436,8,1},{.511,.398,8,1},{.472,.372,8,1},{.502,.337,8,1},{.401,.646,8,2},{.396,.682,8,2},{.429,.700,8,2},{.451,.683,8,2},{.627,.330,9,1},{.620,.312,9,1},{.671,.304,9,1},{.578,.327,9,1},{.636,.395,9,2},{.588,.379,9,2},{.615,.428,9,2},{.642,.432,9,2},{.802,.514,9,3},{.800,.486,9,3},{.831,.498,9,3},{.710,.550,9,4},{.682,.522,9,4},{.579,.532,9,5},{.626,.561,9,5},{.561,.504,9,5},{.599,.489,9,5},{.552,.530,9,6},{.559,.592,9,6},{.565,.558,9,6},{.521,.547,9,6},{.499,.547,9,7},{.457,.518,9,7},{.447,.554,9,7},{.518,.499,9,7},{.499,.575,9,8},{.545,.640,9,8},{.522,.602,9,8},{.491,.610,9,8},{.599,.590,10,1},{.663,.636,10,1},{.569,.638,10,1},{.631,.601,10,1},{.504,.647,10,2},{.460,.655,10,2},{.446,.624,10,2},{.492,.671,10,2},{.494,.764,10,3},{.400,.739,10,3},{.479,.709,10,3},{.467,.764,10,3},{.554,.716,12,1},{.533,.661,12,1},{.522,.693,12,1},{.548,.696,12,1},{.593,.710,12,2},{.622,.719,12,2},{.595,.765,12,2},{.564,.738,12,2},{.682,.711,12,3},{.644,.754,12,3},{.680,.782,12,3},{.673,.745,12,3},{.682,.859,19,1},{.713,.825,19,1},{.635,.850,19,1},{.625,.892,19,1},{.689,.912,19,2},{.578,.949,19,2},{.629,.939,19,2},{.610,.905,19,2},{.511,.906,19,3},{.545,.855,19,3},{.564,.874,19,3},{.566,.902,19,3},{.595,.847,19,4},{.622,.822,19,4},{.601,.794,19,4},{.570,.825,19,4},{.533,.817,19,5},{.488,.826,19,5},{.563,.790,19,5},{.546,.774,19,5},{.322,.113,11,7}},
 firsthold={{.487,.314,25,8},{.648,.834,25,8},{.734,.558,25,8}},
 skywatch={{.27,.051,9,2},{.27,.46,9,4},{.50,.58,9,4},{.54,.21,9,4},{.66,.73,9,4},{.014,.388,9,5}},
 vulkhelguard={{.508,.387,19,1},{.830,.490,19,2},{.529,.626,19,2},{.271,.675,19,2},{.436,.455,19,2},{.206,.437,19,3}},
 thebanishedcells={{.481,.838,11,7}},
-bangkorai={{.306,.871,14,5},{.398,.301,4,1},{.414,.417,4,1},{.386,.368,4,1},{.390,.393,4,1},{.501,.355,4,2},{.504,.391,4,2},{.555,.407,4,2},{.627,.358,4,3},{.557,.367,4,3},{.612,.321,4,3},{.592,.402,4,3},{.562,.215,4,4},{.548,.259,4,4},{.586,.291,4,4},{.613,.265,4,4},{.472,.336,4,5},{.472,.226,4,5},{.452,.282,4,5},{.528,.322,4,5},{.359,.216,4,6},{.431,.201,4,6},{.395,.202,4,6},{.583,.077,4,7},{.467,.169,4,7},{.532,.165,4,7},{.511,.117,4,7},{.690,.135,4,8},{.603,.140,4,8},{.625,.099,4,8},{.639,.130,4,8},{.627,.180,4,9},{.614,.152,4,9},{.661,.183,4,9},{.579,.177,4,9},{.625,.208,4,10},{.653,.249,4,10},{.704,.207,4,10},{.658,.208,4,10},{.678,.285,12,13},{.701,.288,12,13},{.630,.434,12,14},{.700,.495,12,14},{.655,.459,12,14},{.664,.442,12,14},{.627,.477,12,15},{.595,.532,12,15},{.573,.473,12,16},{.490,.511,12,16},{.440,.503,14,1},{.353,.468,14,1},{.475,.458,14,1},{.327,.540,14,2},{.343,.593,14,2},{.450,.562,14,2},{.329,.570,14,2},{.25,.64,14,3},{.296,.609,14,3},{.341,.606,14,3},{.304,.659,14,3},{.271,.726,14,4},{.258,.701,14,4},{.273,.845,14,5},{.313,.814,14,5},{.248,.879,14,5},{.326,.935,14,6},{.351,.866,14,6},{.376,.900,14,6},{.394,.834,14,6},{.44,.88,14,7},{.481,.923,14,7},{.476,.872,14,7},{.357,.747,14,8},{.442,.736,14,8},{.394,.782,14,8},{.39,.35,14,9},{.372,.681,14,9},{.337,.691,14,9},{.487,.659,14,10},{.521,.709,14,10},{.523,.673,14,10},{.471,.615,14,10},{.59,.64,18,7},{.559,.682,18,7},{.633,.723,18,8},{.593,.726,18,8},{.595,.696,18,8},{.606,.626,18,9},{.647,.675,18,9},{.690,.682,18,9},{.668,.647,18,9},{.495,.569,18,10},{.490,.560,18,10},{.372,.277,11,13}},
+bangkorai={{.306,.871,14,5},{.398,.301,4,1},{.414,.417,4,1},{.386,.368,4,1},{.390,.393,4,1},{.501,.355,4,2},{.504,.391,4,2},{.555,.407,4,2},{.627,.358,4,3},{.557,.367,4,3},{.612,.321,4,3},{.592,.402,4,3},{.562,.215,4,4},{.548,.259,4,4},{.586,.291,4,4},{.613,.265,4,4},{.472,.336,4,5},{.472,.226,4,5},{.452,.282,4,5},{.528,.322,4,5},{.359,.216,4,6},{.431,.201,4,6},{.395,.202,4,6},{.583,.077,4,7},{.467,.169,4,7},{.532,.165,4,7},{.511,.117,4,7},{.690,.135,4,8},{.603,.140,4,8},{.625,.099,4,8},{.639,.130,4,8},{.627,.180,4,9},{.614,.152,4,9},{.661,.183,4,9},{.579,.177,4,9},{.625,.208,4,10},{.653,.249,4,10},{.704,.207,4,10},{.658,.208,4,10},{.678,.285,12,13},{.701,.288,12,13},{.630,.434,12,14},{.700,.495,12,14},{.655,.459,12,14},{.664,.442,12,14},{.627,.477,12,15},{.595,.532,12,15},{.573,.473,12,16},{.490,.511,12,16},{.440,.503,14,1},{.353,.468,14,1},{.475,.458,14,1},{.327,.540,14,2},{.343,.593,14,2},{.450,.562,14,2},{.329,.570,14,2},{.25,.64,14,3},{.296,.609,14,3},{.341,.606,14,3},{.304,.659,14,3},{.271,.726,14,4},{.258,.701,14,4},{.273,.845,14,5},{.313,.814,14,5},{.248,.879,14,5},{.326,.935,14,6},{.351,.866,14,6},{.376,.900,14,6},{.394,.834,14,6},{.44,.88,14,7},{.481,.923,14,7},{.476,.872,14,7},{.357,.747,14,8},{.442,.736,14,8},{.394,.782,14,8},{.39,.35,14,9},{.372,.681,14,9},{.337,.691,14,9},{.487,.659,14,10},{.521,.709,14,10},{.523,.673,14,10},{.471,.615,14,10},{.58,.63,18,7},{.559,.682,18,7},{.633,.723,18,8},{.593,.726,18,8},{.595,.696,18,8},{.606,.626,18,9},{.647,.675,18,9},{.690,.682,18,9},{.668,.647,18,9},{.495,.569,18,10},{.490,.560,18,10},{.372,.277,11,13}},
 evermore={{.423,.165,4,1},{.354,.551,4,1},{.512,.839,4,1},{.374,.697,4,1},{.686,.858,14,1},{.38,.43,14,9}},
 onsisbreathmine={{.207,.640,14,6}},
 blackhearthavenarea1={{.708,.486,11,13}},
@@ -1739,13 +1823,31 @@ vvardenfell={{.404,.809,20,3},{.882,.612,20,3},{.34,.528,20,3},{.502,.244,8,4},{
 hewsbane={{.382,.595,11,3},{.446,.592,18,5}},
 }
 local TreasureMaps={
+u38_telvannipeninsula={--Provided by Gamer1986PAN
+{.374,.621,196201},--Telvanni Peninsula CE Treasure Map I
+{.662,.664,196202},--Telvanni Peninsula CE Treasure Map II
+{.626,.584,198097},--Telvanni Peninsula Treasure Map I
+{.769,.540,198098},--Telvanni Peninsula Treasure Map II
+{.637,.498,198099},--Telvanni Peninsula Treasure Map III
+{.289,.385,198100},--Telvanni Peninsula Treasure Map IV
+{.732,.551,198291},--Blacksmith Survey: Telvanni Peninsula
+{.597,.504,198297},--Woodworker Survey: Telvanni Peninsula
+{.488,.756,198294},--Jewelry Crafting Survey: Telvanni Peninsula
+{.214,.456,197842}}, -- Hand of Almalexia Clue
+u38_apocrypha={--Provided by Gamer1986PAN
+{.384,.465,196203},--Apocrypha CE Treasure Map
+{.754,.400,198101},--Apocrypha Treasure Map I
+{.454,.338,198102},--Apocrypha Treasure Map II
+{.798,.7089,198290},--Clothier Survey: Apocrypha
+{.696,.4008,198289},--Enchanter Survey: Apocrypha
+{.400,.388,198288}},--Alchemist Survey: Apocrypha
 u36_galenisland={--Provided by art1ink
 {.44,.247,192370},--Galen Treasure Map I
 {.403,.413,192371},--Galen Treasure Map II
 {.593,.355,191158}},--Druid King Vestments Clue (Galen and Y'ffelon)
 u34_gonfalonbaycity={--Provided by art1ink
 {.92,.63,187668}},--High Isle CE Treasure Map I
-u34_systreszone={
+u34_systreszone={--Provided by art1ink
 {.156,.779,187906},--Knight Commander Clue (High Isle and Amenos)
 {.538,.629,188191,1},--Alchemy Survey (Provided by ApoAlaia)
 {.671,.343,188193,1},--Blacksmith Survey
@@ -1761,12 +1863,10 @@ u34_systreszone={
 {.74,.316,187673},--High Isle Treasure Map III
 {.674,.245,187674},--High Isle Treasure Map IV
 {.61,.749,187675},--High Isle Treasure Map V
-{.459,.606,187676},--High Isle Treasure Map VI
-},
+{.459,.606,187676}},--High Isle Treasure Map VI
 u32deadlandszone={--Provided by art1ink
 {.245,.806,183005},--The Deadlands Treasure Map I
-{.763,.385,183006},--The Deadlands Treasure Map II
-},
+{.763,.385,183006}},--The Deadlands Treasure Map II
 blackwood={--Provided by Shantoo
 {.366,.19,178465,1},--Woodworker Survey
 {.564,.146,178468,1},--Enchanter Survey
@@ -1819,6 +1919,7 @@ stonefalls={
 ebonheart={{.540,.091,57746,1}},
 deshaan={
 {.18,.48,187890},--Hlaalu Councilor Clue (Deshaan)
+{.526,.569,197843},--Mercymother Elite Clue
 {.259,.550,43661},{.184,.472,43662},{.463,.405,43663},{.758,.561,43664},{.899,.549,43665},{.792,.509,43666},{.352,.640,44934},{.476,.420,57748,1},{.787,.408,57751,1},{.238,.481,57755,1},{.148,.496,57772,1},{.637,.550,57817,1},{.485,.615,139426,4}},
 shadowfen={{.483,.701,153647,"shield"},{.369,.150,43667},{.708,.392,43668},{.704,.701,43669},{.609,.611,43670},{.406,.469,43671},{.238,.564,43672},{.642,.455,44943},{.751,.430,57758,1},{.358,.265,57775,1},{.795,.852,57789,1},{.400,.695,57803,1},{.580,.679,57820,1},{.888,.686,139428,4}},
 eastmarch={{.431,.587,153643,"2haxe"},{.441,.374,43673},{.313,.458,43674},{.430,.591,43675},{.366,.598,43676},{.736,.660,43677},{.605,.539,43678},{.713,.583,44935},{.680,.612,57761,1},{.379,.604,57778,1},{.353,.288,57801,1},{.530,.414,57807,1},{.452,.497,57823,1},{.392,.686,139440,4}},
@@ -1869,7 +1970,75 @@ vvardenfell={
 clockwork={{.181,.597,43746},{.803,.424,43747}},
 }
 local UnknownPOI={
-[1383]={
+[1413]={--Apocrypha
+[1]={"Portal to Necrom",17},
+[2]={"Portal to Necrom",17},
+[3]={"Rectory Corporea",6},
+[4]={"The Feral Gallery",10},
+[5]={"Cenotaph of the Remnants",17},
+[6]={"Cipher's Midden",32},
+[7]={"The Sidereal Cloisters",22},
+[8]={"The Ravening Morass",15},
+[9]={"Quires Wind",3},
+[10]={"The Disquiet Study",3},
+[11]={"The Underweave",13},
+[12]={"Apogee of the Tormenting Eye",3},
+[13]={"Fathoms Drift",3},
+[14]={"Libram Cathedral",18},
+[15]={"Deepreave Quag",18},
+[16]={"Runemaster's Acropolis",18},
+[17]={"Chthon Plaza",18},
+[18]={"Versicolor Carrels",8,{195335,7}},
+[19]={"Artisan's Hermitage",8,{194575,5}},
+[20]={"The Tranquil Catalog",31},
+[21]={"Fractured Monolith",2},
+[22]={"Chthonic Landing",2},
+[23]={"Writhing Wastes Edifice",44},
+[24]={"Fallen Hues Edifice",44},
+[26]={"Still Shallows Wayshrine",1},
+[27]={"Soundless Bight Wayshrine",1},
+[28]={"Cipher's Midden Wayshrine",1},
+[29]={"Speiran Tarn Wayshrine",1},
+[30]={"Writhing Wastes Wayshrine",1},
+[31]={"Tranquil Catalog Wayshrine",1},
+[32]={"Apogee Nadir Wayshrine",1},
+[33]={"Forlorn Palisades Wayshrine",1},
+[34]={"Feral Gallery Wayshrine",1},
+[37]={"Syzygial Rostrum",2},
+[38]={"Study of the Lost Cipher",2},
+[39]={"Altar of the One Who Knows",2},
+},
+[1414]={--Telvanni Peninsula
+[1]={"Anchre Egg Mine",3},
+[2]={"Camonnaruhn",3},
+[3]={"Ald Isra",45},
+[4]={"Kemel-Ze",14},
+[5]={"Sailenmora",9},
+[6]={"Tel Dreloth",45},
+[8]={"Necrom",7},
+[9]={"Tomb of the Nameless Master",2},
+[10]={"Tel Baro",45},
+[11]={"Tel Rendys",45},
+[12]={"Clamorclap Bowl",18},
+[13]={"Nightmare Den",18},
+[14]={"Alavelis",32},
+[15]={"Tel Hlurag Ven",8,{194955,3}},
+[16]={"Gorne",13},
+[18]={"Fungal Downs Edifice",44},
+[19]={"Trial: Sanity's Edge",27},
+[20]={"Glasscrag Edifice",44},
+[21]={"Necrom Outskirts Wayshrine",1},
+[22]={"Necrom Wayshrine",1},
+[23]={"Fungal Lowlands Wayshrine",1},
+[24]={"Ald Isra Wayshrine",1},
+[25]={"Padomaic Crest Wayshrine",1},
+[26]={"Great Arm Wayshrine",1},
+[33]={"Bal Foyen Passage",17},
+[30]={"Alavelis Wayshrine",1},
+[31]={"House Dres Encampment",2},
+[32]={"Deshaan Gate",17},
+},
+[1383]={--Galen and Y'ffelon
 [1]={"Vastyr",32},
 [2]={"Y'ffre's Path",31},
 [3]={"Llanshara",21},
@@ -3853,7 +4022,9 @@ local UnknownPOItexture={
 [40]="/esoui/art/icons/poi/poi_ic_darkether_incomplete.dds",
 [41]="/esoui/art/icons/poi/poi_darkbrotherhood_incomplete.dds",
 [42]="/esoui/art/icons/poi/poi_u26_dwemergear_incomplete.dds",
-[43]="/esoui/art/icons/poi/poi_u26_nord_boat_incomplete.dds"
+[43]="/esoui/art/icons/poi/poi_u26_nord_boat_incomplete.dds",
+[44]="/esoui/art/icons/poi/poi_group_portal_incomplete.dds",
+[45]="/esoui/art/icons/poi/poi_mushromtower_incomplete.dds"
 }
 --function ShowPoiIcons()for i,icon in pairs(UnknownPOItexture) do d("["..i.."]|t26:26:"..icon.."|t")end end
 local MundusDescription={
@@ -4343,6 +4514,13 @@ u32deadlandszone={
 [26]={{.874,.464,1},{.498,.666,1},{.545,.571,1},{.68,.417,1},{.771,.41,1},{.773,.339,1},{.681,.304,1},{.457,.556,1},{.326,.527,1},{.394,.515,1},{.29,.576,1},{.249,.725,1},{.35,.687,1},{.492,.593,1},{.568,.328,1},{.55,.444,1},{.193,.561,1},{.78,.254,1}},--Oblivon portals. Provided by art1ink
 [62]={{.812,.422,436}},--Ironclad Sarcoshroud
 },
+u38_apocrypha={--Necrom
+[78]={--Syzygy
+{.888,.596,3678,1},--Aberrant Hushed 1
+{.737,.637,3678,2},--Aberrant Hushed 2
+{.764,.766,3678,3},--Aberrant Hushed 3
+{.49,.699,3678,4}},--Aberrant Hushed 4
+},
 u34_systreszone={--High Isle & Amenos
 [26]={{.129,.629,5},{.233,.759,5},{.249,.596,5},{.256,.485,5},{.269,.865,5},{.308,.439,5},{.424,.788,5},{.426,.437,5},{.434,.851,5},{.452,.657,5},{.493,.517,5},{.560,.629,5},{.580,.739,5},{.619,.339,5},{.745,.422,5},{.746,.336,5},{.789,.265,5},{.835,.304,5},{.835,.385,5},},--Lava Lasher
 [62]={--Antiquity leads provided by Kelinmiriel for remosito
@@ -4530,7 +4708,7 @@ abahslanding={
 [32]={{.538,.410,1382,1}}
 },
 alikr={
-[26]={{.105,.517,2},{.323,.557,2},{.391,.693,2},{.433,.692,2},{.475,.594,2},{.514,.419,2},{.528,.470,2},{.533,.529,2},{.569,.613,2},{.59,.343,2},{.701,.398,2},{.709,.515,2},{.757,.486,2}},
+[26]={{.105,.517,2},{.323,.557,2},{.377,.627,2},{.391,.693,2},{.433,.692,2},{.475,.594,2},{.514,.419,2},{.528,.470,2},{.533,.529,2},{.569,.613,2},{.59,.343,2},{.701,.398,2},{.709,.515,2},{.757,.486,2}},
 [34]={{.148,.482},{.289,.546},{.660,.520},{.783,.428},{.550,.580}},
 [45]={{.246,.460,704,10}},
 [32]={{.251,.458,1380,4}},
@@ -4729,7 +4907,7 @@ southernelsweyr={	--Topal Corsair
 elsweyr={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.623},{.421,.462},{.635,.265},{.445,.527}},
 clockwork={{.634,.604,2047}},
 --]]
-local AchievementsId={[3224]=75,[3298]=74,[3299]=76,[3295]=77,[3080]=67,[3081]=64,[3082]=65,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
+local AchievementsId={[3678]=78,[3224]=75,[3298]=74,[3299]=76,[3295]=77,[3080]=67,[3081]=64,[3082]=65,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
 local ZoneAchievement={
 auridon=1,
 grahtwood=2,
@@ -4985,6 +5163,7 @@ local FishingZones={
 	[857]=3144,--Deadlands
 	[883]=3269,--High Isle
 	[928]=3500,--Firesong
+	[958]=3636,--Necrom
 	bleakrockvillage=493,
 	murkmire=2295,rootwhisper=2295,brightthroatvillage=2295,lilmothcity=2295,
 	imperialcity=1186,
@@ -5229,14 +5408,17 @@ local CustomPins={	--Types
 		},
 	[26]={name="pinType_Portals",id={},pin={},maxDistance=0.05,level=30,texture="/esoui/art/icons/poi/poi_portal_complete.dds",k=1.26},
 	[27]={section=true,name="pinType_High_Isle",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_highisle_up.dds",
-		[74]={name="pinType_Seeker_of_the_Green",done=false,ach=3298,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds"},
+		[74]={name="pinType_Seeker_of_the_Green",done=false,ach=3298,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor4_druid.dds"},
 		[75]={name="pinType_No_Regrets",done=false,ach=3424,maxDistance=0.05,level=101,texture="/esoui/art/tutorial/gamepad/gp_icon_new.dds",k=1,def_texture="/esoui/art/icons/u34_flavor5_drunkedleap.dds"},
 		[76]={name="pinType_Inventor_of_Adventure",done=false,ach=3299,maxDistance=0.05,level=101,texture="/esoui/art/miscellaneous/help_icon.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_rds.dds"},
 		[77]={name="pinType_Gonfalon_Bays_Master_Burglar",done=false,ach=3295,maxDistance=0.05,level=101,texture="/esoui/art/icons/servicetooltipicons/servicetooltipicon_bagvendor.dds",k=1,def_texture="/esoui/art/icons/achievement_u34_flavor1_lockbox.dds"},
 		},
+	[28]={section=true,name="pinType_Necrom",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_necrom_up.dds",
+		[78]={name="pinType_Syzygy",done=false,ach=3678,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor4.dds",k=1,def_texture="/esoui/art/icons/achievement_u38_flavor4.dds"},
+		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
-local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true,[26]=true,[27]=true}
+local PinsNirn={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[9]=true,[10]=true,[11]=true,[12]=true,[13]=true,[14]=true,[15]=true,[16]=true,[17]=true,[18]=true,[19]=true,[20]=true,[22]=true,[23]=true,[24]=true,[26]=true,[27]=true,[28]=true}
 local PinsImperial={[3]=true,[4]=true,[5]=true,[7]=true,[8]=true,[25]=true}
 --	/script local name,_,_,icon=GetAchievementInfo(3295) StartChatInput(icon)
 --	/script StartChatInput(ZO_AchievementsContentsCategoriesScrollChildZO_IconHeader12Icon:GetTextureFileName())
@@ -6367,7 +6549,7 @@ local function OnLoad(eventCode,addonName)
 		return id
 	end
 
-	for i=1,27 do
+	for i=1,28 do
 		local filter=CustomPins[i]
 		if filter then
 			if filter.section then
