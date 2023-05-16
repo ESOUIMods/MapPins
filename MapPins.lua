@@ -285,14 +285,16 @@ u38_quires_wind={{.25,.725,3622}},--Quires Wind Explorer
 u38_disquiet_study={{.442,.628,3623}},--Disquiet Study Explore
 U38_CorpuscleBight_01_Base_0={{.52,.113,3624}},--Fathoms Drift Explorer
 u38_apogee_wind={{.53,.795,3625}},--Apogee Explorer
+U38_underweave_central={
+{.498,.796,3659,1},--Caz'iunes the Executioner
+{.371,.191,3659,2},--Creepclaw
+{.593,.35,3657},--All-Seeing Ky'zuu (Group Event)
+},
 U38_underweave_process02={--The Underweave Conqueror
 {.327,.311,3659,3},--Qacath the Silent
 },
-U38_underweave_heart={{.512,.844,3659,4}},--Kynreve Kev'ni
-U38_underweave_central={
-{.498,.796,3659,1},--Caz'iunes the Executioner
-{.594,.353,3657},--All-Seeing Ky'zuu (Group Event)
-},
+U38_underweave_heart={{.517,.847,3659,4}},--Kynreve Kev'ni
+U38_underweave_process01={{.872,.736,3659,5}},--Loremaster Trigom
 u38_gorne_main_0={--Gorne Conqueror
 {.579,.126,3660,1},--Stupulag
 {.154,.215,3660,2},--Zygiite
@@ -4514,12 +4516,34 @@ u32deadlandszone={
 [26]={{.874,.464,1},{.498,.666,1},{.545,.571,1},{.68,.417,1},{.771,.41,1},{.773,.339,1},{.681,.304,1},{.457,.556,1},{.326,.527,1},{.394,.515,1},{.29,.576,1},{.249,.725,1},{.35,.687,1},{.492,.593,1},{.568,.328,1},{.55,.444,1},{.193,.561,1},{.78,.254,1}},--Oblivon portals. Provided by art1ink
 [62]={{.812,.422,436}},--Ironclad Sarcoshroud
 },
+u38_telvannipeninsula={
+[62]={--Telvanni Alchemy Station
+{.464,.677,615,1},--Volcan Sand Bath
+{.364,.341,616,2},--Enchanted Mixing Stone
+{.273,.452,617,3},--Reagent Drying Rack
+{.444,.473,618,4},--Lustrous Metal Funnel
+{.419,.306,619,5},--Sturdy Crucible
+{.528,.66,620,6},--Igneous Mortar and Pestle
+{.413,.81,621,7},--Glass Desiccator
+{.225,.549,622,8},--Tempered Brass Report
+{.436,.501,623,9},--Malachite Burette and Stand
+{.539,.542,624,10}},--Vacuum Filtration Apparatus
+},
+tlv_aldisra={
+[62]={.72,.177,0,3}},--Reagent Drying Rack (Telvanni Alchemy Station)
 u38_apocrypha={--Necrom
 [78]={--Syzygy
 {.888,.596,3678,1},--Aberrant Hushed 1
 {.737,.637,3678,2},--Aberrant Hushed 2
 {.764,.766,3678,3},--Aberrant Hushed 3
 {.49,.699,3678,4}},--Aberrant Hushed 4
+--Final Rite (Carry out a ritual Syzygial Rostrum)
+[79]={--Tomes of Uknown Color
+{.417,.385,3677,1},--Find Spectral Book 1
+{.276,.405,3677,2},--Find Spectral Book 2
+{.264,.468,3677,3},--Find Spectral Book 3
+{.158,.228,3677,4},--Find Spectral Book 4
+{.372,.246,3677,5}},--Find Spectral Book 5
 },
 u34_systreszone={--High Isle & Amenos
 [26]={{.129,.629,5},{.233,.759,5},{.249,.596,5},{.256,.485,5},{.269,.865,5},{.308,.439,5},{.424,.788,5},{.426,.437,5},{.434,.851,5},{.452,.657,5},{.493,.517,5},{.560,.629,5},{.580,.739,5},{.619,.339,5},{.745,.422,5},{.746,.336,5},{.789,.265,5},{.835,.304,5},{.835,.385,5},},--Lava Lasher
@@ -4907,7 +4931,7 @@ southernelsweyr={	--Topal Corsair
 elsweyr={{.484,.221},{.442,.671},{.23,.632},{.443,.671},{.669,.491},{.293,.623},{.421,.462},{.635,.265},{.445,.527}},
 clockwork={{.634,.604,2047}},
 --]]
-local AchievementsId={[3678]=78,[3224]=75,[3298]=74,[3299]=76,[3295]=77,[3080]=67,[3081]=64,[3082]=65,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
+local AchievementsId={[3677]=79,[3678]=78,[3224]=75,[3298]=74,[3299]=76,[3295]=77,[3080]=67,[3081]=64,[3082]=65,[3083]=63,[1824]=30,[1712]=31,[1382]=32,[872]=33,[869]=34,[871]=34,[873]=34,[1247]=36,[1250]=38,[1349]=39,[716]=40,[2211]=42,[2171]=43,[1827]=44,[704]=45,[1082]=46,[1958]=47,[2320]=48,[2341]=49,[2357]=53,[2669]=59}
 local ZoneAchievement={
 auridon=1,
 grahtwood=2,
@@ -5175,9 +5199,10 @@ local FishingZones={
 	summerset=2191,lillandrill=2191,
 	artaeum=2240,
 	blackreach=2655,
-	U28_blackreach=2861
+	u28_blackreach=2861,
+	u38_apocrypha=3636
 }
-local FishingAchievements={[471]=true,[472]=true,[473]=true,[474]=true,[475]=true,[477]=true,[478]=true,[479]=true,[480]=true,[481]=true,[483]=true,[484]=true,[485]=true,[486]=true,[487]=true,[489]=true,[490]=true,[491]=true,[492]=true,[493]=true,[916]=true,[1186]=true,[1339]=true,[1340]=true,[1351]=true,[1431]=true,[1882]=true,[2191]=true,[2240]=true,[2295]=true,[2412]=true,[2566]=true,[2655]=true,[2861]=true,[2981]=true,[3144]=true,[3500]=true}
+local FishingAchievements={[471]=true,[472]=true,[473]=true,[474]=true,[475]=true,[477]=true,[478]=true,[479]=true,[480]=true,[481]=true,[483]=true,[484]=true,[485]=true,[486]=true,[487]=true,[489]=true,[490]=true,[491]=true,[492]=true,[493]=true,[916]=true,[1186]=true,[1339]=true,[1340]=true,[1351]=true,[1431]=true,[1882]=true,[2191]=true,[2240]=true,[2295]=true,[2412]=true,[2566]=true,[2655]=true,[2861]=true,[2981]=true,[3144]=true,[3500]=true,[3636]=true}
 local FishingBugFix={[473]={[3]="River"},[2027]={[8]="Oily"},[472]={[1]="Foul"}}
 local Volendrung={ava_whole_0={
 --ALLIANCE_ALDMERI_DOMINION
@@ -5415,6 +5440,7 @@ local CustomPins={	--Types
 		},
 	[28]={section=true,name="pinType_Necrom",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_necrom_up.dds",
 		[78]={name="pinType_Syzygy",done=false,ach=3678,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor4.dds",k=1,def_texture="/esoui/art/icons/achievement_u38_flavor4.dds"},
+		[79]={name="pinType_Tomes_of_Uknown_Color",done=false,ach=3677,maxDistance=0.05,level=101,texture="/esoui/art/icons/achievement_u38_flavor3.dds",k=1,def_texture="/esoui/art/icons/achievement_u38_flavor3.dds"},
 		},
 	}
 local PinsAva={[1]=true,[2]=true,[3]=true,[4]=true,[5]=true,[6]=true,[7]=true,[8]=true,[17]=true,[21]=true}
