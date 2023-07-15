@@ -24,6 +24,7 @@ local Localization={
 		Time_Rifts="Time Rifts",
 		Shrines="Shrines",
 		Fishing_Nodes="Fishing nodes",
+--		Fishing_Nodes_done="Fishing Nodes (done)",
 		Volendrung="Volendrung",
 		Antiquities="Antiquities",Antiquity_Leads="Antiquity leads",
 		Imperial_City="Imperial City",IC_Bosses="Bosses",IC_Respawns="Respawns",
@@ -61,6 +62,7 @@ local Localization={
 		Time_Rifts="Временные бреши",
 		Shrines="Алтари",
 		Fishing_Nodes="Рыбалка",
+--		Fishing_Nodes_done="Рыбалка (выполнено)",
 		Volendrung="Волендранг",
 		Antiquities="Древности", Antiquity_Leads="Подсказки древностей",
 		Imperial_City="Имперский город",
@@ -102,6 +104,7 @@ local Localization={
 		Time_Rifts="Zeitrisse",
 		Shrines="Schreine",
 		Fishing_Nodes="Fischgründe",
+--		Fishing_Nodes_done="Gesammelte Fischgründe",
 		Clockwork_City="Clockwork City",
 		Antiquities="Antiquitäten", Antiquity_Leads="Fundorte von Spuren",
 		IC_Bosses="Anführer",
@@ -131,6 +134,7 @@ local Localization={
 		Time_Rifts="Failles temporelles",
 		Shrines="Autels",
 		Fishing_Nodes="Trous de Pêche",
+--		Fishing_Nodes_done="Trous de Pêche(fini)",
 		Volendrung="Volendrung",
 		Antiquities="Antiquités",Antiquity_Leads="Pistes d'antiquités",
 		Imperial_City="Cité impériale",IC_Bosses="Boss",IC_Respawns="Réapparitions",
@@ -168,6 +172,7 @@ local Localization={
 		Time_Rifts="Fendas Temporais",
 		Shrines="Santuários Vampiro/Lobisomem",
 		Fishing_Nodes="Locais de Pesca",
+--		Fishing_Nodes_done="Locais de Pesca Coletados",
 		Volendrung="Volendrung",
 		Antiquities="Antiguidades", Antiquity_Leads="Pistas de Antiguidades",
 		Imperial_City="Cidade Imperial",
@@ -211,6 +216,7 @@ local Localization={
 		Time_Rifts="Розриви часу",
 		Shrines="Святині",
 		Fishing_Nodes="Місце для рибалки",
+--		Fishing_Nodes_done="Місце для рибалки (виконано)",
 		Clockwork_City="Заводне місто",
 		Murkmire="Муркмайр",
 		Elsweyr="Ельсвейр",
@@ -251,6 +257,7 @@ local Localization={
 		Time_Rifts="Fenditure Temporali",
 		Shrines="Tempi",
 		Fishing_Nodes="Zone di Pesca",
+--		Fishing_Nodes_done="Zone di Pesca trovati",
 		Clockwork_City="Città Meccanica",
 		Murkmire="Murkmire",
 		Elsweyr="Elsweyr",
@@ -283,7 +290,8 @@ u38_eggmine={{.513,.464,3620}},--Anchre Egg Mine Explorer
 u38_camonnaruhn={{.587,.214,3621}},--Camonnaruhn Explorer
 u38_quires_wind={{.25,.725,3622}},--Quires Wind Explorer
 u38_disquiet_study={{.442,.628,3623}},--Disquiet Study Explore
-U38_CorpuscleBight_01_Base_0={{.52,.113,3624}},--Fathoms Drift Explorer
+U38_CorpuscleBight_01_Base_0={{.520,.113,3624}},--Fathoms Drift Explorer
+U38_CorpuscleBight_02_Base_0={{.520,.113,3624}},--Fathoms Drift Explorer`
 u38_apogee_wind={{.53,.795,3625}},--Apogee Explorer
 U38_underweave_central={
 {.498,.796,3659,1},--Caz'iunes the Executioner
@@ -606,6 +614,7 @@ u38_apocrypha={--Necrom Provided by art1ink
 U38_underweave_central={{.351,.619,3672,11}},
 u38_disquiet_study={{.452,.299,3672,14,541}},
 u38_quires_wind={{.564,.656,3672,15,542}},
+U38_CorpuscleBight_01_Base_0={{.424,.121,3672,16,543}},
 U38_CorpuscleBight_02_Base_0={{.424,.121,3672,16,543}},
 u38_apogee_wind={{.481,.471,3672,18,545}},
 u38_telvannipeninsula={
@@ -1494,6 +1503,7 @@ u38_telvannipeninsula={
 {.840,.343,8,4},--The House of Troubles
 {.449,.556,11,8},-- Where Magical Paths Meet
 {.588,.681,20,1},-- Ancestors and the Dunmer (Abridged)
+{.276,.493,20,3},--The Great Houses and Their Uses
 },
 u38_apocrypha={
 {.714,.854,17,1},--The Book of Daedra
@@ -1501,7 +1511,8 @@ u38_apocrypha={
 },
 u38_disquiet_study={{.491,.364,8,6}},--Modern Heretics
 u38_ciphersmidden_city={{.447,.46,8,9}},--Fragmentae Abyssum Hermaeus Morus
-u38_teldreloth_ext={{.418,.687,20,1}},-- Ancestors and the Dunmer (Abridged)
+u38_teldreloth_ext={{.418,.687,20,1}},--Ancestors and the Dunmer (Abridged)
+tlv_aldisra={{.747,.609,20,3}},--The Great Houses and Their Uses
 u38_Necrom={
 {.582,.524,8,4},--The House of Troubles
 {.36,.573,8,1},--Aedra and Daedra
@@ -5052,12 +5063,6 @@ local FishIcon={
 	[4]="/esoui/art/icons/crafting_fishing_perch.dds"	--Lake
 	}
 local FishingNodes={
-murkmire={
-{.147,.407,1},{.597,.25,1},{.579,.242,1},{.56,.236,1},{.528,.232,1},{.112,.469,1},{.11,.448,1},{.108,.421,1},{.319,.641,1},{.7,.278,1},{.7,.287,1},{.716,.613,1},
-{.5,.427,2},{.499,.445,2},{.535,.432,2},{.531,.412,2},{.519,.386,2},{.533,.381,2},{.699,.211,2},{.774,.239,2},{.408,.699,2},{.404,.691,2},{.417,.676,2},{.422,.658,2},{.428,.647,2},{.43,.638,2},{.431,.606,2},{.431,.626,2},{.461,.627,2},{.46,.642,2},{.458,.655,2},{.469,.668,2},{.698,.585,2},{.712,.587,2},{.314,.588,2},{.352,.526,2},{.38,.518,2},{.469,.668,2},{.505,.729,2},{.496,.712,2},{.502,.706,2},{.46,.6,2},{.44,.57,2},{.439,.593,2},{.732,.477,2},{.717,.48,2},{.71,.475,2},{.615,.507,2},{.675,.467,2},
-{.806,.795,3},{.77,.8,3},{.761,.808,3},{.788,.596,3},{.887,.594,3},{.926,.677,3},{.941,.736,3},{.954,.805,3},{.945,.83,3},{.854,.872,3},{.801,.895,3},{.692,.882,3},{.67,.836,3},{.563,.825,3},{.496,.771,3},{.47,.765,3},{.443,.738,3},{.411,.74,3},{.399,.724,3},{.365,.72,3},{.334,.702,3},{.313,.679,3},{.297,.67,3},{.287,.67,3},{.272,.667,3},{.259,.643,3},{.245,.613,3},{.77,.594,3},{.784,.577,3},{.79,.57,3},{.782,.542,3},{.759,.5,3},{.774,.447,3},{.786,.425,3},
-{.578,.41,4},{.632,.392,4},{.309,.421,4},{.291,.435,4},{.282,.419,4},{.475,.389,4},{.481,.392,4},{.614,.384,4},{.343,.615,4},{.349,.666,4},{.552,.487,4},{.546,.49,4},{.516,.501,4},{.526,.508,4},{.576,.544,4},{.6,.594,4},{.584,.648,4},{.14,.415,4},{.14,.406,4},{.11,.382,4},{.11,.346,4},{.136,.333,4},{.725,.675,4},{.7,.36,4},{.74,.383,4},{.692,.35,4},{.702,.361,4},{.738,.621,4},
-},
 alcairecastle={{.552,.523,4},{.675,.656,2},{.74,.725,2},{.836,.796,2}},
 aldcroft={{.368,.229,2},{.432,.544,4},{.622,.114,2},{.722,.792,3},{.723,.609,3},{.805,.475,3}},
 alikr={{.098,.519,3},{.112,.469,3},{.112,.476,3},{.125,.469,3},{.126,.493,3},{.137,.48,3},{.174,.455,3},{.176,.445,3},{.184,.437,3},{.191,.434,3},{.197,.434,3},{.198,.442,3},{.213,.445,3},{.216,.407,3},{.22,.444,3},{.229,.442,3},{.231,.404,3},{.249,.389,3},{.263,.388,3},{.274,.361,3},{.282,.393,3},{.302,.409,3},{.319,.421,3},{.328,.387,3},{.329,.415,3},{.33,.387,3},{.334,.377,3},{.338,.445,4},{.343,.401,3},{.364,.394,3},{.404,.637,4},{.404,.629,4},{.408,.631,4},{.42,.622,4},{.424,.618,4},{.429,.533,1},{.43,.577,4},{.445,.515,1},{.445,.544,1},{.497,.346,3},{.529,.345,3},{.572,.28,3},{.597,.272,3},{.61,.604,1},{.622,.615,1},{.744,.571,1},{.856,.557,1},{.865,.547,1}},
@@ -5107,6 +5112,12 @@ malabaltor={{.8,.4,2},{.77,.454,2},{.414,.632,4},{.057,.537,3},{.062,.553,3},{.0
 marbruk={{.292,.548,4},{.411,.594,4}},
 mistral={{.106,.511,3},{.143,.082,3},{.575,.713,3},{.665,.645,3},{.751,.542,3},{.789,.712,3},{.875,.269,3},{.898,.191,3},{.957,.055,3}},
 mournhold={{.216,.681,4},{.362,.275,2},{.367,.37,2},{.567,.463,4},{.609,.039,2},{.742,.151,2},{.79,.218,2},{.818,.123,2}},
+murkmire={
+{.147,.407,1},{.597,.25,1},{.579,.242,1},{.56,.236,1},{.528,.232,1},{.112,.469,1},{.11,.448,1},{.108,.421,1},{.319,.641,1},{.7,.278,1},{.7,.287,1},{.716,.613,1},
+{.5,.427,2},{.499,.445,2},{.535,.432,2},{.531,.412,2},{.519,.386,2},{.533,.381,2},{.699,.211,2},{.774,.239,2},{.408,.699,2},{.404,.691,2},{.417,.676,2},{.422,.658,2},{.428,.647,2},{.43,.638,2},{.431,.606,2},{.431,.626,2},{.461,.627,2},{.46,.642,2},{.458,.655,2},{.469,.668,2},{.698,.585,2},{.712,.587,2},{.314,.588,2},{.352,.526,2},{.38,.518,2},{.469,.668,2},{.505,.729,2},{.496,.712,2},{.502,.706,2},{.46,.6,2},{.44,.57,2},{.439,.593,2},{.732,.477,2},{.717,.48,2},{.71,.475,2},{.615,.507,2},{.675,.467,2},
+{.806,.795,3},{.77,.8,3},{.761,.808,3},{.788,.596,3},{.887,.594,3},{.926,.677,3},{.941,.736,3},{.954,.805,3},{.945,.83,3},{.854,.872,3},{.801,.895,3},{.692,.882,3},{.67,.836,3},{.563,.825,3},{.496,.771,3},{.47,.765,3},{.443,.738,3},{.411,.74,3},{.399,.724,3},{.365,.72,3},{.334,.702,3},{.313,.679,3},{.297,.67,3},{.287,.67,3},{.272,.667,3},{.259,.643,3},{.245,.613,3},{.77,.594,3},{.784,.577,3},{.79,.57,3},{.782,.542,3},{.759,.5,3},{.774,.447,3},{.786,.425,3},
+{.578,.41,4},{.632,.392,4},{.309,.421,4},{.291,.435,4},{.282,.419,4},{.475,.389,4},{.481,.392,4},{.614,.384,4},{.343,.615,4},{.349,.666,4},{.552,.487,4},{.546,.49,4},{.516,.501,4},{.526,.508,4},{.576,.544,4},{.6,.594,4},{.584,.648,4},{.14,.415,4},{.14,.406,4},{.11,.382,4},{.11,.346,4},{.136,.333,4},{.725,.675,4},{.7,.36,4},{.74,.383,4},{.692,.35,4},{.702,.361,4},{.738,.621,4},
+},
 narsis={{.07,.21,4},{.163,.342,4},{.193,.117,4},{.217,.169,4},{.281,.04,4},{.316,.336,4},{.411,.223,4}},
 nimalten={{.331,.262,4},{.338,.174,4},{.455,.141,4},{.46,.282,4},{.72,.771,4}},
 northpoint={{.066,.118,3},{.493,.043,3},{.622,.138,3},{.753,.107,3},{.8,.968,3},{.821,.195,3},{.878,.561,3},{.891,.833,3},{.9,.301,3},{.92,.707,3},{.924,.36,3},{.937,.455,3}},
@@ -5210,7 +5221,7 @@ local FishingZones={
 	artaeum=2240,
 	blackreach=2655,
 	U28_blackreach=2861,
-	u38_apocrypha=3636
+	u38_apocrypha=3636,
 }
 local FishingAchievements={[471]=true,[472]=true,[473]=true,[474]=true,[475]=true,[477]=true,[478]=true,[479]=true,[480]=true,[481]=true,[483]=true,[484]=true,[485]=true,[486]=true,[487]=true,[489]=true,[490]=true,[491]=true,[492]=true,[493]=true,[916]=true,[1186]=true,[1339]=true,[1340]=true,[1351]=true,[1431]=true,[1882]=true,[2191]=true,[2240]=true,[2295]=true,[2412]=true,[2566]=true,[2655]=true,[2861]=true,[2981]=true,[3144]=true,[3500]=true,[3636]=true}
 local FishingBugFix={[473]={[3]="River"},[2027]={[8]="Oily"},[472]={[1]="Foul"}}
@@ -5400,6 +5411,7 @@ local CustomPins={	--Types
 	[15]={name="pinType_Time_Rifts",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/"..AddonName.."/img/Treasure_1-2.dds",k=1.8},
 	[16]={name="pinType_Shrines",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/poi/poi_daedricruin_incomplete.dds",k=1.25},
 	[17]={name="pinType_Fishing_Nodes",done=false,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/achievements_indexicon_fishing_up.dds",k=1.25},
+--	[17]={name="pinType_Fishing_Nodes_done",done=true,id={},pin={},maxDistance=0.05,level=101,texture="/esoui/art/icons/achievements_indexicon_fishing_up.dds",k=1.25},
 	[18]={section=true,name="pinType_Clockwork_City",id={},pin={},texture="/esoui/art/treeicons/tutorial_idexicon_cwc_up.dds",	--"/art/fx/texture/clockworksigil.dds",
 		[47]={name="pinType_Precursor_Maker",done=false,ach=1958,maxDistance=0.05,level=101,texture="/esoui/art/menubar/gamepad/gp_playermenu_icon_settings.dds",k=1,def_texture="/esoui/art/icons/achievement_update16_001.dds"},
 		},
@@ -6062,7 +6074,10 @@ local function OnAchievementUpdate(achievementId,link)
 		end
 	end
 end
-
+local function OnSkyshardsUpdated()
+    ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[3].name])
+    if COMPASS_PINS then COMPASS_PINS:RefreshPins(CustomPins[3].name) end
+end
 local function OnBookLearned(_,categoryIndex)
 	if categoryIndex==1 then
 		ZO_WorldMap_RefreshCustomPinsOfType(_G[CustomPins[5].name])
@@ -6213,6 +6228,11 @@ end
 local function RegisterEvents()
 	EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_ACHIEVEMENT_UPDATED,function(_,achievementId,link) OnAchievementUpdate(achievementId)end)
 	EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_ACHIEVEMENT_AWARDED,function(_,_,_,achievementId,link) OnAchievementUpdate(achievementId)end)
+	if SavedVars[3] then
+        EVENT_MANAGER:RegisterForEvent(AddonName, EVENT_SKYSHARDS_UPDATED, OnSkyshardsUpdated)
+    else
+        EVENT_MANAGER:UnregisterForEvent(AddonName, EVENT_SKYSHARDS_UPDATED)
+    end
 	if SavedVars[5] then
 		EVENT_MANAGER:RegisterForEvent(AddonName,EVENT_LORE_BOOK_LEARNED, OnBookLearned)
 	else
