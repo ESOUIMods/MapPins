@@ -238,7 +238,7 @@ local Localization={
 		Necrom="Некром",
 		Gold_Road="Золота дорога",
 		},
-	it={	--provided by windedsilver 1.91
+	it={--provided by windedsilver 1.91
 		--Water
 		Lake="Lago",Foul="Acqua Sporca",River="Fiume",Salt="Mare",Oily="Oleosa",Mystic="Mistico",Running="Fluente",
 		--Portals
@@ -278,7 +278,45 @@ local Localization={
 		Necrom="Necrom",
 		Gold_Road="Gold Road",
 		},
-}
+	es={--provided by EthanC-Sleepzone
+		-- Agua
+		Lake = "Lago", Foul = "Impura", River = "Río", Salt = "Salada", Oily = "Aceitosa", Mystic = "Mística", Running = "Corriente",
+		-- Portales
+		Portals = "Portales", Celestial_Rifts = "Grietas celestiales", Dark_Fissures = "Fisuras oscuras", Oblivion_Portals = "Portales de Oblivion", Shadow_Fissures = "Fisuras sombrías", Lava_Lashers = "Azotadores de lava",
+		-- Filtros
+		Delve_bosses = "Jefes de mazmorras", Delve_bosses_done = "Jefes de mazmorras (completados)",
+		Skyshards = "Fragmentos del cielo", Skyshards_done = "Fragmentos del cielo (recogidos)",
+		Lore_books = "Libros de lore", Lore_books_done = "Libros de lore (leídos)",
+		Treasure_Maps = "Mapas del tesoro",
+		Treasure_Chests = "Cofres del tesoro",
+		Unknown_POI = "Punto de interés desconocido",
+		Undaunted = "Intrépidos",
+		Time_Rifts = "Grietas temporales",
+		Shrines = "Santuarios",
+		Fishing_Nodes = "Nodos de pesca",
+		Volendrung = "Volendrung",
+		Antiquities = "Antigüedades", Antiquity_Leads = "Pistas de antigüedades",
+		Imperial_City = "Ciudad Imperial", IC_Bosses = "Jefes", IC_Respawns = "Reapariciones",
+		Cunning_Scamp = "Tramposo astuto", Trove_Scamp = "Bribón del tesoro",
+		World_achievements = "Logros del mundo",
+		Orsinium_world_event = "Encuentros aleatorios",
+		Summerset_world_event = "Encuentros aleatorios",
+		Random_Encounters = "Encuentros aleatorios",
+		-- DLC
+		Orsinium = "Orsinium",
+		Thieves_guild = "Gremio de ladrones",
+		Morrowind = "Morrowind",
+		Summerset = "Summerset",
+		Clockwork_City = "Ciudad Mecánica",
+		Murkmire = "Murkmire",
+		Elsweyr = "Elsweyr",
+		Blackwood = "Bosque Negro",
+		Greymoor = "Greymoor",
+		High_Isle = "Isla Alta",
+		Necrom = "Necrom",
+		Gold_Road = "Gold Road1",
+		},
+	}
 local lang=GetCVar("language.2") if not Localization[lang] then lang="en" end
 local function Loc(string)
 	return Localization[lang][string] or Localization[lang]["en"] or string
@@ -1551,15 +1589,16 @@ local Lorebooks={
 --Varieties of Faith, The Forebears 5,6
 --Nine Commands of the Eight Divines 10,8
 --Magic from the Sky 15,3
---Eulogy for Emperor Varen 19,6
 --The Humor of Wood Elves 21,5
 --The Wedding Feast: A Memoir 21,7
 --Ayleid Survivals in Valenwood 26,7
 u42_Skingrad={{.543,.860,13,4}},--The Cleansing of the Fane
+UI_Maps_U42_VarensWall_Ext_0={{.373,.5,19,6}},--Eulogy for Emperor Varen
 westwealdoverland={
 {.593,.464,26,2},--Varieties of Faith: The Wood Elves
 {.712,.646,13,4},--The Cleansing of the Fane
 {.707,.412,13,4},--The Cleansing of the Fane
+{.141,.615,19,6},--Eulogy for Emperor Varen
 },
 --Necrom Provided by art1ink.
 u38_telvannipeninsula={
@@ -2022,7 +2061,7 @@ stonefalls={
 ebonheart={{.540,.091,57746,1}},
 deshaan={
 {.18,.48,187890},--Hlaalu Councilor Clue (Deshaan)
-{.526,.569,197843},--Mercymother Elite Clue
+{.528,.571,197843},--Mercymother Elite Clue
 {.261,.552,43661},{.186,.474,43662},{.463,.405,43663},{.758,.561,43664},{.899,.549,43665},{.792,.509,43666},{.352,.640,44934},{.476,.420,57748,1},{.787,.408,57751,1},{.238,.481,57755,1},{.148,.496,57772,1},{.637,.550,57817,1},{.485,.615,139426,4}},
 shadowfen={{.483,.701,153647,"shield"},{.369,.150,43667},{.708,.392,43668},{.704,.701,43669},{.609,.611,43670},{.406,.469,43671},{.238,.564,43672},{.642,.455,44943},{.751,.430,57758,1},{.358,.265,57775,1},{.795,.852,57789,1},{.400,.695,57803,1},{.580,.679,57820,1},{.888,.686,139428,4}},
 eastmarch={{.431,.587,153643,"2haxe"},{.441,.374,43673},{.313,.458,43674},{.430,.591,43675},{.366,.598,43676},{.736,.660,43677},{.605,.539,43678},{.713,.583,44935},{.680,.612,57761,1},{.379,.604,57778,1},{.353,.288,57801,1},{.530,.414,57807,1},{.452,.497,57823,1},{.392,.686,139440,4}},
@@ -2997,7 +3036,7 @@ local UnknownPOI={
 [8]={"Elinhir",23},
 [9]={"Spellscar",5},
 [10]={"Dragonstar",32},
-[11]={"Dragonstar Arena",17},
+[11]={"Dragonstar Arena",20},
 [12]={"Atelier of the Twice-Born Star",8,{58153,9}},
 [13]={"Molavar",3},
 [14]={"Rkundzelft",19},
@@ -5064,7 +5103,7 @@ rivenspire={
 },
 sentinel={[45]={{.383,.499,704,10}},[32]={{.405,.492,1380,4}},[34]={{.589,.919}}},
 shadowfen={
-[26]={{.58,.304,2},{.261,.810,2},{.382,.226,2},{.395,.827,2},{.602,.256,2},{.607,.485,2},{.700,.811,2}},
+[26]={{.129,.699,2},{.58,.304,2},{.261,.810,2},{.382,.226,2},{.395,.827,2},{.602,.256,2},{.607,.485,2},{.700,.811,2}},
 [33]={{.127,.722,872,10},{.333,.166,872,10},{.618,.703,872,10},{.803,.640,872,10}},
 [34]={{.346,.594},{.382,.363},{.626,.461},{.683,.724},{.570,.634}},
 [45]={{.428,.239,704,8}},
@@ -5391,7 +5430,7 @@ local FishingZones={
 	[179]=483,--Auridon
 	[180]=487,--Reaper's March
 	[181]=484,--Grahtwood
-	[501]=916,--Carglorn
+	[502]=916,--Carglorn
 	[109]=493,--Bleakrock
 	[305]=491,--Stros M'Kai
 	[307]=492,--Khenarthi's Roost
@@ -5404,18 +5443,18 @@ local FishingZones={
 	[589]=2027,--Clockwork City
 	[590]=2027,--Clockwork City Brass Fortress
 	[616]=2191,--Summerset
-	[633]=2240,--Arteum
+	[634]=2240,--Arteum
 	[407]=2295,--Murkmire
-	[682]=2412,--Northern Elsweyr
-	[721]=2566,--Southern Elsweyr
-	[744]=2655,--Greymoor
-	[784]=2861,--Markarth
-	[835]=2981,--Blackwood
-	[858]=3144,--Deadlands
-	[884]=3269,--High Isle
-	[930]=3500,--Firesong
-	[959]=3636,--Necrom
-	[981]=3948,--Gold Road
+	[683]=2412,--Northern Elsweyr
+	[722]=2566,--Southern Elsweyr
+	[745]=2655,--Greymoor
+	[785]=2861,--Markarth
+	[836]=2981,--Blackwood
+	[859]=3144,--Deadlands
+	[885]=3269,--High Isle
+	[932]=3500,--Firesong
+	[961]=3636,--Necrom
+	[983]=3948,--Gold Road
 	bleakrockvillage=493,
 	murkmire=2295,rootwhisper=2295,brightthroatvillage=2295,lilmothcity=2295,
 	imperialcity=1186,
